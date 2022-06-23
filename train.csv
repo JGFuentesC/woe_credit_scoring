@@ -1,0 +1,1001 @@
+SK_ID_CURR,TARGET,C_CNT_CHILDREN,C_AMT_INCOME_TOTAL,C_AMT_CREDIT,C_AMT_ANNUITY,C_AMT_GOODS_PRICE,C_OWN_CAR_AGE,C_TOTALAREA_MODE,D_OCCUPATION_TYPE,D_NAME_CONTRACT_TYPE,D_CODE_GENDER,D_FLAG_OWN_CAR,D_FLAG_OWN_REALTY,D_NAME_INCOME_TYPE,D_NAME_EDUCATION_TYPE,D_NAME_FAMILY_STATUS,D_NAME_HOUSING_TYPE,D_FLAG_PHONE,D_WEEKDAY_APPR_PROCESS_START,D_NAME_TYPE_SUITE,D_HOUSETYPE_MODE,D_WALLSMATERIAL_MODE
+216875,0,0,31500.0,238500.0,10503.0,238500.0,,0.0119,,Cash loans,M,N,Y,Pensioner,Higher education,Single / not married,House / apartment,0,TUESDAY,Unaccompanied,block of flats,"Stone, brick"
+129913,0,0,126000.0,382500.0,19125.0,382500.0,,0.0879,Sales staff,Revolving loans,F,N,Y,Commercial associate,Secondary / secondary special,Married,House / apartment,1,SATURDAY,Unaccompanied,block of flats,"Stone, brick"
+249923,0,2,112500.0,592560.0,31023.0,450000.0,,,Core staff,Cash loans,F,N,N,Commercial associate,Secondary / secondary special,Civil marriage,Municipal apartment,1,THURSDAY,Unaccompanied,,
+318314,0,0,112500.0,589045.5,26077.5,508500.0,,,Sales staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Single / not married,House / apartment,0,TUESDAY,Unaccompanied,,
+238253,0,0,157500.0,269550.0,10975.5,225000.0,,0.0113,,Cash loans,F,N,N,Commercial associate,Secondary / secondary special,Married,House / apartment,1,THURSDAY,Unaccompanied,block of flats,"Stone, brick"
+121643,0,0,176175.0,1042560.0,32863.5,900000.0,,0.0394,Sales staff,Cash loans,M,N,N,Commercial associate,Secondary / secondary special,Single / not married,With parents,1,THURSDAY,Unaccompanied,block of flats,Panel
+362691,0,1,157500.0,284400.0,22599.0,225000.0,,,,Cash loans,F,N,N,Working,Higher education,Civil marriage,House / apartment,0,TUESDAY,Unaccompanied,,
+451467,0,1,216000.0,545040.0,20677.5,450000.0,,,Sales staff,Cash loans,F,N,Y,Commercial associate,Secondary / secondary special,Single / not married,House / apartment,0,FRIDAY,Unaccompanied,,
+304647,0,1,126000.0,225000.0,17775.0,225000.0,0.0,0.1016,Drivers,Cash loans,M,Y,Y,Working,Secondary / secondary special,Married,House / apartment,1,THURSDAY,Unaccompanied,block of flats,"Stone, brick"
+384265,0,1,135000.0,675000.0,32602.5,675000.0,,0.0786,High skill tech staff,Cash loans,F,N,N,Working,Secondary / secondary special,Married,House / apartment,1,WEDNESDAY,Unaccompanied,,
+258300,0,0,67500.0,1209541.5,40104.0,990000.0,,,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Married,House / apartment,1,WEDNESDAY,Unaccompanied,,
+307895,0,0,225000.0,239850.0,22423.5,225000.0,,,,Cash loans,M,N,Y,Commercial associate,Secondary / secondary special,Single / not married,House / apartment,1,THURSDAY,Unaccompanied,,
+366021,0,0,225000.0,379008.0,38835.0,360000.0,2.0,,,Cash loans,F,Y,Y,Pensioner,Secondary / secondary special,Civil marriage,House / apartment,1,THURSDAY,Unaccompanied,,
+241632,0,1,81000.0,480060.0,22509.0,337500.0,64.0,0.0704,Drivers,Cash loans,M,Y,Y,Commercial associate,Secondary / secondary special,Civil marriage,House / apartment,0,SATURDAY,Unaccompanied,block of flats,"Stone, brick"
+400846,0,0,360000.0,675000.0,35082.0,675000.0,2.0,0.2432,Managers,Cash loans,M,Y,Y,Commercial associate,Higher education,Single / not married,House / apartment,0,FRIDAY,Unaccompanied,block of flats,Monolithic
+398821,0,0,90000.0,382500.0,37260.0,382500.0,,0.115,Cleaning staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Widow,House / apartment,0,WEDNESDAY,Other_A,block of flats,Panel
+212338,0,0,315000.0,76500.0,7834.5,76500.0,5.0,,Core staff,Cash loans,M,Y,Y,Commercial associate,Incomplete higher,Married,House / apartment,0,SUNDAY,Unaccompanied,,
+390417,0,3,99000.0,202500.0,15898.5,202500.0,1.0,0.0693,Sales staff,Cash loans,M,Y,Y,Working,Secondary / secondary special,Married,House / apartment,0,MONDAY,Unaccompanied,block of flats,"Stone, brick"
+172467,0,0,202500.0,315000.0,18211.5,315000.0,6.0,0.0062,Sales staff,Cash loans,F,Y,Y,Commercial associate,Higher education,Single / not married,House / apartment,1,SATURDAY,Other_B,block of flats,
+291154,0,0,67500.0,521280.0,21231.0,450000.0,,0.0704,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Widow,House / apartment,1,SATURDAY,Unaccompanied,block of flats,Panel
+426037,0,0,405000.0,779688.0,33034.5,630000.0,10.0,0.0404,,Cash loans,M,Y,Y,Working,Incomplete higher,Widow,House / apartment,0,SATURDAY,Unaccompanied,block of flats,Panel
+344075,0,0,135000.0,521280.0,31630.5,450000.0,7.0,,,Cash loans,M,Y,Y,Working,Secondary / secondary special,Married,House / apartment,1,FRIDAY,Unaccompanied,,
+283511,0,0,90000.0,225000.0,12204.0,225000.0,,0.0364,Laborers,Cash loans,M,N,N,Working,Secondary / secondary special,Married,Rented apartment,1,FRIDAY,Unaccompanied,block of flats,"Stone, brick"
+363804,0,0,211500.0,523152.0,40617.0,463500.0,,,Sales staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,FRIDAY,Family,,
+181786,0,1,247500.0,127350.0,13500.0,112500.0,4.0,,Laborers,Cash loans,M,Y,Y,Commercial associate,Secondary / secondary special,Married,House / apartment,0,FRIDAY,Children,,
+116221,0,0,90000.0,459000.0,16861.5,459000.0,4.0,,Accountants,Cash loans,F,Y,Y,Working,Secondary / secondary special,Married,House / apartment,0,THURSDAY,Unaccompanied,,
+209688,0,0,90000.0,180000.0,9000.0,180000.0,9.0,,Accountants,Revolving loans,F,Y,N,Working,Secondary / secondary special,Single / not married,House / apartment,0,MONDAY,Unaccompanied,,
+280796,0,1,180000.0,1255680.0,41629.5,1125000.0,,,,Cash loans,F,N,N,Working,Secondary / secondary special,Married,With parents,0,WEDNESDAY,Unaccompanied,,
+232890,0,2,81000.0,50940.0,5166.0,45000.0,25.0,,Accountants,Cash loans,F,Y,N,Working,Higher education,Married,House / apartment,0,MONDAY,Unaccompanied,,
+392170,0,0,112500.0,1300500.0,38155.5,1300500.0,,,Sales staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,WEDNESDAY,Unaccompanied,,
+411982,0,0,90000.0,1125000.0,36292.5,1125000.0,,,Managers,Cash loans,F,N,N,Working,Secondary / secondary special,Married,House / apartment,0,MONDAY,Unaccompanied,,
+414407,0,0,157500.0,382500.0,19125.0,382500.0,,,High skill tech staff,Revolving loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,THURSDAY,"Spouse, partner",,
+293660,0,3,184500.0,167121.0,13527.0,139500.0,18.0,0.0082,Drivers,Cash loans,M,Y,Y,Commercial associate,Secondary / secondary special,Married,House / apartment,1,SUNDAY,Unaccompanied,block of flats,Wooden
+374339,0,0,148050.0,675000.0,46089.0,675000.0,,,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Married,House / apartment,1,TUESDAY,Unaccompanied,,
+226323,0,2,180000.0,604152.0,30978.0,540000.0,,,Managers,Cash loans,M,N,Y,Working,Higher education,Civil marriage,House / apartment,1,SATURDAY,Unaccompanied,,
+428964,0,0,112500.0,270000.0,13500.0,270000.0,,,Secretaries,Revolving loans,F,N,Y,State servant,Secondary / secondary special,Married,House / apartment,0,MONDAY,Unaccompanied,,
+421391,0,0,112500.0,382500.0,37390.5,382500.0,,0.1491,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Married,House / apartment,0,SATURDAY,Family,block of flats,Panel
+121891,0,0,180000.0,792162.0,35023.5,630000.0,,,Managers,Cash loans,F,N,Y,Working,Secondary / secondary special,Civil marriage,House / apartment,0,SUNDAY,Family,,
+370166,0,1,157500.0,990432.0,32863.5,855000.0,,0.0069,Laborers,Cash loans,F,N,N,Commercial associate,Secondary / secondary special,Married,House / apartment,0,TUESDAY,Unaccompanied,block of flats,"Stone, brick"
+190194,0,1,87750.0,130500.0,12906.0,130500.0,,,,Cash loans,F,N,Y,State servant,Higher education,Married,House / apartment,1,MONDAY,Unaccompanied,,
+158675,0,2,225000.0,710640.0,80370.0,675000.0,,0.1107,Managers,Cash loans,F,N,N,Commercial associate,Higher education,Single / not married,House / apartment,1,THURSDAY,Unaccompanied,block of flats,"Stone, brick"
+146563,1,0,180000.0,252000.0,15358.5,252000.0,,,Cooking staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,TUESDAY,Unaccompanied,,
+390150,1,1,225000.0,675000.0,33750.0,675000.0,,0.0737,,Revolving loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,WEDNESDAY,Unaccompanied,block of flats,Panel
+197727,1,0,450000.0,1546020.0,42511.5,1350000.0,,0.0919,,Cash loans,F,N,Y,Pensioner,Higher education,Married,House / apartment,1,FRIDAY,Unaccompanied,block of flats,Panel
+454786,0,0,180000.0,787131.0,26145.0,679500.0,,,Sales staff,Cash loans,F,N,Y,Commercial associate,Higher education,Single / not married,House / apartment,0,WEDNESDAY,Unaccompanied,,
+190358,0,1,391500.0,640080.0,29970.0,450000.0,,0.0454,Drivers,Cash loans,M,N,N,Working,Secondary / secondary special,Married,House / apartment,0,FRIDAY,Unaccompanied,block of flats,"Stone, brick"
+197194,0,1,270000.0,547344.0,31549.5,472500.0,,0.0674,Core staff,Cash loans,F,N,Y,Commercial associate,Secondary / secondary special,Civil marriage,House / apartment,0,WEDNESDAY,Unaccompanied,block of flats,"Stone, brick"
+440510,0,0,81000.0,454500.0,44275.5,454500.0,,,,Cash loans,F,N,N,Working,Secondary / secondary special,Married,House / apartment,0,TUESDAY,Unaccompanied,,
+330494,0,0,270000.0,2085120.0,72607.5,1800000.0,7.0,0.1868,Managers,Cash loans,M,Y,N,Commercial associate,Higher education,Married,House / apartment,1,FRIDAY,Unaccompanied,block of flats,Panel
+260114,0,0,180000.0,814041.0,23931.0,679500.0,,,Drivers,Cash loans,M,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,SATURDAY,Unaccompanied,,
+451638,0,0,121500.0,675000.0,32472.0,675000.0,,0.0069999999999999,,Cash loans,M,N,N,Working,Secondary / secondary special,Married,House / apartment,1,WEDNESDAY,Unaccompanied,block of flats,Others
+184218,0,0,202500.0,114682.5,13099.5,99000.0,4.0,0.1769,,Cash loans,F,Y,N,Working,Secondary / secondary special,Married,Municipal apartment,0,THURSDAY,Unaccompanied,block of flats,Panel
+167229,0,0,157500.0,643500.0,18571.5,643500.0,17.0,0.2303,,Cash loans,M,Y,N,Working,Secondary / secondary special,Single / not married,House / apartment,1,THURSDAY,Unaccompanied,block of flats,Panel
+442029,0,0,121500.0,781920.0,25969.5,675000.0,8.0,0.0589,Security staff,Cash loans,M,Y,Y,Working,Secondary / secondary special,Married,House / apartment,1,MONDAY,Family,block of flats,"Stone, brick"
+374482,0,0,180000.0,1223010.0,48631.5,1125000.0,64.0,,Managers,Cash loans,F,Y,Y,Commercial associate,Higher education,Widow,House / apartment,0,TUESDAY,Unaccompanied,,
+245245,0,0,90000.0,545040.0,20677.5,450000.0,,0.2409,,Cash loans,F,N,Y,Pensioner,Higher education,Single / not married,Municipal apartment,1,SATURDAY,Unaccompanied,block of flats,Panel
+327535,0,0,112500.0,225000.0,24363.0,225000.0,7.0,0.1973,Drivers,Cash loans,M,Y,Y,Working,Incomplete higher,Married,House / apartment,0,TUESDAY,Unaccompanied,block of flats,Panel
+389999,1,0,148500.0,540000.0,25150.5,540000.0,31.0,0.002,Drivers,Cash loans,M,Y,N,Commercial associate,Secondary / secondary special,Civil marriage,House / apartment,0,THURSDAY,Unaccompanied,,
+387498,0,0,157500.0,295168.5,16141.5,238500.0,16.0,0.0123,Laborers,Cash loans,M,Y,Y,Commercial associate,Secondary / secondary special,Married,House / apartment,0,WEDNESDAY,Family,,
+144524,0,0,67500.0,545040.0,26509.5,450000.0,,0.0505,Sales staff,Cash loans,F,N,Y,Commercial associate,Lower secondary,Civil marriage,House / apartment,1,MONDAY,Unaccompanied,block of flats,Panel
+316509,0,0,315000.0,640080.0,31261.5,450000.0,11.0,0.1974,Drivers,Cash loans,M,Y,Y,Working,Secondary / secondary special,Married,House / apartment,1,TUESDAY,Unaccompanied,block of flats,"Stone, brick"
+159276,0,1,162000.0,1288350.0,37800.0,1125000.0,,0.1334,High skill tech staff,Cash loans,M,N,Y,Commercial associate,Higher education,Married,House / apartment,1,THURSDAY,Unaccompanied,block of flats,"Stone, brick"
+386691,0,0,112500.0,152685.0,7794.0,103500.0,,,Sales staff,Cash loans,F,N,N,Working,Secondary / secondary special,Single / not married,House / apartment,0,WEDNESDAY,Unaccompanied,,
+101171,0,0,112500.0,508495.5,21541.5,454500.0,,,Sales staff,Cash loans,F,N,N,Working,Secondary / secondary special,Married,House / apartment,1,SUNDAY,Unaccompanied,,
+365175,0,0,202500.0,1096020.0,56092.5,900000.0,,,,Cash loans,F,N,Y,Working,Secondary / secondary special,Civil marriage,House / apartment,0,TUESDAY,Unaccompanied,,
+300674,1,1,157500.0,508500.0,40306.5,508500.0,4.0,0.1201,Drivers,Cash loans,M,Y,Y,Working,Secondary / secondary special,Married,House / apartment,0,TUESDAY,Unaccompanied,block of flats,Panel
+227718,0,0,315000.0,1185282.0,38236.5,1035000.0,3.0,,,Cash loans,F,Y,Y,Pensioner,Secondary / secondary special,Widow,House / apartment,0,WEDNESDAY,Unaccompanied,,
+309138,1,0,157500.0,760225.5,33615.0,679500.0,,0.0256,,Cash loans,F,N,N,Working,Secondary / secondary special,Married,House / apartment,1,THURSDAY,Unaccompanied,block of flats,"Stone, brick"
+339146,0,1,270000.0,254700.0,25321.5,225000.0,19.0,,Laborers,Cash loans,M,Y,Y,Working,Secondary / secondary special,Married,Municipal apartment,0,MONDAY,Unaccompanied,,
+185203,0,0,157500.0,781920.0,25542.0,675000.0,,0.2383,,Cash loans,F,N,N,Pensioner,Secondary / secondary special,Married,House / apartment,0,WEDNESDAY,Children,block of flats,"Stone, brick"
+277930,0,2,108000.0,148365.0,12024.0,135000.0,8.0,,High skill tech staff,Cash loans,M,Y,Y,Working,Secondary / secondary special,Married,House / apartment,0,MONDAY,Unaccompanied,,
+207449,0,0,337500.0,450000.0,20979.0,450000.0,,0.0245,Sales staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Civil marriage,House / apartment,1,THURSDAY,Unaccompanied,block of flats,Panel
+258608,0,1,211500.0,640080.0,24259.5,450000.0,,0.1667,High skill tech staff,Cash loans,F,N,Y,Commercial associate,Secondary / secondary special,Widow,House / apartment,1,TUESDAY,Unaccompanied,block of flats,"Stone, brick"
+301413,1,0,135000.0,398160.0,31585.5,315000.0,9.0,0.0053,Medicine staff,Cash loans,F,Y,Y,State servant,Secondary / secondary special,Married,House / apartment,0,THURSDAY,Unaccompanied,block of flats,
+396052,1,0,360000.0,1546020.0,45202.5,1350000.0,7.0,,Managers,Cash loans,F,Y,N,Commercial associate,Secondary / secondary special,Separated,House / apartment,1,MONDAY,Unaccompanied,,
+384809,0,2,135000.0,544491.0,21226.5,454500.0,,,Cooking staff,Cash loans,F,N,Y,Commercial associate,Secondary / secondary special,Civil marriage,House / apartment,0,TUESDAY,Unaccompanied,,
+215787,0,1,173250.0,450000.0,21888.0,450000.0,8.0,0.0033,,Cash loans,M,Y,Y,Commercial associate,Secondary / secondary special,Married,House / apartment,0,SUNDAY,"Spouse, partner",terraced house,"Stone, brick"
+367741,1,0,157500.0,508495.5,25960.5,454500.0,,,High skill tech staff,Cash loans,M,N,N,Commercial associate,Higher education,Married,House / apartment,0,TUESDAY,Family,,
+437050,0,0,157500.0,752742.0,40234.5,697500.0,,,Managers,Cash loans,F,N,Y,Commercial associate,Higher education,Separated,House / apartment,1,THURSDAY,Unaccompanied,,
+122757,0,0,225000.0,656811.0,21703.5,567000.0,7.0,,,Cash loans,M,Y,Y,Commercial associate,Secondary / secondary special,Married,House / apartment,1,SATURDAY,Unaccompanied,,
+381837,0,0,135000.0,540000.0,17550.0,540000.0,,,,Cash loans,F,N,Y,Working,Secondary / secondary special,Separated,House / apartment,0,TUESDAY,Unaccompanied,,
+421666,0,0,202500.0,808650.0,26217.0,675000.0,,0.0317,Sales staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,WEDNESDAY,"Spouse, partner",block of flats,"Stone, brick"
+236246,0,0,270000.0,314100.0,13963.5,225000.0,10.0,,,Cash loans,M,Y,N,Working,Secondary / secondary special,Married,With parents,0,WEDNESDAY,Unaccompanied,,
+354236,0,0,225000.0,675000.0,32602.5,675000.0,,,Medicine staff,Cash loans,F,N,Y,State servant,Secondary / secondary special,Widow,House / apartment,0,TUESDAY,Unaccompanied,,
+397159,0,0,76500.0,222547.5,17352.0,202500.0,,,Sales staff,Cash loans,F,N,Y,Working,Higher education,Married,House / apartment,1,TUESDAY,Unaccompanied,,
+156739,0,2,216000.0,1575000.0,45270.0,1575000.0,2.0,0.0227,Drivers,Cash loans,M,Y,N,Working,Higher education,Married,House / apartment,0,WEDNESDAY,Unaccompanied,block of flats,"Stone, brick"
+391719,0,0,112500.0,810000.0,26127.0,810000.0,,0.4047,Core staff,Cash loans,F,N,N,Working,Higher education,Married,House / apartment,0,FRIDAY,Family,block of flats,"Stone, brick"
+253615,0,2,67500.0,195543.0,14359.5,148500.0,,0.1364,Laborers,Cash loans,M,N,Y,Commercial associate,Secondary / secondary special,Married,House / apartment,0,MONDAY,Unaccompanied,block of flats,Panel
+240128,0,0,247500.0,574785.0,34861.5,436500.0,,0.0641,Drivers,Cash loans,M,N,N,Working,Secondary / secondary special,Single / not married,House / apartment,0,MONDAY,Unaccompanied,,Panel
+213753,0,0,202500.0,260640.0,30928.5,225000.0,,0.0884,Managers,Cash loans,M,N,Y,Working,Higher education,Married,House / apartment,0,FRIDAY,Unaccompanied,block of flats,"Stone, brick"
+367909,0,0,171000.0,360000.0,35734.5,360000.0,2.0,0.2707,,Cash loans,F,Y,Y,Pensioner,Higher education,Married,House / apartment,1,TUESDAY,Other_B,block of flats,Panel
+150692,0,0,90000.0,153000.0,12397.5,153000.0,,,Laborers,Cash loans,M,N,Y,Commercial associate,Secondary / secondary special,Separated,House / apartment,0,THURSDAY,Unaccompanied,,
+244831,0,0,99000.0,163008.0,18522.0,144000.0,,0.1048,Sales staff,Cash loans,F,N,N,Working,Secondary / secondary special,Married,House / apartment,0,THURSDAY,Unaccompanied,,
+189671,0,0,202500.0,526491.0,26878.5,454500.0,15.0,,Security staff,Cash loans,M,Y,Y,Commercial associate,Secondary / secondary special,Married,House / apartment,0,WEDNESDAY,"Spouse, partner",,
+416573,0,0,202500.0,948816.0,27873.0,792000.0,,0.0898,Managers,Cash loans,F,N,Y,Working,Secondary / secondary special,Widow,House / apartment,0,THURSDAY,Unaccompanied,block of flats,Panel
+150732,0,0,81000.0,202500.0,10125.0,202500.0,,,Sales staff,Revolving loans,F,N,Y,Commercial associate,Secondary / secondary special,Single / not married,House / apartment,0,TUESDAY,Unaccompanied,,
+143224,0,0,117000.0,381528.0,13702.5,315000.0,,,,Cash loans,F,N,N,Pensioner,Secondary / secondary special,Married,House / apartment,1,SATURDAY,Unaccompanied,,
+403532,0,0,153000.0,508495.5,20295.0,454500.0,3.0,,Accountants,Cash loans,F,Y,Y,State servant,Secondary / secondary special,Married,House / apartment,0,FRIDAY,Unaccompanied,,
+242687,0,1,81000.0,182016.0,10579.5,144000.0,,,Laborers,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,TUESDAY,Unaccompanied,,
+427434,1,0,135000.0,509400.0,40374.0,450000.0,,0.0484,Laborers,Cash loans,F,N,N,Working,Higher education,Married,House / apartment,1,SATURDAY,Unaccompanied,block of flats,"Stone, brick"
+131350,1,0,108000.0,814041.0,23800.5,679500.0,,0.0083,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Married,House / apartment,0,WEDNESDAY,Unaccompanied,block of flats,"Stone, brick"
+308529,0,0,90000.0,270000.0,13261.5,270000.0,7.0,,,Cash loans,F,Y,Y,Working,Secondary / secondary special,Married,House / apartment,0,TUESDAY,Unaccompanied,,
+425981,0,0,135000.0,630000.0,30307.5,630000.0,,0.0218,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Widow,House / apartment,0,THURSDAY,Unaccompanied,block of flats,"Stone, brick"
+270175,0,0,126000.0,518562.0,38083.5,463500.0,,,,Cash loans,F,N,Y,Working,Secondary / secondary special,Civil marriage,House / apartment,0,TUESDAY,Unaccompanied,,
+321442,0,1,225000.0,308461.5,20745.0,279000.0,2.0,,Realty agents,Cash loans,F,Y,Y,Working,Higher education,Married,With parents,0,TUESDAY,Unaccompanied,,
+374542,0,0,112500.0,270000.0,13500.0,270000.0,64.0,,Drivers,Revolving loans,M,Y,Y,Commercial associate,Higher education,Single / not married,House / apartment,0,WEDNESDAY,Unaccompanied,,
+280111,0,0,135000.0,327024.0,12456.0,270000.0,,0.0066,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Widow,House / apartment,0,SUNDAY,Unaccompanied,block of flats,Wooden
+156112,1,1,247500.0,1237554.0,43974.0,886500.0,64.0,0.0058,,Cash loans,F,Y,N,Working,Higher education,Single / not married,With parents,0,FRIDAY,Unaccompanied,block of flats,"Stone, brick"
+218719,1,0,175500.0,490536.0,22995.0,405000.0,,,Security staff,Cash loans,M,N,Y,Commercial associate,Secondary / secondary special,Single / not married,House / apartment,0,TUESDAY,Unaccompanied,,
+189756,0,0,270000.0,1354500.0,37377.0,1354500.0,,,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Married,House / apartment,0,WEDNESDAY,"Spouse, partner",,
+138746,0,0,90000.0,647046.0,21001.5,463500.0,,,Security staff,Cash loans,M,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,TUESDAY,Unaccompanied,,
+313317,0,0,157500.0,285453.0,14701.5,193500.0,,0.0077,Drivers,Cash loans,F,N,Y,Commercial associate,Secondary / secondary special,Separated,House / apartment,0,WEDNESDAY,Unaccompanied,block of flats,"Stone, brick"
+128718,0,0,405000.0,1256400.0,36864.0,900000.0,10.0,,Managers,Cash loans,M,Y,Y,Commercial associate,Higher education,Married,House / apartment,0,MONDAY,Unaccompanied,,
+370841,0,0,45450.0,86598.0,9220.5,76500.0,,,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Widow,House / apartment,0,TUESDAY,Unaccompanied,,
+308201,0,1,90000.0,754740.0,24475.5,630000.0,,,Sales staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,1,SATURDAY,Unaccompanied,,
+268111,1,1,81000.0,126675.0,15030.0,103500.0,,0.0749,Laborers,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,1,WEDNESDAY,Unaccompanied,block of flats,Panel
+321685,0,0,225000.0,1575000.0,43443.0,1575000.0,20.0,0.0274,Laborers,Cash loans,M,Y,Y,Working,Secondary / secondary special,Married,House / apartment,0,FRIDAY,Unaccompanied,block of flats,"Stone, brick"
+180342,0,0,54000.0,157500.0,9765.0,157500.0,,0.0121,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Widow,House / apartment,1,MONDAY,Unaccompanied,block of flats,"Stone, brick"
+266625,0,1,238500.0,585000.0,22666.5,585000.0,,0.0911,Drivers,Cash loans,M,N,Y,Commercial associate,Secondary / secondary special,Married,House / apartment,0,MONDAY,Unaccompanied,block of flats,Panel
+172378,0,0,112500.0,754740.0,19908.0,630000.0,,0.0468,High skill tech staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Separated,House / apartment,1,THURSDAY,Unaccompanied,block of flats,Panel
+453689,0,1,180000.0,1515415.5,44437.5,1354500.0,,0.0733,,Cash loans,M,N,Y,Pensioner,Secondary / secondary special,Married,House / apartment,0,WEDNESDAY,Unaccompanied,block of flats,Panel
+314054,0,0,472500.0,1024785.0,57352.5,922500.0,,0.0072,Laborers,Cash loans,F,N,N,Commercial associate,Secondary / secondary special,Married,House / apartment,0,THURSDAY,Unaccompanied,block of flats,Wooden
+104068,0,0,90000.0,450000.0,25128.0,450000.0,,,Core staff,Cash loans,F,N,N,Working,Higher education,Married,House / apartment,0,FRIDAY,Unaccompanied,,
+372482,0,2,135000.0,801000.0,31896.0,801000.0,,0.1377,Security staff,Cash loans,M,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,WEDNESDAY,Unaccompanied,block of flats,Panel
+408967,0,0,67500.0,285453.0,14701.5,193500.0,,,,Cash loans,F,N,Y,Pensioner,Lower secondary,Married,House / apartment,0,THURSDAY,Family,,
+359180,0,1,135000.0,675000.0,21775.5,675000.0,,0.0449,Sales staff,Cash loans,F,N,N,Working,Secondary / secondary special,Married,House / apartment,1,WEDNESDAY,Unaccompanied,block of flats,Panel
+342048,0,1,292500.0,539100.0,27652.5,450000.0,2.0,0.1578,Accountants,Cash loans,F,Y,Y,Commercial associate,Higher education,Married,House / apartment,0,MONDAY,Unaccompanied,block of flats,Panel
+380770,0,0,112500.0,832500.0,24471.0,832500.0,,0.1349,Sales staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,1,THURSDAY,Unaccompanied,block of flats,Panel
+278047,0,0,162000.0,119925.0,11227.5,112500.0,,0.0486,,Cash loans,M,N,N,Pensioner,Secondary / secondary special,Married,House / apartment,0,THURSDAY,Unaccompanied,block of flats,Panel
+127911,1,1,157500.0,545040.0,26640.0,450000.0,19.0,,Drivers,Cash loans,M,Y,Y,Working,Secondary / secondary special,Married,House / apartment,0,WEDNESDAY,Unaccompanied,,
+326630,0,0,121500.0,673875.0,31356.0,544500.0,15.0,,Laborers,Cash loans,M,Y,Y,Working,Secondary / secondary special,Separated,House / apartment,0,FRIDAY,Unaccompanied,,
+375688,0,0,90000.0,888840.0,32053.5,675000.0,,,,Cash loans,F,N,N,Pensioner,Secondary / secondary special,Widow,House / apartment,1,SUNDAY,Unaccompanied,,
+345659,0,0,112500.0,506232.0,13918.5,400500.0,10.0,0.1471,,Cash loans,F,Y,N,Working,Higher education,Single / not married,With parents,0,SUNDAY,Unaccompanied,block of flats,"Stone, brick"
+245572,0,0,450000.0,1237684.5,49216.5,1138500.0,,0.1157,Private service staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,THURSDAY,Unaccompanied,terraced house,"Stone, brick"
+450472,0,0,126000.0,760131.0,24651.0,634500.0,,0.168,Laborers,Cash loans,M,N,Y,Working,Lower secondary,Single / not married,With parents,0,WEDNESDAY,Unaccompanied,block of flats,"Stone, brick"
+329757,0,0,112500.0,189000.0,18823.5,189000.0,,,Laborers,Cash loans,M,N,Y,Working,Secondary / secondary special,Married,House / apartment,1,MONDAY,Unaccompanied,,
+128209,0,0,135000.0,900000.0,28260.0,900000.0,,0.3074,Core staff,Cash loans,F,N,Y,Working,Higher education,Married,House / apartment,0,SUNDAY,Unaccompanied,block of flats,Panel
+181404,0,1,180000.0,315000.0,15448.5,315000.0,15.0,0.0702,,Cash loans,F,Y,N,Working,Higher education,Single / not married,House / apartment,0,FRIDAY,Unaccompanied,block of flats,Block
+113681,0,0,67500.0,808650.0,21460.5,675000.0,9.0,,Security staff,Cash loans,M,Y,Y,Working,Secondary / secondary special,Married,House / apartment,0,TUESDAY,Unaccompanied,,
+350873,0,0,225000.0,755190.0,36459.0,675000.0,,,,Cash loans,M,N,Y,State servant,Higher education,Single / not married,House / apartment,1,MONDAY,Unaccompanied,,
+113049,0,1,76500.0,297000.0,19975.5,297000.0,,,Medicine staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,MONDAY,Unaccompanied,,
+106403,0,1,202500.0,698517.0,41724.0,603000.0,,0.0521,High skill tech staff,Cash loans,M,N,Y,Commercial associate,Secondary / secondary special,Civil marriage,House / apartment,0,SATURDAY,Unaccompanied,block of flats,Block
+167662,0,0,75150.0,808650.0,26217.0,675000.0,,,Security staff,Cash loans,M,N,N,Working,Secondary / secondary special,Married,House / apartment,0,WEDNESDAY,Unaccompanied,,
+455194,0,0,90000.0,1223010.0,51948.0,1125000.0,4.0,,,Cash loans,M,Y,Y,Pensioner,Secondary / secondary special,Married,House / apartment,1,FRIDAY,Unaccompanied,,
+151124,0,2,112500.0,405000.0,20250.0,405000.0,,,,Revolving loans,F,N,Y,Commercial associate,Secondary / secondary special,Married,House / apartment,0,THURSDAY,Unaccompanied,,
+433497,0,0,67500.0,225000.0,17775.0,225000.0,15.0,0.0475,Laborers,Cash loans,M,Y,N,Working,Lower secondary,Single / not married,House / apartment,1,MONDAY,Unaccompanied,block of flats,Panel
+248243,0,0,162000.0,536917.5,30109.5,463500.0,,0.1638,Managers,Cash loans,F,N,Y,Working,Higher education,Widow,House / apartment,1,TUESDAY,Unaccompanied,block of flats,"Stone, brick"
+199033,0,0,67500.0,180000.0,9000.0,180000.0,,,,Revolving loans,F,N,Y,Pensioner,Secondary / secondary special,Married,House / apartment,0,FRIDAY,Unaccompanied,,
+186028,0,0,279000.0,1185120.0,36063.0,900000.0,,0.0538,Drivers,Cash loans,M,N,N,State servant,Secondary / secondary special,Married,Municipal apartment,1,THURSDAY,Family,block of flats,"Stone, brick"
+223308,0,1,139500.0,477621.0,32049.0,432000.0,,0.0958,Sales staff,Cash loans,F,N,N,Working,Secondary / secondary special,Married,House / apartment,1,SUNDAY,Family,block of flats,Block
+347720,0,1,202500.0,403330.5,15336.0,333000.0,,0.0885,Laborers,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,MONDAY,Unaccompanied,block of flats,Panel
+346873,1,0,90000.0,251280.0,13153.5,180000.0,64.0,,Medicine staff,Cash loans,F,Y,Y,Working,Higher education,Married,House / apartment,0,TUESDAY,Other_B,,
+264208,0,0,126000.0,323194.5,21595.5,279000.0,7.0,,,Cash loans,F,Y,Y,Pensioner,Secondary / secondary special,Married,House / apartment,1,MONDAY,Unaccompanied,,
+198687,0,0,90000.0,360000.0,18535.5,360000.0,12.0,,,Cash loans,F,Y,Y,Working,Secondary / secondary special,Civil marriage,House / apartment,1,THURSDAY,Unaccompanied,,
+445855,0,1,130500.0,326439.0,10377.0,229500.0,,0.057,Sales staff,Cash loans,F,N,N,Working,Higher education,Single / not married,House / apartment,0,THURSDAY,Unaccompanied,specific housing,"Stone, brick"
+145673,1,1,81000.0,135000.0,6750.0,135000.0,,,Laborers,Revolving loans,M,N,N,Working,Secondary / secondary special,Married,House / apartment,0,TUESDAY,Unaccompanied,,
+207657,0,2,90000.0,521280.0,22959.0,450000.0,,0.0069,Cleaning staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Civil marriage,House / apartment,0,WEDNESDAY,Unaccompanied,block of flats,
+363038,0,0,108000.0,254700.0,14220.0,225000.0,,0.148,,Cash loans,F,N,Y,Working,Secondary / secondary special,Widow,House / apartment,1,MONDAY,Unaccompanied,block of flats,"Stone, brick"
+376776,0,1,180000.0,1013508.0,29763.0,846000.0,,0.0508,Sales staff,Cash loans,F,N,N,Working,Secondary / secondary special,Separated,With parents,0,MONDAY,Unaccompanied,block of flats,"Stone, brick"
+325189,0,0,67500.0,545040.0,20677.5,450000.0,9.0,,,Cash loans,F,Y,Y,Pensioner,Secondary / secondary special,Married,House / apartment,0,FRIDAY,Children,,
+379868,0,0,90000.0,180000.0,9000.0,180000.0,,0.0768,Sales staff,Revolving loans,F,N,Y,Commercial associate,Secondary / secondary special,Single / not married,House / apartment,0,TUESDAY,Unaccompanied,block of flats,Panel
+177495,0,0,72000.0,254700.0,26226.0,225000.0,,,,Cash loans,M,N,Y,Pensioner,Secondary / secondary special,Married,House / apartment,0,WEDNESDAY,Unaccompanied,,
+186512,0,0,157500.0,250272.0,16294.5,198000.0,,,Laborers,Cash loans,F,N,Y,Working,Higher education,Married,House / apartment,1,MONDAY,Unaccompanied,,
+180996,0,0,427500.0,1574532.0,66843.0,1350000.0,,0.1721,Sales staff,Cash loans,F,N,N,Working,Higher education,Married,House / apartment,0,THURSDAY,Unaccompanied,block of flats,Panel
+389035,0,0,112500.0,270000.0,13500.0,270000.0,,0.0603,Sales staff,Revolving loans,F,N,Y,Working,Higher education,Married,House / apartment,1,WEDNESDAY,Unaccompanied,block of flats,Panel
+422988,0,0,99000.0,446931.0,21865.5,369000.0,28.0,,Core staff,Cash loans,F,Y,Y,State servant,Secondary / secondary special,Single / not married,With parents,1,MONDAY,Family,,
+225843,0,0,112500.0,381528.0,17784.0,315000.0,,0.1141,Laborers,Cash loans,F,N,N,Working,Incomplete higher,Married,House / apartment,0,SATURDAY,Unaccompanied,block of flats,"Stone, brick"
+220937,0,0,225000.0,1332000.0,39078.0,1332000.0,,0.042,High skill tech staff,Cash loans,F,N,N,Working,Higher education,Separated,House / apartment,1,WEDNESDAY,Unaccompanied,block of flats,Others
+379597,0,1,99000.0,373500.0,15952.5,373500.0,,,Core staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,SATURDAY,"Spouse, partner",,
+135012,0,0,81000.0,781920.0,23836.5,675000.0,,,,Cash loans,F,N,N,Pensioner,Secondary / secondary special,Married,House / apartment,0,THURSDAY,Family,,
+430638,0,0,315000.0,1113840.0,47322.0,900000.0,1.0,0.0604,Managers,Cash loans,F,Y,Y,Commercial associate,Higher education,Married,House / apartment,0,TUESDAY,"Spouse, partner",block of flats,Others
+406769,0,0,202500.0,983299.5,41791.5,904500.0,,0.0464,,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,TUESDAY,Family,block of flats,Panel
+395582,0,0,157500.0,508495.5,22527.0,454500.0,,,,Cash loans,F,N,N,Pensioner,Secondary / secondary special,Widow,House / apartment,0,MONDAY,Unaccompanied,,
+335149,0,0,81000.0,640080.0,29970.0,450000.0,,,Accountants,Cash loans,F,N,N,Commercial associate,Higher education,Single / not married,With parents,0,WEDNESDAY,Unaccompanied,,
+366932,0,0,135000.0,400392.0,45414.0,360000.0,,0.1632,,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,Municipal apartment,1,MONDAY,Unaccompanied,block of flats,Block
+216576,0,0,113850.0,518562.0,25078.5,463500.0,,,High skill tech staff,Cash loans,M,N,Y,Working,Secondary / secondary special,Civil marriage,House / apartment,0,SATURDAY,Unaccompanied,,
+415349,0,0,99000.0,314100.0,13833.0,225000.0,,0.5253,,Cash loans,M,N,Y,Commercial associate,Incomplete higher,Married,House / apartment,0,FRIDAY,Unaccompanied,block of flats,Mixed
+402750,0,0,157500.0,247500.0,14337.0,247500.0,,0.1146,,Cash loans,M,N,Y,Pensioner,Secondary / secondary special,Married,House / apartment,0,WEDNESDAY,Family,block of flats,"Stone, brick"
+294865,0,0,225000.0,518562.0,25078.5,463500.0,3.0,,,Cash loans,F,Y,Y,Working,Higher education,Married,House / apartment,0,WEDNESDAY,Unaccompanied,,
+215838,0,2,270000.0,339723.0,17473.5,274500.0,,0.199,Laborers,Cash loans,M,N,Y,Commercial associate,Secondary / secondary special,Married,House / apartment,0,FRIDAY,Unaccompanied,,
+386852,0,0,193905.0,450000.0,29097.0,450000.0,,,Sales staff,Cash loans,M,N,N,Commercial associate,Secondary / secondary special,Civil marriage,With parents,0,THURSDAY,Unaccompanied,,
+152098,0,0,135000.0,183784.5,16983.0,148500.0,,0.0717,Laborers,Cash loans,F,N,Y,Working,Secondary / secondary special,Single / not married,House / apartment,0,TUESDAY,Unaccompanied,block of flats,Panel
+127166,0,0,270000.0,728460.0,41818.5,675000.0,,0.0379,,Cash loans,F,N,Y,Commercial associate,Secondary / secondary special,Separated,House / apartment,1,TUESDAY,Unaccompanied,specific housing,Panel
+358708,0,0,72000.0,269550.0,13095.0,225000.0,,,,Cash loans,F,N,Y,Pensioner,Lower secondary,Single / not married,House / apartment,0,FRIDAY,Unaccompanied,,
+411800,0,0,67500.0,765000.0,22495.5,765000.0,,,Sales staff,Cash loans,F,N,Y,Commercial associate,Secondary / secondary special,Married,House / apartment,0,TUESDAY,Unaccompanied,,
+388405,0,0,157500.0,819432.0,24088.5,684000.0,,,Sales staff,Cash loans,F,N,Y,Commercial associate,Secondary / secondary special,Married,House / apartment,0,WEDNESDAY,Unaccompanied,,
+436081,0,0,189000.0,1096020.0,56092.5,900000.0,7.0,,Security staff,Cash loans,M,Y,Y,Working,Secondary / secondary special,Married,House / apartment,0,FRIDAY,"Spouse, partner",,
+337461,0,0,135000.0,247275.0,21280.5,225000.0,,0.0765,Laborers,Cash loans,M,N,Y,Working,Secondary / secondary special,Single / not married,House / apartment,0,SATURDAY,Unaccompanied,block of flats,"Stone, brick"
+232116,0,1,225000.0,640080.0,29970.0,450000.0,,0.2173,,Cash loans,F,N,Y,Commercial associate,Secondary / secondary special,Married,House / apartment,0,MONDAY,Family,block of flats,Panel
+143873,0,0,266089.5,2370559.5,84271.5,2254500.0,0.0,0.0169,Managers,Cash loans,F,Y,Y,Working,Higher education,Single / not married,House / apartment,0,TUESDAY,Unaccompanied,block of flats,Block
+385682,0,0,157500.0,297130.5,15300.0,256500.0,,,Sales staff,Cash loans,F,N,N,Commercial associate,Secondary / secondary special,Married,House / apartment,1,MONDAY,Unaccompanied,,
+149427,0,0,202500.0,450000.0,27193.5,450000.0,1.0,,Laborers,Cash loans,M,Y,Y,Working,Secondary / secondary special,Single / not married,House / apartment,0,MONDAY,Unaccompanied,,
+107244,0,0,126000.0,407520.0,23395.5,360000.0,,,,Cash loans,M,N,Y,Working,Higher education,Married,House / apartment,0,FRIDAY,Unaccompanied,,
+153190,1,0,112500.0,450000.0,24543.0,450000.0,,0.0609,Sales staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,SUNDAY,Unaccompanied,block of flats,"Stone, brick"
+424603,0,2,126000.0,528633.0,27121.5,472500.0,,0.0738,Security staff,Cash loans,M,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,TUESDAY,Unaccompanied,block of flats,Panel
+317304,0,0,90000.0,139230.0,10539.0,112500.0,,,,Cash loans,F,N,Y,Commercial associate,Secondary / secondary special,Separated,House / apartment,0,THURSDAY,Unaccompanied,,
+135906,0,2,157500.0,258709.5,16974.0,234000.0,,,Core staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,With parents,0,SUNDAY,Family,,
+282775,0,0,270000.0,781920.0,47965.5,675000.0,7.0,,Managers,Cash loans,F,Y,Y,Commercial associate,Secondary / secondary special,Married,House / apartment,0,TUESDAY,Family,,
+302974,0,2,126000.0,1305000.0,38286.0,1305000.0,20.0,,Sales staff,Cash loans,F,Y,N,Commercial associate,Incomplete higher,Married,House / apartment,0,FRIDAY,Unaccompanied,,
+264468,0,0,90000.0,562491.0,24907.5,454500.0,,0.0581,,Cash loans,F,N,N,Working,Secondary / secondary special,Widow,Municipal apartment,0,MONDAY,Unaccompanied,block of flats,"Stone, brick"
+114732,1,0,180000.0,592560.0,31153.5,450000.0,8.0,0.2338,Laborers,Cash loans,M,Y,N,State servant,Secondary / secondary special,Married,House / apartment,0,FRIDAY,Family,block of flats,Panel
+360078,0,0,67500.0,447768.0,25132.5,405000.0,34.0,0.0566,,Cash loans,M,Y,Y,Pensioner,Secondary / secondary special,Married,House / apartment,0,TUESDAY,Unaccompanied,block of flats,"Stone, brick"
+183170,0,0,90000.0,781920.0,34443.0,675000.0,,,,Cash loans,F,N,N,Pensioner,Secondary / secondary special,Married,House / apartment,0,WEDNESDAY,Unaccompanied,,
+273094,0,0,315000.0,454500.0,31630.5,454500.0,,0.0114,Accountants,Cash loans,F,N,Y,State servant,Secondary / secondary special,Civil marriage,House / apartment,0,SATURDAY,Family,block of flats,"Stone, brick"
+180250,0,0,67500.0,573408.0,17514.0,495000.0,,0.1368,,Cash loans,F,N,N,Pensioner,Secondary / secondary special,Single / not married,House / apartment,0,SATURDAY,Family,block of flats,Panel
+283311,0,0,180000.0,500211.0,48861.0,463500.0,4.0,0.0257,Private service staff,Cash loans,F,Y,Y,State servant,Incomplete higher,Single / not married,House / apartment,1,THURSDAY,Unaccompanied,block of flats,"Stone, brick"
+440012,0,0,211500.0,1125000.0,39987.0,1125000.0,6.0,,Accountants,Cash loans,F,Y,N,Commercial associate,Higher education,Married,Municipal apartment,1,FRIDAY,Family,,
+350000,0,1,90000.0,450000.0,21649.5,450000.0,11.0,,High skill tech staff,Cash loans,F,Y,N,Working,Secondary / secondary special,Married,House / apartment,0,TUESDAY,Unaccompanied,,
+313607,0,0,144000.0,652500.0,31518.0,652500.0,,,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Married,House / apartment,1,WEDNESDAY,Unaccompanied,,
+192754,0,0,112500.0,792346.5,26316.0,684000.0,30.0,,Drivers,Cash loans,M,Y,Y,Working,Secondary / secondary special,Married,House / apartment,0,SUNDAY,Unaccompanied,,
+381213,0,2,202500.0,270000.0,18171.0,270000.0,,,Laborers,Cash loans,M,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,WEDNESDAY,Unaccompanied,,
+418769,0,0,292500.0,1024740.0,52321.5,900000.0,6.0,0.0473,,Cash loans,M,Y,Y,State servant,Higher education,Married,House / apartment,0,FRIDAY,Unaccompanied,block of flats,Panel
+444643,0,0,202500.0,566055.0,18256.5,472500.0,15.0,0.3645,Drivers,Cash loans,M,Y,N,Working,Secondary / secondary special,Married,With parents,0,MONDAY,Unaccompanied,block of flats,"Stone, brick"
+134251,0,0,225000.0,472500.0,46161.0,454500.0,,0.0617,Managers,Cash loans,F,N,Y,Working,Secondary / secondary special,Single / not married,House / apartment,0,WEDNESDAY,Unaccompanied,block of flats,"Stone, brick"
+162600,0,0,90000.0,265851.0,17838.0,229500.0,9.0,,Managers,Cash loans,M,Y,N,Commercial associate,Higher education,Single / not married,House / apartment,0,THURSDAY,Unaccompanied,,
+363228,1,0,157500.0,675000.0,26284.5,675000.0,,,Sales staff,Cash loans,F,N,Y,Commercial associate,Secondary / secondary special,Civil marriage,House / apartment,1,SATURDAY,Unaccompanied,,
+419435,0,0,135000.0,675000.0,21906.0,675000.0,6.0,0.1113,,Cash loans,M,Y,Y,Commercial associate,Secondary / secondary special,Married,House / apartment,0,FRIDAY,Unaccompanied,block of flats,Panel
+141278,1,1,270000.0,358344.0,22050.0,283500.0,15.0,0.0581,,Cash loans,M,Y,Y,Working,Higher education,Married,House / apartment,0,WEDNESDAY,Unaccompanied,block of flats,Panel
+283141,0,1,67500.0,202500.0,10125.0,202500.0,,,Core staff,Revolving loans,F,N,Y,Working,Secondary / secondary special,Single / not married,House / apartment,0,FRIDAY,Unaccompanied,,
+185013,0,0,135000.0,414792.0,18400.5,315000.0,,0.0726,Laborers,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,THURSDAY,Unaccompanied,block of flats,Panel
+206129,0,0,157500.0,194922.0,14701.5,157500.0,,0.403,Laborers,Cash loans,M,N,Y,Commercial associate,Secondary / secondary special,Single / not married,House / apartment,1,FRIDAY,Unaccompanied,block of flats,Panel
+447337,0,1,112500.0,327024.0,20137.5,270000.0,1.0,,Drivers,Cash loans,M,Y,N,Working,Secondary / secondary special,Single / not married,With parents,0,FRIDAY,Unaccompanied,,
+116692,1,0,193500.0,450000.0,21888.0,450000.0,,0.1337,Managers,Cash loans,M,N,Y,Working,Higher education,Separated,House / apartment,0,FRIDAY,Unaccompanied,block of flats,"Stone, brick"
+282249,1,0,157500.0,1448104.5,39951.0,1264500.0,9.0,0.0543,Sales staff,Cash loans,F,Y,Y,Working,Higher education,Married,House / apartment,0,TUESDAY,Unaccompanied,block of flats,Panel
+274709,0,2,90000.0,521280.0,27423.0,450000.0,,,Laborers,Cash loans,F,N,Y,Working,Secondary / secondary special,Single / not married,House / apartment,0,MONDAY,Unaccompanied,,
+427177,0,1,360000.0,1223010.0,48501.0,1125000.0,8.0,0.166,Managers,Cash loans,M,Y,Y,Working,Secondary / secondary special,Married,House / apartment,1,THURSDAY,Unaccompanied,block of flats,Block
+380181,0,0,112500.0,450000.0,17095.5,450000.0,,,Cooking staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,1,SATURDAY,Unaccompanied,,
+268365,0,2,247500.0,254799.0,18670.5,193500.0,,,Laborers,Cash loans,M,N,Y,Working,Secondary / secondary special,Married,House / apartment,1,WEDNESDAY,Unaccompanied,,
+268003,0,0,54000.0,143910.0,14148.0,135000.0,,,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Married,House / apartment,1,WEDNESDAY,"Spouse, partner",,
+100632,0,0,225000.0,732915.0,79065.0,675000.0,5.0,0.1896,Managers,Cash loans,M,Y,Y,Commercial associate,Higher education,Married,House / apartment,0,FRIDAY,Unaccompanied,block of flats,Panel
+374403,1,1,337500.0,545040.0,25537.5,450000.0,,0.6129,Core staff,Cash loans,M,N,Y,State servant,Higher education,Married,House / apartment,0,WEDNESDAY,Unaccompanied,block of flats,Panel
+379452,0,0,405000.0,472500.0,22860.0,472500.0,,,Sales staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,MONDAY,Family,,
+415406,0,2,112500.0,1125000.0,37309.5,1125000.0,1.0,0.0268,Accountants,Cash loans,F,Y,Y,Working,Secondary / secondary special,Married,House / apartment,0,MONDAY,Family,block of flats,"Stone, brick"
+130599,0,0,180000.0,270000.0,13500.0,270000.0,,0.0165,Laborers,Revolving loans,F,N,Y,Working,Secondary / secondary special,Separated,House / apartment,0,WEDNESDAY,Unaccompanied,terraced house,Block
+405910,0,1,360000.0,675000.0,21775.5,675000.0,,,,Cash loans,M,N,Y,Pensioner,Secondary / secondary special,Married,Office apartment,1,THURSDAY,Unaccompanied,,
+251852,0,0,135000.0,1546020.0,42642.0,1350000.0,,,,Cash loans,F,N,N,Pensioner,Secondary / secondary special,Married,House / apartment,0,MONDAY,"Spouse, partner",,
+165771,0,0,247500.0,431280.0,23395.5,360000.0,5.0,0.1649,Laborers,Cash loans,M,Y,N,Working,Secondary / secondary special,Single / not married,House / apartment,1,FRIDAY,Unaccompanied,block of flats,Panel
+362367,0,0,90000.0,314100.0,13963.5,225000.0,,,Sales staff,Cash loans,F,N,N,Working,Secondary / secondary special,Single / not married,House / apartment,0,FRIDAY,Unaccompanied,,
+309337,0,0,202500.0,1113840.0,47322.0,900000.0,,0.3631,Drivers,Cash loans,M,N,Y,Working,Secondary / secondary special,Civil marriage,House / apartment,0,FRIDAY,Unaccompanied,block of flats,Monolithic
+395372,0,1,202500.0,1971072.0,68643.0,1800000.0,,0.0368,Managers,Cash loans,F,N,N,Working,Secondary / secondary special,Married,House / apartment,0,MONDAY,Unaccompanied,block of flats,"Stone, brick"
+187273,0,1,270000.0,539100.0,29245.5,450000.0,,0.2019,Accountants,Cash loans,F,N,Y,Working,Higher education,Married,House / apartment,0,WEDNESDAY,Unaccompanied,block of flats,Mixed
+422688,0,0,90000.0,755190.0,32125.5,675000.0,,,Sales staff,Cash loans,F,N,Y,Commercial associate,Lower secondary,Widow,House / apartment,1,MONDAY,Unaccompanied,,
+251667,0,0,112500.0,202500.0,10125.0,202500.0,,,Sales staff,Revolving loans,F,N,Y,Commercial associate,Secondary / secondary special,Married,House / apartment,0,TUESDAY,Family,,
+432601,0,0,225000.0,385164.0,17095.5,292500.0,,0.0687,Accountants,Cash loans,F,N,Y,Working,Secondary / secondary special,Single / not married,House / apartment,0,THURSDAY,Unaccompanied,block of flats,Panel
+205510,0,1,135000.0,1166724.0,32211.0,913500.0,,0.0697,Core staff,Cash loans,M,N,N,Working,Secondary / secondary special,Married,With parents,0,THURSDAY,Unaccompanied,block of flats,Panel
+391639,0,0,58500.0,180000.0,9000.0,180000.0,,,High skill tech staff,Revolving loans,F,N,Y,State servant,Secondary / secondary special,Married,House / apartment,0,THURSDAY,Unaccompanied,,
+145444,0,0,99000.0,509400.0,40374.0,450000.0,,,Drivers,Cash loans,M,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,MONDAY,Unaccompanied,,
+348091,0,0,67500.0,528633.0,24624.0,472500.0,,0.0752,,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,1,THURSDAY,Unaccompanied,block of flats,Panel
+363211,0,2,270000.0,675000.0,33750.0,675000.0,8.0,0.0248,Accountants,Revolving loans,F,Y,Y,Working,Incomplete higher,Married,House / apartment,0,THURSDAY,Unaccompanied,block of flats,"Stone, brick"
+313948,0,0,225000.0,450000.0,16294.5,450000.0,,0.2194,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Married,House / apartment,0,FRIDAY,Unaccompanied,block of flats,Panel
+363837,0,1,202500.0,545040.0,26640.0,450000.0,16.0,,Drivers,Cash loans,M,Y,Y,Working,Secondary / secondary special,Married,House / apartment,0,THURSDAY,Unaccompanied,,
+300131,0,0,270000.0,752742.0,44140.5,697500.0,,0.2543,Laborers,Cash loans,M,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,TUESDAY,Unaccompanied,block of flats,"Stone, brick"
+312601,0,2,135000.0,215640.0,14715.0,180000.0,,,Sales staff,Cash loans,F,N,Y,Commercial associate,Secondary / secondary special,Married,House / apartment,0,MONDAY,Family,,
+433426,0,0,225000.0,278613.0,31563.0,252000.0,7.0,,Laborers,Cash loans,M,Y,N,Working,Secondary / secondary special,Married,House / apartment,0,SATURDAY,Unaccompanied,,
+391437,0,0,90000.0,187704.0,5818.5,148500.0,,,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Married,House / apartment,0,THURSDAY,Unaccompanied,,
+240418,0,2,90000.0,568800.0,15642.0,450000.0,,,Laborers,Cash loans,M,N,Y,Working,Secondary / secondary special,Separated,House / apartment,0,TUESDAY,Unaccompanied,,
+351604,0,0,157500.0,494550.0,38430.0,450000.0,,,Sales staff,Cash loans,F,N,Y,Commercial associate,Secondary / secondary special,Widow,House / apartment,1,THURSDAY,Unaccompanied,,
+165436,0,1,283500.0,360000.0,37930.5,360000.0,4.0,0.0684,Cooking staff,Cash loans,F,Y,Y,Working,Secondary / secondary special,Widow,House / apartment,0,THURSDAY,Unaccompanied,block of flats,"Stone, brick"
+267536,1,0,175500.0,808650.0,23305.5,675000.0,,0.0571,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Married,House / apartment,0,MONDAY,Family,block of flats,"Stone, brick"
+175547,1,0,67500.0,225000.0,10489.5,225000.0,,,Sales staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,THURSDAY,Unaccompanied,,
+157479,0,0,112500.0,1024636.5,33993.0,918000.0,,,,Cash loans,F,N,Y,Pensioner,Higher education,Married,House / apartment,0,WEDNESDAY,Unaccompanied,,
+345062,0,0,157500.0,879480.0,34209.0,630000.0,,0.6612,Sales staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,TUESDAY,Unaccompanied,block of flats,Panel
+267411,0,0,180000.0,1442952.0,39811.5,1260000.0,,,Accountants,Cash loans,F,N,Y,Working,Higher education,Married,House / apartment,0,TUESDAY,Unaccompanied,,
+425118,0,0,157500.0,254700.0,27558.0,225000.0,6.0,,Sales staff,Cash loans,F,Y,Y,Working,Higher education,Married,House / apartment,0,THURSDAY,Unaccompanied,,
+192646,0,0,180000.0,225000.0,11560.5,225000.0,4.0,,Realty agents,Cash loans,F,Y,N,Working,Secondary / secondary special,Married,House / apartment,0,FRIDAY,Unaccompanied,,
+372571,0,1,103500.0,1125000.0,33025.5,1125000.0,,,Core staff,Cash loans,F,N,N,Working,Higher education,Married,House / apartment,1,MONDAY,Unaccompanied,,
+334107,0,1,112500.0,292500.0,19674.0,292500.0,7.0,0.0168,,Cash loans,F,Y,Y,Working,Secondary / secondary special,Married,House / apartment,0,MONDAY,Unaccompanied,block of flats,"Stone, brick"
+292111,0,0,180000.0,1206000.0,51228.0,1206000.0,,0.0428,,Cash loans,F,N,Y,Commercial associate,Secondary / secondary special,Married,House / apartment,0,FRIDAY,Unaccompanied,block of flats,"Stone, brick"
+378779,0,0,112500.0,612612.0,31410.0,495000.0,,0.0635,,Cash loans,F,N,Y,Working,Secondary / secondary special,Civil marriage,House / apartment,0,SATURDAY,Family,block of flats,Panel
+188230,0,0,81000.0,254700.0,17149.5,225000.0,,,Sales staff,Cash loans,F,N,Y,Commercial associate,Secondary / secondary special,Civil marriage,House / apartment,1,THURSDAY,Unaccompanied,,
+148288,0,0,247500.0,1448104.5,39951.0,1264500.0,,0.092,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Married,House / apartment,1,WEDNESDAY,Family,block of flats,Panel
+345233,0,0,202500.0,1502941.5,52371.0,1372500.0,,0.0748,Sales staff,Cash loans,F,N,Y,Working,Higher education,Single / not married,House / apartment,1,SUNDAY,Unaccompanied,block of flats,Panel
+392845,0,1,225000.0,540000.0,27000.0,540000.0,2.0,0.0014,Laborers,Revolving loans,M,Y,Y,Working,Secondary / secondary special,Married,House / apartment,0,MONDAY,Unaccompanied,block of flats,Wooden
+335499,0,0,67500.0,315000.0,11875.5,315000.0,,,Sales staff,Cash loans,F,N,N,Working,Secondary / secondary special,Married,House / apartment,1,SATURDAY,Unaccompanied,,
+305052,0,0,90000.0,760225.5,30150.0,679500.0,,,Laborers,Cash loans,F,N,Y,State servant,Higher education,Married,House / apartment,0,WEDNESDAY,Unaccompanied,,
+133930,0,0,90000.0,576837.0,18607.5,481500.0,,0.0021,,Cash loans,F,N,N,Pensioner,Lower secondary,Widow,Municipal apartment,0,SUNDAY,Family,block of flats,Wooden
+163677,0,0,49500.0,312768.0,16096.5,270000.0,,,,Cash loans,F,N,N,Commercial associate,Higher education,Married,House / apartment,0,WEDNESDAY,Unaccompanied,,
+182219,0,2,135000.0,343377.0,25011.0,283500.0,,,Laborers,Cash loans,F,N,Y,Working,Secondary / secondary special,Single / not married,House / apartment,0,MONDAY,Unaccompanied,,
+209667,0,0,67500.0,450000.0,23692.5,450000.0,,0.184,,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,MONDAY,Unaccompanied,block of flats,"Stone, brick"
+117176,0,0,144000.0,592560.0,32143.5,450000.0,64.0,,Laborers,Cash loans,M,Y,Y,Commercial associate,Higher education,Civil marriage,House / apartment,0,WEDNESDAY,Family,,
+182058,0,0,126000.0,135000.0,13279.5,135000.0,3.0,0.1922,Laborers,Cash loans,F,Y,Y,Working,Secondary / secondary special,Married,House / apartment,1,THURSDAY,Unaccompanied,block of flats,Panel
+247026,0,0,135000.0,298512.0,16798.5,270000.0,,0.0,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Married,House / apartment,0,SATURDAY,Unaccompanied,block of flats,
+413071,0,2,135000.0,156384.0,16560.0,135000.0,,0.2279,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Single / not married,House / apartment,0,SATURDAY,Unaccompanied,block of flats,Panel
+252913,1,0,144000.0,685012.5,33084.0,553500.0,,,Laborers,Cash loans,M,N,Y,Working,Secondary / secondary special,Civil marriage,House / apartment,0,SATURDAY,Unaccompanied,,
+381771,1,0,315000.0,835380.0,40320.0,675000.0,13.0,0.031,Laborers,Cash loans,M,Y,Y,Working,Secondary / secondary special,Married,House / apartment,0,TUESDAY,"Spouse, partner",block of flats,"Stone, brick"
+283837,0,0,450000.0,900000.0,48082.5,900000.0,,,Accountants,Cash loans,F,N,Y,Working,Higher education,Widow,House / apartment,0,MONDAY,Unaccompanied,,
+445641,0,0,180000.0,1125000.0,59931.0,1125000.0,,0.3511,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Married,House / apartment,0,FRIDAY,Unaccompanied,block of flats,Block
+229143,0,0,126000.0,973503.0,39780.0,855000.0,,0.1888,Cooking staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Civil marriage,House / apartment,0,MONDAY,Unaccompanied,block of flats,"Stone, brick"
+132851,0,1,90000.0,269550.0,11547.0,225000.0,,0.0708,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Civil marriage,House / apartment,0,TUESDAY,Unaccompanied,block of flats,Panel
+273842,0,0,112500.0,337761.0,18450.0,256500.0,,0.0769,,Cash loans,F,N,N,Working,Secondary / secondary special,Married,House / apartment,1,FRIDAY,Unaccompanied,block of flats,"Stone, brick"
+283513,0,0,90000.0,448056.0,16222.5,315000.0,,,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Single / not married,House / apartment,0,FRIDAY,Family,,
+138514,0,0,112500.0,1012500.0,40284.0,1012500.0,,0.016,Sales staff,Cash loans,F,N,N,Working,Secondary / secondary special,Married,House / apartment,1,TUESDAY,Unaccompanied,block of flats,"Stone, brick"
+181728,0,0,225000.0,755190.0,36459.0,675000.0,,0.1315,Laborers,Cash loans,M,N,Y,Commercial associate,Higher education,Single / not married,House / apartment,0,WEDNESDAY,Unaccompanied,block of flats,"Stone, brick"
+431158,0,0,112500.0,450000.0,29299.5,450000.0,,,Secretaries,Cash loans,F,N,Y,Working,Incomplete higher,Single / not married,House / apartment,0,FRIDAY,Unaccompanied,,
+192835,0,2,112500.0,512338.5,24916.5,423000.0,,0.0878,Core staff,Cash loans,F,N,Y,Working,Higher education,Married,House / apartment,0,THURSDAY,Unaccompanied,,
+209618,0,2,112500.0,247275.0,19548.0,225000.0,,0.0865,,Cash loans,F,N,Y,Commercial associate,Higher education,Married,House / apartment,0,WEDNESDAY,Unaccompanied,block of flats,"Stone, brick"
+419136,0,0,108000.0,900000.0,38263.5,900000.0,,0.176,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Married,House / apartment,1,FRIDAY,Unaccompanied,block of flats,"Stone, brick"
+300505,0,0,180000.0,1084383.0,35838.0,823500.0,,0.2412,,Cash loans,F,N,Y,Working,Secondary / secondary special,Separated,House / apartment,1,THURSDAY,Family,block of flats,Panel
+120181,0,2,270000.0,1223010.0,48631.5,1125000.0,,0.0068,Medicine staff,Cash loans,F,N,Y,State servant,Secondary / secondary special,Married,Municipal apartment,0,MONDAY,Children,block of flats,
+139498,0,1,90000.0,343377.0,17910.0,283500.0,,0.0476,,Cash loans,F,N,Y,Commercial associate,Secondary / secondary special,Single / not married,House / apartment,0,TUESDAY,Unaccompanied,block of flats,Panel
+130780,0,0,112500.0,814041.0,23931.0,679500.0,,0.0843,,Cash loans,F,N,Y,Working,Higher education,Married,House / apartment,0,TUESDAY,Unaccompanied,block of flats,"Stone, brick"
+441404,0,0,67500.0,450000.0,24412.5,450000.0,,,,Cash loans,M,N,N,Pensioner,Lower secondary,Married,House / apartment,0,SATURDAY,"Spouse, partner",,
+428594,0,0,157500.0,1350000.0,88600.5,1350000.0,,0.0071,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Widow,House / apartment,1,MONDAY,Unaccompanied,block of flats,Block
+171607,0,0,112500.0,135000.0,6750.0,135000.0,,0.0208,,Revolving loans,F,N,Y,Pensioner,Secondary / secondary special,Married,House / apartment,0,TUESDAY,Family,block of flats,"Stone, brick"
+311112,0,0,360000.0,1218447.0,33637.5,954000.0,27.0,,Core staff,Cash loans,M,Y,N,Commercial associate,Secondary / secondary special,Single / not married,Rented apartment,0,TUESDAY,Unaccompanied,,
+315377,0,0,135000.0,248877.0,13630.5,189000.0,,0.0066,Security staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Single / not married,House / apartment,0,FRIDAY,Family,block of flats,"Stone, brick"
+136080,0,0,126000.0,835164.0,40306.5,733500.0,,0.1895,,Cash loans,M,N,N,Pensioner,Secondary / secondary special,Married,House / apartment,0,SATURDAY,Unaccompanied,,
+331970,0,0,315000.0,500211.0,50107.5,463500.0,14.0,0.0284,,Cash loans,F,Y,Y,State servant,Higher education,Widow,House / apartment,0,FRIDAY,Unaccompanied,block of flats,Block
+189900,0,0,112500.0,1493086.5,52029.0,1363500.0,,0.0,Managers,Cash loans,F,N,Y,Working,Higher education,Married,House / apartment,1,TUESDAY,Unaccompanied,block of flats,
+168484,0,0,405000.0,781920.0,61906.5,675000.0,,0.1658,Managers,Cash loans,F,N,Y,Commercial associate,Higher education,Single / not married,House / apartment,1,WEDNESDAY,Unaccompanied,block of flats,Panel
+264859,0,0,189000.0,244998.0,10921.5,175500.0,,0.0345,Cleaning staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Widow,House / apartment,0,SATURDAY,Unaccompanied,block of flats,"Stone, brick"
+133897,1,1,180000.0,454500.0,21996.0,454500.0,,,Core staff,Cash loans,F,N,N,Working,Secondary / secondary special,Married,Office apartment,0,FRIDAY,Unaccompanied,,
+173071,0,0,112500.0,328405.5,19975.5,283500.0,24.0,,Sales staff,Cash loans,F,Y,Y,Working,Secondary / secondary special,Married,House / apartment,0,MONDAY,Unaccompanied,,
+439932,0,0,202500.0,135000.0,6750.0,135000.0,,0.2124,,Revolving loans,F,N,N,Pensioner,Secondary / secondary special,Civil marriage,House / apartment,0,WEDNESDAY,Unaccompanied,block of flats,Monolithic
+328756,0,0,126000.0,314100.0,11767.5,225000.0,,0.0612,High skill tech staff,Cash loans,M,N,N,Working,Higher education,Single / not married,House / apartment,0,TUESDAY,Unaccompanied,block of flats,"Stone, brick"
+437249,0,0,90000.0,171900.0,8491.5,112500.0,,0.2685,Sales staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Single / not married,House / apartment,0,WEDNESDAY,Unaccompanied,block of flats,Panel
+311378,1,1,144000.0,900000.0,97060.5,900000.0,,0.2416,Laborers,Cash loans,M,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,FRIDAY,Unaccompanied,block of flats,Panel
+441380,0,0,135000.0,156384.0,16155.0,135000.0,,,Medicine staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Single / not married,House / apartment,0,SUNDAY,Unaccompanied,,
+370226,0,0,135000.0,900000.0,23742.0,900000.0,,,,Cash loans,F,N,N,Working,Higher education,Single / not married,House / apartment,1,TUESDAY,Unaccompanied,,
+419257,0,2,337500.0,1078200.0,31653.0,900000.0,,0.0056,Laborers,Cash loans,M,N,N,Working,Secondary / secondary special,Married,House / apartment,0,WEDNESDAY,Unaccompanied,,
+406240,1,1,72000.0,414792.0,19350.0,315000.0,,,Core staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,1,WEDNESDAY,Family,,
+327592,0,0,180000.0,432661.5,28525.5,373500.0,,0.1983,,Cash loans,F,N,N,Commercial associate,Secondary / secondary special,Married,House / apartment,1,FRIDAY,Unaccompanied,block of flats,Panel
+141482,0,0,207000.0,191880.0,21829.5,180000.0,9.0,,Waiters/barmen staff,Cash loans,F,Y,N,Working,Secondary / secondary special,Married,House / apartment,1,FRIDAY,Unaccompanied,,
+277653,0,0,202500.0,1125000.0,32895.0,1125000.0,2.0,,High skill tech staff,Cash loans,M,Y,N,Working,Higher education,Single / not married,With parents,0,WEDNESDAY,Unaccompanied,,
+322379,0,0,225000.0,629320.5,24754.5,508500.0,,0.0442,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Civil marriage,House / apartment,0,FRIDAY,Unaccompanied,block of flats,Panel
+258121,0,0,225000.0,655614.0,67311.0,607500.0,,0.1051,Sales staff,Cash loans,M,N,N,Commercial associate,Incomplete higher,Single / not married,House / apartment,1,TUESDAY,Unaccompanied,block of flats,Panel
+400150,0,0,99000.0,180000.0,9000.0,180000.0,,0.0927,Core staff,Revolving loans,M,N,Y,Commercial associate,Secondary / secondary special,Single / not married,With parents,0,FRIDAY,Unaccompanied,block of flats,"Stone, brick"
+438276,0,1,135000.0,948582.0,27864.0,679500.0,,0.0704,Core staff,Cash loans,M,N,Y,Working,Secondary / secondary special,Married,With parents,1,FRIDAY,Family,block of flats,Panel
+371586,0,0,180000.0,1223010.0,51948.0,1125000.0,,,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Married,House / apartment,0,FRIDAY,Unaccompanied,,
+164038,0,2,225000.0,254700.0,25321.5,225000.0,,0.0527,Core staff,Cash loans,F,N,Y,Commercial associate,Incomplete higher,Civil marriage,House / apartment,0,THURSDAY,Unaccompanied,block of flats,Panel
+289659,0,0,247500.0,148365.0,10548.0,135000.0,,0.067,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Widow,House / apartment,0,SUNDAY,Unaccompanied,block of flats,Panel
+228161,0,0,135000.0,675000.0,41427.0,675000.0,23.0,0.1731,Drivers,Cash loans,M,Y,N,Working,Secondary / secondary special,Married,House / apartment,0,TUESDAY,"Spouse, partner",block of flats,"Stone, brick"
+421649,0,0,157500.0,808650.0,26217.0,675000.0,64.0,,Accountants,Cash loans,F,Y,Y,Working,Secondary / secondary special,Married,House / apartment,1,FRIDAY,Unaccompanied,,
+110556,0,0,94500.0,409500.0,21037.5,409500.0,,,Cleaning staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,THURSDAY,Family,,
+274037,0,2,67500.0,283419.0,15952.5,234000.0,,0.0529,Sales staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,TUESDAY,Unaccompanied,block of flats,Panel
+120653,0,0,216000.0,409716.0,19840.5,342000.0,,,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Civil marriage,House / apartment,0,WEDNESDAY,Unaccompanied,,
+303636,0,0,157500.0,755190.0,32125.5,675000.0,,,Cooking staff,Cash loans,F,N,Y,State servant,Secondary / secondary special,Married,House / apartment,1,TUESDAY,Unaccompanied,,
+155074,1,0,54000.0,522000.0,20358.0,522000.0,,,Core staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,Office apartment,0,MONDAY,Unaccompanied,,
+286156,0,1,70200.0,355536.0,18283.5,270000.0,,,Sales staff,Cash loans,F,N,Y,Commercial associate,Secondary / secondary special,Married,House / apartment,0,TUESDAY,Unaccompanied,,
+438266,0,4,225000.0,808650.0,29839.5,675000.0,64.0,,,Cash loans,F,Y,N,Pensioner,Secondary / secondary special,Married,House / apartment,0,TUESDAY,Family,,
+295197,0,2,270000.0,720000.0,21181.5,720000.0,,,,Cash loans,M,N,Y,Commercial associate,Secondary / secondary special,Married,House / apartment,0,THURSDAY,Family,,
+433449,0,1,180000.0,1006920.0,42790.5,900000.0,7.0,0.0686,Laborers,Cash loans,M,Y,Y,Working,Secondary / secondary special,Separated,House / apartment,0,THURSDAY,Unaccompanied,block of flats,Panel
+120443,0,0,126000.0,835380.0,40320.0,675000.0,,0.0492,Laborers,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,FRIDAY,Unaccompanied,block of flats,"Stone, brick"
+209453,0,1,135000.0,787131.0,42066.0,679500.0,,0.1202,Core staff,Cash loans,F,N,Y,Working,Higher education,Married,House / apartment,1,THURSDAY,Family,block of flats,Panel
+256542,0,0,72000.0,1017000.0,37818.0,1017000.0,,0.048,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Married,House / apartment,0,FRIDAY,Unaccompanied,block of flats,"Stone, brick"
+421340,0,0,270000.0,1236816.0,36292.5,1080000.0,12.0,,,Cash loans,M,Y,N,Pensioner,Higher education,Married,House / apartment,0,THURSDAY,Unaccompanied,,
+413133,0,2,108000.0,261000.0,14287.5,261000.0,,0.0502,,Cash loans,F,N,Y,Commercial associate,Secondary / secondary special,Civil marriage,House / apartment,0,WEDNESDAY,Family,block of flats,"Stone, brick"
+142619,0,0,270000.0,1154362.5,37237.5,1008000.0,,0.1452,,Cash loans,F,N,Y,Commercial associate,Secondary / secondary special,Single / not married,House / apartment,1,FRIDAY,Unaccompanied,block of flats,Block
+357960,0,0,112500.0,780363.0,37539.0,697500.0,16.0,,Laborers,Cash loans,M,Y,Y,Working,Secondary / secondary special,Single / not married,House / apartment,0,MONDAY,Unaccompanied,,
+143086,0,1,180000.0,422235.0,23035.5,364500.0,,,Sales staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,TUESDAY,Unaccompanied,,
+311371,0,1,157500.0,270000.0,13500.0,270000.0,9.0,0.3301,Laborers,Revolving loans,M,Y,Y,Working,Secondary / secondary special,Married,House / apartment,1,TUESDAY,Unaccompanied,block of flats,Panel
+313070,0,0,157500.0,312003.0,15138.0,211500.0,14.0,,Secretaries,Cash loans,F,Y,N,Working,Secondary / secondary special,Married,House / apartment,0,WEDNESDAY,Unaccompanied,,
+454749,0,0,99000.0,450000.0,24543.0,450000.0,40.0,,Laborers,Cash loans,M,Y,Y,Working,Secondary / secondary special,Civil marriage,House / apartment,1,MONDAY,Family,,
+455172,0,0,90000.0,317443.5,17347.5,256500.0,,,Waiters/barmen staff,Cash loans,F,N,N,Commercial associate,Higher education,Single / not married,With parents,0,THURSDAY,Other_A,,
+161556,0,0,306000.0,447768.0,30051.0,405000.0,64.0,0.3561,,Cash loans,M,Y,Y,Commercial associate,Secondary / secondary special,Single / not married,House / apartment,0,THURSDAY,Unaccompanied,block of flats,"Stone, brick"
+186180,0,3,94500.0,450000.0,24543.0,450000.0,,,Sales staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,THURSDAY,Unaccompanied,,
+289962,1,1,135000.0,265851.0,21132.0,229500.0,,,Low-skill Laborers,Cash loans,M,N,N,Working,Lower secondary,Married,House / apartment,1,MONDAY,Unaccompanied,,
+171457,0,0,261000.0,900000.0,69781.5,900000.0,6.0,0.0562,Sales staff,Cash loans,F,Y,Y,Working,Secondary / secondary special,Married,House / apartment,1,MONDAY,Unaccompanied,block of flats,"Stone, brick"
+259563,0,0,135000.0,240660.0,11835.0,157500.0,,0.335,Laborers,Cash loans,F,N,Y,Working,Secondary / secondary special,Civil marriage,House / apartment,0,MONDAY,Unaccompanied,block of flats,"Stone, brick"
+258998,0,0,157500.0,808650.0,26217.0,675000.0,,0.1666,,Cash loans,F,N,N,Pensioner,Higher education,Separated,House / apartment,0,TUESDAY,Unaccompanied,block of flats,"Stone, brick"
+275025,0,0,90000.0,508495.5,20025.0,454500.0,,,Core staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,1,FRIDAY,Family,,
+381342,0,2,112500.0,269550.0,14242.5,225000.0,15.0,,Laborers,Cash loans,F,Y,Y,Working,Secondary / secondary special,Single / not married,House / apartment,0,SUNDAY,"Spouse, partner",,
+237599,0,1,112500.0,598486.5,21627.0,454500.0,,0.0522,Laborers,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,THURSDAY,Unaccompanied,block of flats,"Stone, brick"
+347493,0,1,270000.0,2013840.0,55507.5,1800000.0,6.0,0.0695,Sales staff,Cash loans,M,Y,Y,Working,Incomplete higher,Married,House / apartment,1,TUESDAY,Unaccompanied,block of flats,Panel
+173525,0,0,225000.0,1113840.0,57001.5,900000.0,,0.1673,Laborers,Cash loans,M,N,N,Working,Secondary / secondary special,Separated,Municipal apartment,0,SATURDAY,Unaccompanied,block of flats,Panel
+318618,0,0,171000.0,1078200.0,31653.0,900000.0,,,Drivers,Cash loans,M,N,N,Working,Higher education,Married,Municipal apartment,0,TUESDAY,Unaccompanied,,
+132701,0,1,180000.0,590337.0,26131.5,477000.0,,,Medicine staff,Cash loans,F,N,N,State servant,Secondary / secondary special,Married,House / apartment,0,THURSDAY,Unaccompanied,,
+190710,0,0,202500.0,518562.0,36220.5,463500.0,,0.1563,Accountants,Cash loans,F,N,Y,Working,Higher education,Married,House / apartment,0,TUESDAY,Unaccompanied,block of flats,"Stone, brick"
+209100,0,0,121500.0,348264.0,35815.5,315000.0,,0.0515,Drivers,Cash loans,M,N,Y,State servant,Secondary / secondary special,Married,House / apartment,0,TUESDAY,Unaccompanied,block of flats,Panel
+162111,0,0,157500.0,385164.0,18657.0,292500.0,,,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Married,House / apartment,0,FRIDAY,Family,,
+343670,0,1,144000.0,550980.0,40090.5,450000.0,,,Low-skill Laborers,Cash loans,F,N,Y,Working,Secondary / secondary special,Civil marriage,With parents,0,MONDAY,Unaccompanied,,
+186024,0,0,225000.0,149256.0,16879.5,135000.0,7.0,0.1182,,Cash loans,M,Y,N,Working,Secondary / secondary special,Married,House / apartment,0,WEDNESDAY,Unaccompanied,block of flats,"Stone, brick"
+369567,0,0,135000.0,781920.0,34573.5,675000.0,9.0,,Drivers,Cash loans,M,Y,Y,Working,Secondary / secondary special,Married,House / apartment,0,WEDNESDAY,Unaccompanied,,
+364516,0,0,112500.0,454500.0,13288.5,454500.0,,,,Cash loans,F,N,N,Pensioner,Secondary / secondary special,Separated,House / apartment,1,WEDNESDAY,Unaccompanied,,
+257866,0,0,202500.0,450000.0,35685.0,450000.0,10.0,,Core staff,Cash loans,M,Y,Y,Working,Secondary / secondary special,Married,House / apartment,0,MONDAY,Unaccompanied,,
+420831,0,0,139500.0,760225.5,38947.5,679500.0,,0.0607,,Cash loans,M,N,Y,Working,Secondary / secondary special,Single / not married,House / apartment,0,TUESDAY,Unaccompanied,block of flats,Panel
+331112,0,0,90000.0,675000.0,21906.0,675000.0,64.0,,,Cash loans,F,Y,N,Working,Secondary / secondary special,Single / not married,With parents,0,TUESDAY,Unaccompanied,,
+368924,0,0,157500.0,640080.0,24129.0,450000.0,,0.0929,Laborers,Cash loans,M,N,Y,Working,Secondary / secondary special,Single / not married,House / apartment,0,SUNDAY,Family,block of flats,Panel
+198925,0,1,81000.0,180000.0,9000.0,585000.0,,0.021,Drivers,Revolving loans,F,N,Y,Working,Secondary / secondary special,Single / not married,House / apartment,1,SATURDAY,Unaccompanied,block of flats,"Stone, brick"
+114225,0,2,315000.0,1130112.0,37480.5,1012500.0,,0.0705,,Cash loans,M,N,Y,Commercial associate,Higher education,Separated,House / apartment,0,WEDNESDAY,Unaccompanied,block of flats,Panel
+298802,0,1,135000.0,270000.0,13500.0,270000.0,,,Waiters/barmen staff,Revolving loans,F,N,Y,Working,Higher education,Married,House / apartment,0,TUESDAY,Unaccompanied,,
+150742,0,1,90000.0,576072.0,28017.0,405000.0,,0.2147,,Cash loans,M,N,Y,Pensioner,Higher education,Separated,House / apartment,0,THURSDAY,Unaccompanied,block of flats,Panel
+361092,0,0,202500.0,251091.0,28458.0,238500.0,,0.1479,,Cash loans,F,N,N,Working,Secondary / secondary special,Married,House / apartment,0,FRIDAY,Unaccompanied,block of flats,"Stone, brick"
+226515,0,1,157500.0,712944.0,34429.5,567000.0,,0.3986,Sales staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,MONDAY,Unaccompanied,block of flats,"Stone, brick"
+145103,0,0,45000.0,180000.0,8658.0,180000.0,,0.0159,Cleaning staff,Cash loans,M,N,N,Working,Secondary / secondary special,Married,House / apartment,0,TUESDAY,Unaccompanied,block of flats,"Stone, brick"
+245538,0,0,67500.0,247275.0,19548.0,225000.0,,,,Cash loans,M,N,Y,Pensioner,Secondary / secondary special,Married,House / apartment,0,THURSDAY,Family,,
+419494,0,0,117000.0,227520.0,12834.0,180000.0,,0.0428,,Cash loans,F,N,N,Pensioner,Secondary / secondary special,Married,House / apartment,0,WEDNESDAY,Unaccompanied,block of flats,Block
+254551,0,1,189000.0,1527579.0,53226.0,1395000.0,,0.0092,Laborers,Cash loans,M,N,Y,Working,Higher education,Married,House / apartment,0,TUESDAY,Unaccompanied,block of flats,Wooden
+112066,0,2,135000.0,247275.0,19264.5,225000.0,11.0,,Security staff,Cash loans,M,Y,Y,Working,Secondary / secondary special,Married,House / apartment,1,MONDAY,Unaccompanied,,
+358012,0,0,112500.0,835380.0,45445.5,675000.0,8.0,,Sales staff,Cash loans,F,Y,Y,Working,Secondary / secondary special,Married,House / apartment,0,TUESDAY,Unaccompanied,,
+131196,0,0,180000.0,601470.0,30838.5,450000.0,4.0,0.1464,Drivers,Cash loans,M,Y,Y,Commercial associate,Secondary / secondary special,Married,House / apartment,0,MONDAY,Family,block of flats,"Stone, brick"
+189860,0,0,135000.0,450000.0,16294.5,450000.0,,0.0388,,Cash loans,F,N,Y,Pensioner,Higher education,Widow,House / apartment,1,THURSDAY,Unaccompanied,block of flats,Mixed
+195438,0,1,247500.0,807534.0,41359.5,652500.0,,,Core staff,Cash loans,F,N,N,Working,Higher education,Married,House / apartment,0,SUNDAY,Unaccompanied,,
+161788,0,0,180000.0,765000.0,22495.5,765000.0,11.0,,Laborers,Cash loans,M,Y,Y,Commercial associate,Secondary / secondary special,Married,House / apartment,0,TUESDAY,Unaccompanied,,
+410468,0,0,67500.0,337761.0,22977.0,256500.0,,,Private service staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,THURSDAY,Unaccompanied,,
+361010,0,1,180000.0,1293502.5,35568.0,1129500.0,,,Core staff,Cash loans,F,N,N,State servant,Higher education,Married,House / apartment,0,WEDNESDAY,Unaccompanied,,
+137976,0,2,135000.0,808650.0,26217.0,675000.0,,0.0466,Laborers,Cash loans,M,N,Y,Working,Secondary / secondary special,Married,House / apartment,1,THURSDAY,Unaccompanied,block of flats,Panel
+367642,0,0,67500.0,553806.0,24525.0,495000.0,3.0,,,Cash loans,F,Y,Y,Pensioner,Secondary / secondary special,Married,House / apartment,0,TUESDAY,"Spouse, partner",,
+263722,0,0,90000.0,263686.5,25816.5,238500.0,,0.0265,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Married,House / apartment,1,TUESDAY,Unaccompanied,block of flats,"Stone, brick"
+309419,0,0,90000.0,251280.0,9697.5,180000.0,12.0,,,Cash loans,M,Y,Y,Working,Incomplete higher,Single / not married,House / apartment,0,THURSDAY,Unaccompanied,,
+298840,0,0,225000.0,1078200.0,34911.0,900000.0,22.0,0.0187,Laborers,Cash loans,M,Y,Y,Working,Secondary / secondary special,Civil marriage,House / apartment,1,SATURDAY,Unaccompanied,block of flats,"Stone, brick"
+154975,0,1,225000.0,286704.0,17455.5,247500.0,,0.0212,Drivers,Cash loans,M,N,Y,State servant,Secondary / secondary special,Married,House / apartment,0,THURSDAY,Unaccompanied,block of flats,Others
+253831,0,0,135000.0,364896.0,15588.0,315000.0,,,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Married,House / apartment,0,TUESDAY,Unaccompanied,,
+171247,0,0,157500.0,675000.0,17937.0,675000.0,,0.0548,Managers,Cash loans,F,N,N,Working,Higher education,Separated,House / apartment,0,WEDNESDAY,Unaccompanied,block of flats,Panel
+284862,0,0,135000.0,417024.0,18369.0,360000.0,,0.051,,Cash loans,F,N,N,Working,Secondary / secondary special,Single / not married,Municipal apartment,0,MONDAY,Unaccompanied,,
+227735,0,0,202500.0,747000.0,29754.0,747000.0,,0.1799,Cleaning staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,1,MONDAY,Other_B,block of flats,Panel
+413134,0,0,103500.0,517500.0,22054.5,517500.0,,0.0255,Laborers,Cash loans,F,N,Y,Working,Secondary / secondary special,Widow,House / apartment,0,MONDAY,Unaccompanied,block of flats,Panel
+431711,0,1,157500.0,450000.0,22500.0,450000.0,,,Core staff,Revolving loans,F,N,Y,Commercial associate,Secondary / secondary special,Married,House / apartment,1,FRIDAY,Unaccompanied,,
+236448,0,1,58500.0,343800.0,16155.0,225000.0,,,Laborers,Cash loans,F,N,N,Commercial associate,Secondary / secondary special,Married,House / apartment,0,SUNDAY,Family,,
+225596,0,2,288000.0,1187370.0,115803.0,1125000.0,3.0,0.1385,Managers,Cash loans,M,Y,Y,Commercial associate,Secondary / secondary special,Married,House / apartment,0,TUESDAY,Unaccompanied,block of flats,"Stone, brick"
+175136,0,0,121500.0,1773963.0,61789.5,1620000.0,,0.0654,High skill tech staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,TUESDAY,Unaccompanied,block of flats,"Stone, brick"
+166586,0,0,180000.0,1528200.0,53248.5,1350000.0,18.0,,,Cash loans,F,Y,N,Pensioner,Secondary / secondary special,Civil marriage,House / apartment,0,THURSDAY,Unaccompanied,,
+322417,0,0,112500.0,724500.0,21312.0,724500.0,,0.1118,Medicine staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,SATURDAY,Unaccompanied,block of flats,Panel
+138823,0,2,67500.0,52128.0,5742.0,45000.0,,0.0595,,Cash loans,F,N,Y,Working,Secondary / secondary special,Civil marriage,House / apartment,0,MONDAY,Unaccompanied,block of flats,"Stone, brick"
+276303,0,1,54000.0,229500.0,13302.0,229500.0,17.0,,Core staff,Cash loans,F,Y,Y,Working,Secondary / secondary special,Married,House / apartment,1,SATURDAY,Unaccompanied,,
+408111,1,1,112500.0,450000.0,21109.5,450000.0,,,Laborers,Cash loans,M,N,Y,Working,Secondary / secondary special,Separated,House / apartment,0,MONDAY,Unaccompanied,,
+119911,0,1,157500.0,622413.0,31909.5,495000.0,,0.0604,Sales staff,Cash loans,F,N,Y,Commercial associate,Secondary / secondary special,Civil marriage,With parents,1,TUESDAY,Unaccompanied,block of flats,"Stone, brick"
+320766,0,0,180000.0,1096020.0,52857.0,900000.0,1.0,0.1246,High skill tech staff,Cash loans,F,Y,Y,Commercial associate,Secondary / secondary special,Married,House / apartment,1,MONDAY,"Spouse, partner",block of flats,"Stone, brick"
+416751,0,0,135000.0,1035832.5,29083.5,904500.0,,0.1124,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Single / not married,House / apartment,0,SUNDAY,Unaccompanied,block of flats,Panel
+314559,0,0,112500.0,337500.0,16875.0,337500.0,,,,Revolving loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,SATURDAY,Unaccompanied,,
+449066,0,1,225000.0,270000.0,13500.0,270000.0,2.0,0.062,Managers,Revolving loans,M,Y,N,Commercial associate,Secondary / secondary special,Married,House / apartment,0,THURSDAY,Unaccompanied,block of flats,"Stone, brick"
+114153,0,0,90000.0,284400.0,16456.5,225000.0,,0.0782,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Widow,House / apartment,0,WEDNESDAY,Family,block of flats,Block
+359364,0,0,270000.0,601470.0,32760.0,450000.0,,0.0975,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Widow,House / apartment,0,WEDNESDAY,Unaccompanied,block of flats,Others
+211449,0,0,315000.0,180000.0,9000.0,180000.0,18.0,0.1683,Drivers,Revolving loans,M,Y,Y,Working,Secondary / secondary special,Civil marriage,House / apartment,0,TUESDAY,Unaccompanied,block of flats,Panel
+231234,0,1,225000.0,1535553.0,40635.0,1372500.0,12.0,,Drivers,Cash loans,M,Y,N,Working,Secondary / secondary special,Married,House / apartment,0,WEDNESDAY,Unaccompanied,,
+434003,1,0,45000.0,108072.0,6331.5,85500.0,,,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Married,Office apartment,0,SATURDAY,Unaccompanied,,
+168128,0,0,112500.0,152820.0,15016.5,135000.0,,0.0707,Cooking staff,Cash loans,F,N,Y,Commercial associate,Secondary / secondary special,Married,House / apartment,0,MONDAY,Unaccompanied,block of flats,Panel
+139521,0,1,72000.0,545040.0,25537.5,450000.0,,0.0115,Core staff,Cash loans,F,N,Y,Working,Higher education,Married,House / apartment,0,TUESDAY,Unaccompanied,block of flats,"Stone, brick"
+286804,0,0,81000.0,247275.0,19548.0,225000.0,,,Security staff,Cash loans,M,N,Y,Working,Incomplete higher,Single / not married,House / apartment,0,FRIDAY,Unaccompanied,,
+315311,0,1,270000.0,900000.0,26446.5,900000.0,,,Drivers,Cash loans,M,N,N,Working,Secondary / secondary special,Married,Rented apartment,0,THURSDAY,Unaccompanied,,
+258270,0,0,180000.0,270000.0,13500.0,270000.0,18.0,,Managers,Revolving loans,F,Y,N,Commercial associate,Secondary / secondary special,Married,House / apartment,0,SATURDAY,Family,,
+399686,1,2,135000.0,598401.0,23314.5,499500.0,12.0,,Security staff,Cash loans,M,Y,Y,Working,Secondary / secondary special,Married,House / apartment,0,MONDAY,Unaccompanied,,
+366881,0,1,135000.0,308133.0,16843.5,234000.0,,0.1412,,Cash loans,M,N,Y,Working,Secondary / secondary special,Single / not married,House / apartment,1,SATURDAY,Unaccompanied,block of flats,
+218577,1,0,225000.0,1649376.0,54508.5,1350000.0,,0.015,Private service staff,Cash loans,M,N,N,Commercial associate,Higher education,Married,House / apartment,0,WEDNESDAY,Unaccompanied,block of flats,Wooden
+450309,0,0,202500.0,573408.0,25389.0,495000.0,,,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Married,House / apartment,0,MONDAY,Unaccompanied,,
+132278,0,1,148500.0,1078200.0,31653.0,900000.0,16.0,0.0019,,Cash loans,F,Y,N,Working,Lower secondary,Married,Municipal apartment,0,FRIDAY,Unaccompanied,block of flats,Wooden
+284794,0,0,202500.0,1006920.0,51543.0,900000.0,18.0,,Laborers,Cash loans,M,Y,N,Commercial associate,Higher education,Married,Co-op apartment,0,THURSDAY,Unaccompanied,,
+302964,0,0,72000.0,192528.0,7384.5,126000.0,,0.1219,Laborers,Cash loans,M,N,Y,Working,Secondary / secondary special,Civil marriage,Municipal apartment,0,FRIDAY,Unaccompanied,block of flats,Panel
+148939,0,0,225000.0,135000.0,6750.0,135000.0,2.0,0.1035,Core staff,Revolving loans,F,Y,Y,Commercial associate,Higher education,Married,House / apartment,0,WEDNESDAY,Unaccompanied,block of flats,Panel
+115660,0,1,207000.0,973710.0,34627.5,697500.0,,,Core staff,Cash loans,F,N,Y,Working,Higher education,Married,House / apartment,0,MONDAY,Unaccompanied,,
+156974,0,0,157500.0,310671.0,22644.0,256500.0,,,,Cash loans,F,N,Y,Working,Secondary / secondary special,Widow,House / apartment,0,TUESDAY,Unaccompanied,,
+181988,0,0,171000.0,426645.0,22468.5,324000.0,,,Core staff,Cash loans,M,N,N,State servant,Secondary / secondary special,Single / not married,House / apartment,1,WEDNESDAY,Family,,
+175975,0,1,225000.0,1006920.0,39528.0,900000.0,,0.1977,Core staff,Cash loans,F,N,N,Commercial associate,Higher education,Separated,Rented apartment,0,SATURDAY,Other_A,block of flats,Panel
+126734,0,0,67500.0,202500.0,10125.0,202500.0,,,,Revolving loans,M,N,Y,Pensioner,Secondary / secondary special,Married,House / apartment,0,FRIDAY,Unaccompanied,,
+259930,1,0,90000.0,592560.0,32274.0,450000.0,,,,Cash loans,M,N,N,Working,Secondary / secondary special,Married,House / apartment,0,FRIDAY,Unaccompanied,,
+324515,0,0,135000.0,345645.0,13158.0,243000.0,7.0,,Laborers,Cash loans,F,Y,Y,Working,Secondary / secondary special,Civil marriage,House / apartment,1,WEDNESDAY,Family,,
+137068,0,0,202500.0,640080.0,31261.5,450000.0,6.0,0.0463,Managers,Cash loans,F,Y,Y,Commercial associate,Secondary / secondary special,Widow,House / apartment,0,SATURDAY,Unaccompanied,block of flats,Panel
+267515,0,1,112500.0,229500.0,15336.0,229500.0,,,Cooking staff,Cash loans,F,N,N,Working,Secondary / secondary special,Married,House / apartment,1,TUESDAY,Unaccompanied,,
+113027,0,0,135000.0,1113840.0,50463.0,900000.0,,0.0355,Laborers,Cash loans,M,N,Y,State servant,Secondary / secondary special,Married,House / apartment,0,FRIDAY,Unaccompanied,block of flats,Block
+455034,0,0,121500.0,142200.0,4671.0,112500.0,,0.049,,Cash loans,F,N,N,Pensioner,Secondary / secondary special,Separated,House / apartment,0,TUESDAY,Unaccompanied,block of flats,"Stone, brick"
+423991,0,0,180000.0,276277.5,18261.0,238500.0,12.0,0.2142,Managers,Cash loans,M,Y,Y,Working,Secondary / secondary special,Single / not married,House / apartment,0,FRIDAY,Family,block of flats,"Stone, brick"
+362893,0,1,135000.0,183784.5,14350.5,148500.0,,,,Cash loans,F,N,Y,State servant,Secondary / secondary special,Married,House / apartment,0,TUESDAY,Unaccompanied,,
+147909,0,1,67500.0,425133.0,13347.0,351000.0,,,Core staff,Cash loans,F,N,N,Working,Secondary / secondary special,Married,House / apartment,0,FRIDAY,Family,,
+266827,0,0,148500.0,495000.0,25402.5,495000.0,,,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Married,House / apartment,0,THURSDAY,Unaccompanied,,
+110515,0,2,144000.0,207396.0,16515.0,157500.0,7.0,,Laborers,Cash loans,M,Y,N,Commercial associate,Secondary / secondary special,Married,House / apartment,1,WEDNESDAY,"Spouse, partner",,
+405029,0,0,135000.0,704844.0,36117.0,630000.0,,0.0492,Sales staff,Cash loans,F,N,Y,Commercial associate,Secondary / secondary special,Civil marriage,House / apartment,1,THURSDAY,Unaccompanied,block of flats,Panel
+355541,0,0,180000.0,450000.0,22500.0,450000.0,,,,Revolving loans,M,N,Y,Pensioner,Higher education,Single / not married,House / apartment,1,TUESDAY,Unaccompanied,,
+162606,0,0,67500.0,518562.0,20695.5,463500.0,18.0,,Drivers,Cash loans,M,Y,Y,State servant,Secondary / secondary special,Married,House / apartment,0,WEDNESDAY,Unaccompanied,,
+196163,0,0,292500.0,630000.0,31500.0,630000.0,,0.1444,High skill tech staff,Revolving loans,M,N,N,Commercial associate,Higher education,Single / not married,House / apartment,0,WEDNESDAY,Unaccompanied,block of flats,Block
+246984,0,0,157500.0,247500.0,12375.0,247500.0,10.0,,,Revolving loans,F,Y,Y,Pensioner,Higher education,Married,House / apartment,0,THURSDAY,Unaccompanied,,
+179561,0,0,90000.0,640080.0,29839.5,450000.0,18.0,,Laborers,Cash loans,F,Y,Y,Working,Secondary / secondary special,Married,House / apartment,0,FRIDAY,Unaccompanied,,
+399833,0,1,599998.5,1350000.0,68710.5,1350000.0,1.0,0.1852,Sales staff,Cash loans,M,Y,Y,Commercial associate,Incomplete higher,Married,House / apartment,0,MONDAY,Unaccompanied,block of flats,"Stone, brick"
+190881,0,0,360000.0,1072809.0,28431.0,895500.0,,0.0899,,Cash loans,F,N,Y,Pensioner,Higher education,Married,House / apartment,0,WEDNESDAY,Unaccompanied,block of flats,"Stone, brick"
+195430,0,0,171000.0,215865.0,22797.0,202500.0,,,,Cash loans,F,N,N,Pensioner,Secondary / secondary special,Married,House / apartment,0,FRIDAY,Unaccompanied,,
+416830,0,0,180000.0,180000.0,9000.0,180000.0,2.0,0.0651,IT staff,Revolving loans,M,Y,N,Working,Secondary / secondary special,Civil marriage,With parents,1,TUESDAY,Unaccompanied,block of flats,Panel
+341028,0,0,225000.0,913500.0,29596.5,913500.0,17.0,0.0789,High skill tech staff,Cash loans,M,Y,N,Commercial associate,Higher education,Married,House / apartment,0,THURSDAY,Unaccompanied,block of flats,"Stone, brick"
+266408,0,2,135000.0,877500.0,31216.5,877500.0,,0.0298,Security staff,Cash loans,F,N,Y,Working,Higher education,Married,House / apartment,0,SATURDAY,Unaccompanied,block of flats,"Stone, brick"
+243169,0,1,76500.0,314055.0,13437.0,238500.0,,,,Cash loans,F,N,N,Working,Secondary / secondary special,Civil marriage,House / apartment,0,THURSDAY,"Spouse, partner",,
+421670,0,0,180000.0,508495.5,23562.0,454500.0,3.0,0.0672,Laborers,Cash loans,M,Y,N,Working,Secondary / secondary special,Married,House / apartment,1,SATURDAY,Unaccompanied,block of flats,Panel
+186677,0,0,117000.0,360000.0,18000.0,360000.0,4.0,0.0443,Security staff,Revolving loans,M,Y,N,Working,Secondary / secondary special,Married,Municipal apartment,0,WEDNESDAY,Family,block of flats,Panel
+424754,0,0,382500.0,675000.0,49248.0,675000.0,26.0,,,Cash loans,F,Y,Y,Working,Incomplete higher,Married,House / apartment,0,TUESDAY,Unaccompanied,,
+229515,0,1,180000.0,119448.0,6799.5,94500.0,,0.0559,Medicine staff,Cash loans,F,N,N,Working,Secondary / secondary special,Married,House / apartment,0,WEDNESDAY,Unaccompanied,block of flats,Panel
+313156,0,0,117000.0,408780.0,20011.5,337500.0,64.0,0.072,Sales staff,Cash loans,F,Y,Y,Commercial associate,Incomplete higher,Married,House / apartment,0,MONDAY,"Spouse, partner",block of flats,Panel
+401051,0,0,225000.0,1096020.0,55962.0,900000.0,,0.1013,Security staff,Cash loans,F,N,N,Working,Secondary / secondary special,Married,House / apartment,1,MONDAY,Unaccompanied,specific housing,"Stone, brick"
+170793,0,0,36000.0,225000.0,8613.0,225000.0,10.0,,Cooking staff,Cash loans,F,Y,Y,Working,Secondary / secondary special,Married,House / apartment,0,TUESDAY,Family,,
+405785,0,0,225000.0,1255680.0,41499.0,1125000.0,,0.0709,Medicine staff,Cash loans,F,N,N,State servant,Secondary / secondary special,Civil marriage,With parents,1,TUESDAY,Unaccompanied,block of flats,Panel
+104421,0,0,135000.0,244584.0,16474.5,193500.0,17.0,0.0225,Drivers,Cash loans,M,Y,N,State servant,Higher education,Married,With parents,0,MONDAY,Unaccompanied,block of flats,
+451975,0,0,135000.0,382500.0,14548.5,382500.0,,,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Widow,House / apartment,0,THURSDAY,Unaccompanied,,
+113095,0,0,139500.0,835380.0,36927.0,675000.0,,0.1011,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Married,House / apartment,1,FRIDAY,Children,block of flats,Panel
+419782,0,0,225000.0,991944.0,29002.5,828000.0,,0.1689999999999999,,Cash loans,F,N,N,Commercial associate,Secondary / secondary special,Civil marriage,Municipal apartment,1,THURSDAY,Unaccompanied,block of flats,"Stone, brick"
+351872,0,0,360000.0,363190.5,24268.5,328500.0,14.0,,,Cash loans,M,Y,Y,Working,Secondary / secondary special,Civil marriage,Rented apartment,1,SUNDAY,Unaccompanied,,
+107365,0,0,90000.0,284400.0,16011.0,225000.0,,,,Cash loans,F,N,Y,Pensioner,Lower secondary,Single / not married,House / apartment,1,FRIDAY,Unaccompanied,,
+381673,0,0,180000.0,283500.0,30663.0,283500.0,,,Drivers,Cash loans,M,N,Y,Working,Higher education,Married,House / apartment,0,MONDAY,Unaccompanied,,
+228343,0,0,270000.0,1494486.0,43695.0,1305000.0,,,Laborers,Cash loans,M,N,N,Working,Secondary / secondary special,Single / not married,Rented apartment,1,FRIDAY,Unaccompanied,,
+292661,0,0,270000.0,1030680.0,63184.5,900000.0,8.0,0.252,Drivers,Cash loans,M,Y,Y,Working,Secondary / secondary special,Married,House / apartment,0,TUESDAY,Unaccompanied,block of flats,"Stone, brick"
+219837,0,0,675000.0,1125000.0,56250.0,1125000.0,3.0,0.0906,Managers,Revolving loans,F,Y,Y,Commercial associate,Higher education,Married,House / apartment,0,WEDNESDAY,Unaccompanied,block of flats,Panel
+378903,1,0,171000.0,225000.0,13765.5,225000.0,,0.0556,,Cash loans,F,N,N,Commercial associate,Secondary / secondary special,Married,House / apartment,1,SUNDAY,Family,block of flats,Panel
+231821,0,2,81000.0,911079.0,32278.5,760500.0,20.0,,Laborers,Cash loans,F,Y,Y,Working,Secondary / secondary special,Married,House / apartment,0,THURSDAY,Unaccompanied,,
+331283,0,0,90000.0,90000.0,8901.0,90000.0,7.0,0.1325,Laborers,Cash loans,M,Y,N,Commercial associate,Secondary / secondary special,Married,Municipal apartment,1,MONDAY,Other_A,block of flats,Panel
+266114,0,0,123750.0,239850.0,23494.5,225000.0,23.0,,,Cash loans,F,Y,Y,Pensioner,Secondary / secondary special,Married,House / apartment,1,WEDNESDAY,Unaccompanied,,
+266607,0,1,135000.0,625536.0,22468.5,540000.0,20.0,,Laborers,Cash loans,M,Y,Y,Working,Secondary / secondary special,Civil marriage,House / apartment,1,WEDNESDAY,Unaccompanied,,
+420700,0,1,193500.0,679500.0,38070.0,679500.0,,0.0145,Core staff,Cash loans,F,N,N,Working,Higher education,Married,House / apartment,1,THURSDAY,Unaccompanied,block of flats,"Stone, brick"
+265279,0,0,225000.0,270000.0,13500.0,270000.0,7.0,0.3674,High skill tech staff,Revolving loans,M,Y,Y,Working,Higher education,Married,House / apartment,0,TUESDAY,Unaccompanied,block of flats,Panel
+360251,0,1,180000.0,444420.0,26986.5,337500.0,9.0,,Laborers,Cash loans,M,Y,Y,Working,Higher education,Widow,House / apartment,0,MONDAY,Unaccompanied,,
+199504,0,0,225000.0,585000.0,29250.0,585000.0,,0.104,Core staff,Revolving loans,F,N,Y,Working,Higher education,Married,House / apartment,0,SATURDAY,Family,specific housing,Panel
+122523,0,1,225000.0,360000.0,19660.5,360000.0,4.0,0.2328,Managers,Cash loans,F,Y,Y,Working,Higher education,Single / not married,House / apartment,1,FRIDAY,Unaccompanied,block of flats,Panel
+156726,0,0,180000.0,552555.0,16879.5,477000.0,,0.0222,Laborers,Cash loans,M,N,N,Commercial associate,Secondary / secondary special,Single / not married,Municipal apartment,0,SATURDAY,Unaccompanied,,"Stone, brick"
+367125,0,0,135000.0,284400.0,13963.5,225000.0,,0.3178,,Cash loans,F,N,Y,Commercial associate,Secondary / secondary special,Single / not married,House / apartment,1,TUESDAY,Unaccompanied,block of flats,Panel
+226124,0,1,90000.0,573628.5,25398.0,463500.0,,,Medicine staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,SATURDAY,Unaccompanied,,
+230265,0,0,157500.0,314100.0,21244.5,225000.0,1.0,,Drivers,Cash loans,M,Y,Y,Working,Secondary / secondary special,Single / not married,Rented apartment,0,SUNDAY,Family,,
+444331,0,2,135000.0,1006920.0,40063.5,900000.0,15.0,,Laborers,Cash loans,M,Y,Y,Working,Secondary / secondary special,Married,House / apartment,0,TUESDAY,Unaccompanied,,
+440193,0,0,252000.0,454500.0,23206.5,454500.0,4.0,0.0679,Laborers,Cash loans,M,Y,N,Working,Incomplete higher,Separated,House / apartment,0,TUESDAY,Unaccompanied,block of flats,
+448127,0,1,135000.0,450346.5,24561.0,342000.0,24.0,,Drivers,Cash loans,M,Y,Y,Working,Secondary / secondary special,Married,House / apartment,1,MONDAY,Unaccompanied,,
+230004,1,0,270000.0,675000.0,53460.0,675000.0,,0.0993,Laborers,Cash loans,M,N,Y,Working,Higher education,Married,House / apartment,0,SUNDAY,Unaccompanied,block of flats,Panel
+125948,0,0,180000.0,582804.0,29884.5,463500.0,,,Core staff,Cash loans,F,N,Y,State servant,Secondary / secondary special,Single / not married,Office apartment,0,MONDAY,Other_B,,
+137076,0,0,67500.0,47970.0,4873.5,45000.0,,,Sales staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,TUESDAY,Unaccompanied,,
+324529,0,0,112500.0,382500.0,19125.0,382500.0,,,Managers,Revolving loans,F,N,N,Commercial associate,Higher education,Married,House / apartment,1,SATURDAY,"Spouse, partner",,
+176535,0,0,157500.0,397332.0,31522.5,351000.0,16.0,,Laborers,Cash loans,M,Y,Y,Working,Secondary / secondary special,Married,House / apartment,0,THURSDAY,Family,,
+316817,1,0,382500.0,755190.0,38686.5,675000.0,,,,Cash loans,M,N,Y,Pensioner,Secondary / secondary special,Married,House / apartment,0,WEDNESDAY,Unaccompanied,,
+300005,0,0,675000.0,215640.0,9625.5,180000.0,,,High skill tech staff,Cash loans,M,N,Y,Commercial associate,Higher education,Married,House / apartment,1,THURSDAY,Unaccompanied,,
+197549,0,0,90000.0,646920.0,19044.0,540000.0,,0.0526,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Separated,House / apartment,1,TUESDAY,Unaccompanied,block of flats,"Stone, brick"
+108756,0,0,94500.0,251091.0,26509.5,238500.0,9.0,,Drivers,Cash loans,M,Y,Y,Working,Secondary / secondary special,Civil marriage,House / apartment,0,MONDAY,Unaccompanied,,
+441299,0,0,157500.0,472500.0,18868.5,472500.0,,,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Civil marriage,House / apartment,0,WEDNESDAY,Unaccompanied,,
+390586,0,0,89100.0,1247472.0,47646.0,1147500.0,,,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Married,House / apartment,0,MONDAY,Unaccompanied,,
+293257,0,0,180000.0,805536.0,56191.5,720000.0,1.0,,Drivers,Cash loans,M,Y,Y,Commercial associate,Higher education,Married,House / apartment,0,WEDNESDAY,Unaccompanied,,
+177329,0,1,112500.0,539100.0,27652.5,450000.0,4.0,0.026,Core staff,Cash loans,F,Y,N,Working,Higher education,Married,House / apartment,0,THURSDAY,Unaccompanied,block of flats,"Stone, brick"
+194800,0,1,112500.0,269550.0,19300.5,225000.0,7.0,0.103,Laborers,Cash loans,F,Y,Y,Working,Secondary / secondary special,Civil marriage,Co-op apartment,0,SATURDAY,Other_A,block of flats,"Stone, brick"
+404971,1,0,180000.0,1102500.0,36567.0,1102500.0,,,Laborers,Cash loans,M,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,WEDNESDAY,Unaccompanied,,
+139691,0,2,189000.0,755190.0,38686.5,675000.0,,0.054,Sales staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Single / not married,House / apartment,0,FRIDAY,Unaccompanied,block of flats,Block
+144108,0,0,292500.0,629320.5,30406.5,508500.0,1.0,0.0067,Sales staff,Cash loans,M,Y,Y,Working,Higher education,Married,House / apartment,0,FRIDAY,Unaccompanied,block of flats,
+159810,0,2,112500.0,225000.0,11488.5,225000.0,,0.105,Sales staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,1,THURSDAY,Unaccompanied,block of flats,"Stone, brick"
+268469,0,1,67500.0,225000.0,11250.0,225000.0,,0.1727,Core staff,Revolving loans,F,N,Y,Commercial associate,Higher education,Married,House / apartment,1,WEDNESDAY,Unaccompanied,block of flats,Panel
+358951,0,0,112500.0,450000.0,20979.0,450000.0,,0.0196,Cooking staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,FRIDAY,Family,block of flats,"Stone, brick"
+298017,0,0,90000.0,345510.0,17770.5,247500.0,,0.0621,Laborers,Cash loans,F,N,Y,Commercial associate,Secondary / secondary special,Married,House / apartment,0,THURSDAY,Unaccompanied,block of flats,"Stone, brick"
+234848,0,0,135000.0,103500.0,10363.5,103500.0,,,Core staff,Cash loans,F,N,Y,Working,Higher education,Separated,House / apartment,1,FRIDAY,Unaccompanied,,
+365349,0,0,184500.0,199152.0,10296.0,135000.0,,,Cleaning staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,FRIDAY,Unaccompanied,,
+211493,0,1,157500.0,270000.0,21330.0,270000.0,,0.063,,Cash loans,F,N,N,Working,Higher education,Single / not married,With parents,0,TUESDAY,Unaccompanied,block of flats,Monolithic
+297071,0,0,135000.0,1155226.5,33907.5,904500.0,,,Managers,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,1,WEDNESDAY,Unaccompanied,,
+372630,0,0,157500.0,675000.0,38880.0,675000.0,,0.2273,Core staff,Cash loans,F,N,N,Working,Incomplete higher,Single / not married,House / apartment,0,MONDAY,Unaccompanied,block of flats,"Stone, brick"
+123730,0,2,103500.0,135000.0,6750.0,135000.0,10.0,,Laborers,Revolving loans,F,Y,Y,Working,Secondary / secondary special,Married,House / apartment,0,THURSDAY,Family,,
+320777,0,0,67500.0,81000.0,8851.5,81000.0,,0.0032,Sales staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,MONDAY,Unaccompanied,,
+343058,1,3,135000.0,364896.0,19926.0,315000.0,,,Laborers,Cash loans,M,N,N,Working,Secondary / secondary special,Married,House / apartment,0,MONDAY,Unaccompanied,,
+193540,0,0,67500.0,193572.0,18985.5,171000.0,,,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Widow,House / apartment,0,WEDNESDAY,Unaccompanied,,
+137762,0,1,112500.0,640080.0,24129.0,450000.0,,0.0688,Cleaning staff,Cash loans,F,N,N,Working,Higher education,Married,Office apartment,0,WEDNESDAY,Unaccompanied,block of flats,Panel
+177753,0,2,270000.0,497520.0,39307.5,450000.0,,,Laborers,Cash loans,M,N,N,Working,Secondary / secondary special,Married,Office apartment,0,WEDNESDAY,Unaccompanied,,
+413823,0,0,315000.0,1042560.0,53091.0,900000.0,,0.2627,Managers,Cash loans,F,N,N,Commercial associate,Higher education,Single / not married,House / apartment,0,SUNDAY,Unaccompanied,block of flats,Panel
+102324,0,0,261000.0,1227901.5,46899.0,1129500.0,1.0,0.0173,,Cash loans,F,Y,Y,Pensioner,Secondary / secondary special,Married,House / apartment,0,MONDAY,Unaccompanied,block of flats,Block
+385353,0,0,157500.0,166500.0,9162.0,166500.0,1.0,,Laborers,Cash loans,F,Y,Y,Working,Secondary / secondary special,Civil marriage,House / apartment,0,WEDNESDAY,Unaccompanied,,
+260502,0,0,67500.0,601470.0,25614.0,450000.0,,,Cooking staff,Cash loans,F,N,N,Working,Secondary / secondary special,Married,House / apartment,0,THURSDAY,Unaccompanied,,
+220096,0,1,180000.0,225000.0,11250.0,225000.0,,,Medicine staff,Revolving loans,F,N,Y,Working,Secondary / secondary special,Single / not married,House / apartment,0,TUESDAY,Unaccompanied,,
+413577,0,0,159300.0,513531.0,22747.5,459000.0,,,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Civil marriage,House / apartment,0,TUESDAY,Unaccompanied,,
+265846,0,0,81000.0,286704.0,15138.0,247500.0,,,Cleaning staff,Cash loans,F,N,Y,Commercial associate,Secondary / secondary special,Married,House / apartment,0,SATURDAY,Family,,
+283959,0,0,108000.0,323388.0,21609.0,292500.0,2.0,,Laborers,Cash loans,M,Y,Y,Working,Higher education,Married,House / apartment,0,SATURDAY,Unaccompanied,,
+242085,1,1,180000.0,1057657.5,54130.5,868500.0,20.0,,,Cash loans,M,Y,N,Commercial associate,Incomplete higher,Separated,House / apartment,0,THURSDAY,Unaccompanied,,
+170518,0,0,67500.0,202500.0,10125.0,202500.0,,,Core staff,Revolving loans,F,N,Y,Working,Higher education,Married,House / apartment,0,SATURDAY,Unaccompanied,,
+115722,0,0,270000.0,900000.0,29875.5,900000.0,,0.0616,Accountants,Cash loans,F,N,Y,Commercial associate,Higher education,Separated,House / apartment,0,FRIDAY,Unaccompanied,block of flats,"Stone, brick"
+255453,0,0,180000.0,365175.0,23467.5,301500.0,28.0,0.2948,Laborers,Cash loans,F,Y,N,Working,Secondary / secondary special,Married,House / apartment,0,THURSDAY,Unaccompanied,block of flats,Panel
+439877,0,2,135000.0,405000.0,20250.0,405000.0,6.0,,Accountants,Revolving loans,F,Y,Y,Commercial associate,Higher education,Married,House / apartment,0,FRIDAY,Unaccompanied,,
+297007,0,2,112500.0,849415.5,43501.5,697500.0,,,High skill tech staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,WEDNESDAY,Unaccompanied,,
+455456,0,0,126000.0,679500.0,19998.0,679500.0,,,,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,FRIDAY,Unaccompanied,block of flats,
+171949,0,0,90000.0,229500.0,6957.0,229500.0,0.0,0.128,Managers,Cash loans,M,Y,Y,Working,Higher education,Married,House / apartment,1,SATURDAY,Unaccompanied,,Panel
+395858,0,0,112500.0,229500.0,14940.0,229500.0,,,,Cash loans,F,N,N,Commercial associate,Secondary / secondary special,Single / not married,With parents,0,THURSDAY,Unaccompanied,,
+325841,1,0,112500.0,247500.0,12375.0,247500.0,,,,Revolving loans,M,N,Y,Working,Secondary / secondary special,Married,With parents,1,FRIDAY,Family,,
+418362,0,0,135000.0,439740.0,18630.0,315000.0,,,Waiters/barmen staff,Cash loans,F,N,N,Working,Secondary / secondary special,Separated,House / apartment,0,TUESDAY,Unaccompanied,,
+179431,0,0,157500.0,254700.0,14350.5,225000.0,,0.0742,,Cash loans,F,N,Y,State servant,Higher education,Widow,House / apartment,0,MONDAY,Unaccompanied,block of flats,Panel
+164960,0,0,112500.0,373500.0,10399.5,225000.0,,0.0434,,Cash loans,F,N,Y,Working,Secondary / secondary special,Separated,Municipal apartment,0,WEDNESDAY,Unaccompanied,block of flats,"Stone, brick"
+285088,1,0,157500.0,239850.0,23850.0,225000.0,,0.0548,,Cash loans,M,N,Y,Working,Secondary / secondary special,Single / not married,House / apartment,0,MONDAY,Unaccompanied,block of flats,Block
+333351,0,1,135000.0,301464.0,19395.0,238500.0,,0.0698,Laborers,Cash loans,F,N,Y,Commercial associate,Secondary / secondary special,Separated,House / apartment,1,FRIDAY,Unaccompanied,block of flats,Panel
+395356,0,1,450000.0,473760.0,50400.0,450000.0,13.0,,Managers,Cash loans,F,Y,N,Commercial associate,Higher education,Civil marriage,Municipal apartment,0,SATURDAY,Unaccompanied,,
+362461,1,0,90000.0,517500.0,24894.0,517500.0,,,Sales staff,Cash loans,F,N,N,Commercial associate,Higher education,Separated,House / apartment,0,MONDAY,Unaccompanied,,
+327400,0,0,202500.0,247500.0,12375.0,247500.0,,0.0144,Laborers,Revolving loans,F,N,Y,Working,Secondary / secondary special,Civil marriage,House / apartment,0,TUESDAY,Family,block of flats,"Stone, brick"
+390450,1,0,112500.0,549882.0,17869.5,459000.0,,,,Cash loans,F,N,N,Pensioner,Secondary / secondary special,Widow,House / apartment,1,THURSDAY,Unaccompanied,,
+145621,0,0,126000.0,225000.0,8212.5,225000.0,,,,Cash loans,F,N,Y,Working,Higher education,Married,House / apartment,0,SATURDAY,Unaccompanied,,
+366971,0,1,90000.0,135000.0,6750.0,,,,Sales staff,Revolving loans,F,N,Y,Working,Higher education,Married,House / apartment,0,THURSDAY,,,
+447901,0,0,157500.0,360000.0,28440.0,360000.0,,0.0737,,Cash loans,F,N,Y,Commercial associate,Secondary / secondary special,Married,House / apartment,0,TUESDAY,Unaccompanied,block of flats,Panel
+286620,0,0,166500.0,382500.0,19125.0,382500.0,,0.0704,Drivers,Revolving loans,M,N,Y,Commercial associate,Incomplete higher,Married,House / apartment,1,SATURDAY,Unaccompanied,block of flats,"Stone, brick"
+217017,0,3,45000.0,545040.0,25537.5,450000.0,,,Core staff,Cash loans,F,N,Y,Working,Higher education,Married,House / apartment,1,MONDAY,Unaccompanied,,
+306307,0,0,360000.0,845811.0,61155.0,756000.0,1.0,,Core staff,Cash loans,M,Y,Y,Working,Secondary / secondary special,Single / not married,House / apartment,0,WEDNESDAY,Unaccompanied,,
+172321,0,0,234000.0,755190.0,31995.0,675000.0,0.0,0.0586,Drivers,Cash loans,M,Y,Y,Working,Secondary / secondary special,Married,House / apartment,1,MONDAY,Family,block of flats,Block
+203993,0,0,112500.0,679500.0,27076.5,679500.0,,0.234,Laborers,Cash loans,M,N,Y,Commercial associate,Secondary / secondary special,Single / not married,House / apartment,0,SATURDAY,Unaccompanied,block of flats,Panel
+346783,0,0,203400.0,1125000.0,33025.5,1125000.0,,,,Cash loans,F,N,Y,State servant,Secondary / secondary special,Separated,House / apartment,0,FRIDAY,Unaccompanied,,
+200375,0,0,247500.0,900000.0,29164.5,900000.0,,0.0716,Laborers,Cash loans,M,N,N,Working,Secondary / secondary special,Married,House / apartment,0,FRIDAY,"Spouse, partner",block of flats,"Stone, brick"
+291342,0,0,135000.0,247500.0,12375.0,247500.0,19.0,,,Revolving loans,M,Y,Y,Pensioner,Secondary / secondary special,Married,House / apartment,0,FRIDAY,Unaccompanied,,
+216632,0,0,180000.0,706500.0,20655.0,706500.0,3.0,,High skill tech staff,Cash loans,F,Y,Y,Commercial associate,Secondary / secondary special,Single / not married,House / apartment,1,FRIDAY,Family,,
+262178,0,0,67500.0,640080.0,24259.5,450000.0,,,Laborers,Cash loans,F,N,Y,State servant,Secondary / secondary special,Single / not married,House / apartment,0,MONDAY,Unaccompanied,,
+380259,1,3,67500.0,202500.0,10125.0,202500.0,41.0,,,Revolving loans,F,Y,Y,Working,Secondary / secondary special,Married,House / apartment,1,SUNDAY,Family,,
+244329,0,0,135000.0,755190.0,30078.0,675000.0,,0.0326,Realty agents,Cash loans,F,N,N,Working,Secondary / secondary special,Separated,Municipal apartment,0,WEDNESDAY,Unaccompanied,block of flats,"Stone, brick"
+161738,0,2,202500.0,284256.0,30613.5,270000.0,6.0,0.086,Medicine staff,Cash loans,F,Y,N,Working,Incomplete higher,Married,House / apartment,1,SUNDAY,Unaccompanied,block of flats,"Stone, brick"
+175744,0,0,103500.0,270000.0,13932.0,270000.0,19.0,,Core staff,Cash loans,F,Y,Y,Commercial associate,Secondary / secondary special,Married,House / apartment,0,MONDAY,Family,,
+416186,0,1,135000.0,1288350.0,37800.0,1125000.0,,,,Cash loans,F,N,N,Working,Higher education,Married,House / apartment,0,TUESDAY,Unaccompanied,,
+173208,0,0,180000.0,513531.0,24835.5,459000.0,5.0,,,Cash loans,M,Y,Y,Working,Secondary / secondary special,Married,With parents,0,THURSDAY,Family,,
+345127,0,0,180000.0,808650.0,23773.5,675000.0,,,,Cash loans,M,N,N,Pensioner,Incomplete higher,Married,House / apartment,0,TUESDAY,Family,,
+198939,0,0,54000.0,277969.5,10476.0,229500.0,9.0,0.2941,,Cash loans,M,Y,Y,Pensioner,Higher education,Single / not married,House / apartment,0,MONDAY,Unaccompanied,block of flats,Panel
+368272,0,0,157500.0,675000.0,41296.5,675000.0,11.0,,Core staff,Cash loans,M,Y,N,Working,Secondary / secondary special,Civil marriage,With parents,0,THURSDAY,Unaccompanied,,
+382777,0,0,103500.0,327024.0,11745.0,270000.0,,,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Widow,House / apartment,0,THURSDAY,Unaccompanied,,
+232723,0,0,225000.0,458460.0,25726.5,405000.0,,0.2246,Sales staff,Cash loans,F,N,Y,Commercial associate,Secondary / secondary special,Separated,House / apartment,1,MONDAY,Unaccompanied,block of flats,Panel
+259150,1,0,315000.0,550980.0,43659.0,450000.0,,0.0461,,Cash loans,M,N,N,Pensioner,Secondary / secondary special,Married,House / apartment,1,THURSDAY,Unaccompanied,block of flats,"Stone, brick"
+132365,0,0,99000.0,420894.0,22963.5,301500.0,,,,Cash loans,M,N,Y,Pensioner,Secondary / secondary special,Married,House / apartment,0,WEDNESDAY,Unaccompanied,,
+207215,0,0,99000.0,1078200.0,31653.0,900000.0,10.0,,,Cash loans,M,Y,Y,Pensioner,Secondary / secondary special,Married,House / apartment,0,FRIDAY,Unaccompanied,,
+374312,0,0,135000.0,450000.0,17842.5,450000.0,,,,Cash loans,F,N,N,State servant,Incomplete higher,Married,With parents,0,SATURDAY,Unaccompanied,,
+239077,0,0,112500.0,508495.5,24592.5,454500.0,,,High skill tech staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Civil marriage,House / apartment,0,WEDNESDAY,Other_A,,
+170047,0,1,157500.0,1275772.5,42291.0,1143000.0,,,Sales staff,Cash loans,M,N,N,Working,Higher education,Married,House / apartment,0,MONDAY,Unaccompanied,,
+395277,0,1,135000.0,797557.5,28777.5,688500.0,,,,Cash loans,F,N,Y,Working,Secondary / secondary special,Single / not married,House / apartment,0,FRIDAY,Unaccompanied,,
+317651,0,0,270000.0,728460.0,38938.5,675000.0,,0.1496,Security staff,Cash loans,M,N,Y,Commercial associate,Secondary / secondary special,Married,House / apartment,0,SATURDAY,Family,block of flats,Panel
+375818,0,1,90000.0,314100.0,16164.0,225000.0,,0.0703,Laborers,Cash loans,M,N,Y,Working,Secondary / secondary special,Civil marriage,House / apartment,1,THURSDAY,Unaccompanied,block of flats,"Stone, brick"
+444720,0,0,157500.0,254700.0,24066.0,225000.0,12.0,0.0441,,Cash loans,F,Y,Y,Pensioner,Secondary / secondary special,Married,House / apartment,0,MONDAY,Unaccompanied,block of flats,Panel
+306023,1,2,472500.0,337500.0,16875.0,337500.0,1.0,0.0463,Sales staff,Revolving loans,F,Y,Y,Working,Higher education,Married,House / apartment,1,MONDAY,Unaccompanied,block of flats,"Stone, brick"
+130985,0,0,270000.0,852088.5,31707.0,688500.0,6.0,,Laborers,Cash loans,M,Y,N,Working,Higher education,Married,House / apartment,0,THURSDAY,Unaccompanied,,
+313454,1,0,108000.0,310671.0,24673.5,256500.0,,0.0446,Laborers,Cash loans,M,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,FRIDAY,Family,block of flats,"Stone, brick"
+404904,0,0,90000.0,142632.0,8091.0,126000.0,,0.0732,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Widow,House / apartment,0,FRIDAY,Unaccompanied,block of flats,"Stone, brick"
+404245,0,1,180000.0,405000.0,45805.5,405000.0,17.0,0.2562,Laborers,Cash loans,M,Y,Y,Working,Lower secondary,Single / not married,House / apartment,1,TUESDAY,Unaccompanied,block of flats,Panel
+141848,0,0,265500.0,450000.0,22500.0,450000.0,64.0,0.1583,Drivers,Revolving loans,M,Y,Y,Working,Secondary / secondary special,Married,House / apartment,1,MONDAY,Unaccompanied,block of flats,"Stone, brick"
+435425,0,0,135000.0,239850.0,24705.0,225000.0,9.0,0.0359,Drivers,Cash loans,M,Y,Y,Working,Secondary / secondary special,Married,House / apartment,0,FRIDAY,Unaccompanied,block of flats,Panel
+205257,0,0,33750.0,284400.0,10849.5,225000.0,,,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Married,House / apartment,1,WEDNESDAY,Unaccompanied,,
+349438,0,0,135000.0,213948.0,12411.0,189000.0,,0.1197,,Cash loans,F,N,N,Pensioner,Secondary / secondary special,Widow,Municipal apartment,1,TUESDAY,Unaccompanied,block of flats,"Stone, brick"
+132782,0,0,202500.0,162000.0,8401.5,162000.0,,0.0762,Laborers,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,MONDAY,Unaccompanied,block of flats,"Stone, brick"
+138509,0,0,450000.0,1417495.5,136687.5,1363500.0,,0.3186,,Cash loans,F,N,Y,Pensioner,Higher education,Separated,House / apartment,1,SUNDAY,Unaccompanied,block of flats,Panel
+100656,0,0,54000.0,312768.0,13378.5,270000.0,,,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Married,House / apartment,0,SATURDAY,Unaccompanied,,
+354098,0,0,175500.0,675000.0,32602.5,675000.0,,0.1146,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Single / not married,House / apartment,0,MONDAY,Unaccompanied,block of flats,"Stone, brick"
+419417,1,1,67500.0,219870.0,15003.0,157500.0,22.0,,Core staff,Cash loans,M,Y,Y,Working,Secondary / secondary special,Married,House / apartment,0,MONDAY,Unaccompanied,,
+318083,0,0,202500.0,729792.0,30807.0,630000.0,1.0,0.0837,Drivers,Cash loans,M,Y,N,Working,Secondary / secondary special,Separated,Rented apartment,0,MONDAY,Children,block of flats,Block
+191274,1,0,112500.0,202500.0,10125.0,202500.0,,0.0086,,Revolving loans,F,N,N,Working,Higher education,Civil marriage,House / apartment,1,WEDNESDAY,Unaccompanied,block of flats,Wooden
+229837,0,0,112500.0,508500.0,16402.5,508500.0,,0.0298,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Widow,House / apartment,0,WEDNESDAY,Family,block of flats,"Stone, brick"
+221558,1,0,157500.0,508495.5,35518.5,454500.0,18.0,,Laborers,Cash loans,M,Y,Y,Commercial associate,Secondary / secondary special,Married,House / apartment,1,WEDNESDAY,Unaccompanied,,
+377406,0,0,90000.0,225000.0,12915.0,225000.0,11.0,,Laborers,Cash loans,M,Y,Y,Working,Secondary / secondary special,Civil marriage,House / apartment,1,WEDNESDAY,"Spouse, partner",,
+296339,0,1,450000.0,1339884.0,39307.5,1170000.0,,0.1298,,Cash loans,F,N,N,Working,Secondary / secondary special,Civil marriage,Municipal apartment,0,MONDAY,Unaccompanied,block of flats,Panel
+130075,0,0,157500.0,1288350.0,37800.0,1125000.0,3.0,,Drivers,Cash loans,M,Y,Y,Working,Secondary / secondary special,Married,House / apartment,1,FRIDAY,Unaccompanied,,
+232210,0,1,195750.0,1546020.0,40783.5,1350000.0,12.0,,Laborers,Cash loans,M,Y,N,Commercial associate,Secondary / secondary special,Married,House / apartment,0,WEDNESDAY,Unaccompanied,,
+316148,0,1,270000.0,675000.0,31279.5,675000.0,7.0,0.1265,Core staff,Cash loans,F,Y,Y,Commercial associate,Secondary / secondary special,Married,House / apartment,0,FRIDAY,Unaccompanied,block of flats,Panel
+123224,0,0,216000.0,639396.0,24354.0,571500.0,7.0,,Managers,Cash loans,F,Y,Y,Working,Higher education,Married,House / apartment,0,TUESDAY,Unaccompanied,,
+387265,0,1,270000.0,1350000.0,39604.5,1350000.0,,0.1919,Laborers,Cash loans,M,N,Y,Commercial associate,Higher education,Married,House / apartment,1,WEDNESDAY,Unaccompanied,block of flats,"Stone, brick"
+228498,0,0,94500.0,225000.0,16821.0,225000.0,,0.0078,Laborers,Cash loans,M,N,N,Working,Secondary / secondary special,Single / not married,House / apartment,0,FRIDAY,Unaccompanied,block of flats,"Stone, brick"
+167820,0,0,270000.0,1006920.0,67693.5,900000.0,,,Managers,Cash loans,F,N,Y,Commercial associate,Higher education,Single / not married,House / apartment,0,MONDAY,Unaccompanied,,
+448264,0,1,166500.0,180000.0,9000.0,180000.0,,,,Revolving loans,F,N,Y,Commercial associate,Secondary / secondary special,Married,House / apartment,0,SATURDAY,Unaccompanied,,
+114197,0,0,90000.0,490495.5,29335.5,454500.0,,0.0025,Core staff,Cash loans,F,N,N,Working,Secondary / secondary special,Widow,House / apartment,1,THURSDAY,Unaccompanied,block of flats,Wooden
+238942,0,0,180000.0,254700.0,14751.0,225000.0,,,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Married,House / apartment,0,FRIDAY,Unaccompanied,,
+218063,0,0,28404.0,225000.0,12564.0,225000.0,,,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Married,House / apartment,1,TUESDAY,Family,,
+239858,0,0,225000.0,675000.0,32602.5,675000.0,,0.0605,,Cash loans,F,N,N,Pensioner,Secondary / secondary special,Separated,Municipal apartment,0,TUESDAY,Unaccompanied,block of flats,Panel
+176495,0,2,135000.0,454500.0,27936.0,454500.0,,,Sales staff,Cash loans,F,N,N,Commercial associate,Secondary / secondary special,Married,Office apartment,0,SATURDAY,Unaccompanied,,
+291939,0,0,67500.0,232344.0,12735.0,157500.0,,,Cooking staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,THURSDAY,Unaccompanied,,
+313503,0,0,202500.0,490495.5,35689.5,454500.0,8.0,0.0252,Laborers,Cash loans,F,Y,N,Working,Secondary / secondary special,Married,House / apartment,1,SATURDAY,Unaccompanied,block of flats,Panel
+350761,0,0,90000.0,174132.0,17973.0,157500.0,,,Cleaning staff,Cash loans,F,N,Y,State servant,Secondary / secondary special,Married,House / apartment,0,MONDAY,Unaccompanied,,
+378470,0,2,180000.0,1061599.5,34375.5,927000.0,,0.0201,Sales staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,THURSDAY,Unaccompanied,block of flats,"Stone, brick"
+452587,0,0,180000.0,180000.0,9000.0,180000.0,12.0,0.0556,Drivers,Revolving loans,M,Y,N,Working,Lower secondary,Married,House / apartment,0,TUESDAY,Unaccompanied,block of flats,"Stone, brick"
+122770,0,1,180000.0,270000.0,13500.0,270000.0,,,Accountants,Revolving loans,F,N,Y,Commercial associate,Higher education,Married,House / apartment,0,SATURDAY,Unaccompanied,,
+258574,0,0,112500.0,675000.0,26154.0,675000.0,12.0,0.0426,Core staff,Cash loans,F,Y,N,Commercial associate,Higher education,Married,House / apartment,1,SUNDAY,Unaccompanied,block of flats,"Stone, brick"
+301628,0,0,180000.0,814041.0,23931.0,679500.0,,0.0935,Core staff,Cash loans,F,N,Y,State servant,Higher education,Single / not married,House / apartment,0,FRIDAY,Unaccompanied,block of flats,"Stone, brick"
+406103,0,0,225000.0,1009566.0,33493.5,904500.0,,0.0751,Core staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,WEDNESDAY,"Spouse, partner",block of flats,Panel
+286476,0,0,360000.0,760225.5,34483.5,679500.0,7.0,0.0539,Sales staff,Cash loans,M,Y,N,Commercial associate,Higher education,Married,House / apartment,1,FRIDAY,Unaccompanied,block of flats,"Stone, brick"
+303753,0,1,112500.0,283500.0,13918.5,283500.0,14.0,0.0931,Security staff,Cash loans,M,Y,Y,State servant,Higher education,Married,House / apartment,0,FRIDAY,Unaccompanied,block of flats,Panel
+368796,0,0,112500.0,237384.0,19161.0,216000.0,,0.0083,Medicine staff,Cash loans,F,N,Y,State servant,Secondary / secondary special,Civil marriage,House / apartment,0,FRIDAY,Unaccompanied,block of flats,
+234144,0,0,81000.0,640080.0,24259.5,450000.0,,,,Cash loans,M,N,Y,Working,Secondary / secondary special,Single / not married,House / apartment,0,MONDAY,Unaccompanied,,
+122190,0,0,189000.0,382500.0,19530.0,382500.0,10.0,0.163,Sales staff,Cash loans,M,Y,Y,Commercial associate,Higher education,Married,House / apartment,0,TUESDAY,Unaccompanied,block of flats,Panel
+278693,0,0,112500.0,72000.0,7884.0,72000.0,,0.0183,Laborers,Cash loans,M,N,Y,Working,Incomplete higher,Separated,House / apartment,0,SUNDAY,Unaccompanied,block of flats,"Stone, brick"
+115376,0,0,117000.0,690048.0,20304.0,576000.0,,,,Cash loans,F,N,Y,Pensioner,Lower secondary,Married,House / apartment,1,WEDNESDAY,Family,,
+192993,0,0,157500.0,402696.0,47920.5,382500.0,,0.0083,Cooking staff,Cash loans,F,N,Y,Commercial associate,Secondary / secondary special,Widow,House / apartment,0,TUESDAY,Unaccompanied,block of flats,Wooden
+130826,0,1,270000.0,450000.0,53536.5,450000.0,4.0,,,Cash loans,F,Y,Y,Working,Higher education,Separated,House / apartment,1,WEDNESDAY,Unaccompanied,,
+124106,0,0,166500.0,971280.0,54364.5,900000.0,5.0,0.1062,Accountants,Cash loans,F,Y,Y,Working,Higher education,Married,House / apartment,0,SUNDAY,Unaccompanied,block of flats,Panel
+325746,0,0,135000.0,135000.0,6750.0,135000.0,2.0,0.6076,Laborers,Revolving loans,F,Y,Y,Working,Higher education,Married,House / apartment,0,FRIDAY,Unaccompanied,block of flats,Panel
+243776,0,0,72000.0,441481.5,15988.5,364500.0,,0.0623,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Widow,House / apartment,0,TUESDAY,Unaccompanied,block of flats,Block
+395335,0,0,198000.0,193500.0,15417.0,193500.0,,0.0289,Core staff,Cash loans,F,N,Y,Commercial associate,Secondary / secondary special,Separated,House / apartment,1,FRIDAY,Unaccompanied,block of flats,"Stone, brick"
+374070,0,2,180000.0,538704.0,26046.0,481500.0,6.0,,Laborers,Cash loans,M,Y,Y,Working,Secondary / secondary special,Married,House / apartment,0,WEDNESDAY,Unaccompanied,,
+318789,0,0,162000.0,288994.5,28714.5,274500.0,,0.0535,Laborers,Cash loans,F,N,Y,Commercial associate,Secondary / secondary special,Married,House / apartment,1,TUESDAY,Family,,Block
+194750,0,0,112500.0,1125000.0,36423.0,1125000.0,,,,Cash loans,F,N,N,Working,Secondary / secondary special,Married,With parents,0,TUESDAY,Unaccompanied,,
+335368,0,0,112500.0,180000.0,9000.0,180000.0,,0.0241,Cooking staff,Revolving loans,F,N,Y,Working,Secondary / secondary special,Single / not married,With parents,0,THURSDAY,Unaccompanied,block of flats,Panel
+446386,0,1,202500.0,153310.5,10899.0,139500.0,,0.0503,Laborers,Cash loans,F,N,Y,Commercial associate,Higher education,Separated,House / apartment,0,SATURDAY,Unaccompanied,block of flats,Block
+399908,0,0,90000.0,454500.0,13419.0,454500.0,,,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Married,House / apartment,0,TUESDAY,Unaccompanied,,
+377583,0,0,270000.0,1082214.0,31144.5,945000.0,,0.0432,,Cash loans,F,N,Y,Working,Secondary / secondary special,Separated,House / apartment,0,FRIDAY,Unaccompanied,block of flats,Panel
+117329,0,0,180000.0,450000.0,32742.0,450000.0,,,Laborers,Cash loans,M,N,Y,Commercial associate,Secondary / secondary special,Separated,House / apartment,1,FRIDAY,Other_B,,
+202141,0,1,180000.0,252000.0,12253.5,252000.0,7.0,,,Cash loans,M,Y,N,Working,Secondary / secondary special,Civil marriage,House / apartment,0,FRIDAY,Unaccompanied,,
+140532,0,0,180000.0,247500.0,14337.0,247500.0,12.0,,,Cash loans,F,Y,Y,Pensioner,Secondary / secondary special,Married,House / apartment,0,TUESDAY,Family,,
+239946,0,0,180000.0,540000.0,27000.0,540000.0,,0.0084,Managers,Revolving loans,M,N,Y,Commercial associate,Secondary / secondary special,Married,House / apartment,0,THURSDAY,"Spouse, partner",block of flats,Wooden
+176381,0,2,135000.0,512338.5,25047.0,423000.0,6.0,,Accountants,Cash loans,F,Y,Y,Working,Higher education,Married,House / apartment,0,TUESDAY,Unaccompanied,,
+330628,1,0,76500.0,296280.0,21690.0,225000.0,,,Low-skill Laborers,Cash loans,M,N,Y,Working,Secondary / secondary special,Civil marriage,House / apartment,0,MONDAY,Other_A,,
+262956,0,0,117000.0,545040.0,26509.5,450000.0,,,,Cash loans,M,N,N,Working,Secondary / secondary special,Single / not married,Office apartment,0,MONDAY,Unaccompanied,,
+103402,0,0,112500.0,315000.0,15750.0,315000.0,,0.0733,Laborers,Revolving loans,M,N,N,Working,Secondary / secondary special,Single / not married,With parents,0,TUESDAY,Unaccompanied,block of flats,Panel
+341784,0,0,382500.0,722394.0,26667.0,603000.0,,,Cleaning staff,Cash loans,F,N,Y,Working,Higher education,Single / not married,House / apartment,0,TUESDAY,Unaccompanied,,
+340986,0,0,135000.0,528633.0,36922.5,472500.0,,0.131,,Cash loans,F,N,Y,Pensioner,Higher education,Married,House / apartment,0,MONDAY,Unaccompanied,block of flats,"Stone, brick"
+268622,0,0,157500.0,1029658.5,34159.5,922500.0,4.0,,,Cash loans,F,Y,Y,Pensioner,Secondary / secondary special,Married,House / apartment,0,THURSDAY,Family,,
+209970,0,0,135000.0,755190.0,36459.0,675000.0,,,Medicine staff,Cash loans,F,N,N,Working,Higher education,Married,House / apartment,0,TUESDAY,Unaccompanied,,
+193467,0,1,270000.0,585000.0,29250.0,585000.0,2.0,,Laborers,Revolving loans,M,Y,Y,Commercial associate,Secondary / secondary special,Married,House / apartment,1,SATURDAY,Unaccompanied,,
+186574,0,0,225000.0,592560.0,31153.5,450000.0,,,Sales staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,TUESDAY,Unaccompanied,,
+398055,0,0,157500.0,746280.0,59094.0,675000.0,9.0,0.0976,Managers,Cash loans,F,Y,Y,Working,Higher education,Married,House / apartment,0,THURSDAY,Unaccompanied,block of flats,"Stone, brick"
+102724,0,0,90000.0,254700.0,20119.5,225000.0,12.0,0.1007,Security staff,Cash loans,M,Y,N,Working,Secondary / secondary special,Single / not married,House / apartment,1,MONDAY,Unaccompanied,block of flats,Panel
+212177,0,0,157500.0,1271929.5,50571.0,1170000.0,,0.0732,Core staff,Cash loans,F,N,N,Commercial associate,Incomplete higher,Married,House / apartment,0,FRIDAY,Unaccompanied,block of flats,Block
+341566,0,2,157500.0,436032.0,21339.0,360000.0,,,Medicine staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,1,WEDNESDAY,Unaccompanied,,
+282172,0,0,157500.0,142632.0,9661.5,126000.0,,,,Cash loans,M,N,Y,Pensioner,Secondary / secondary special,Married,House / apartment,0,SUNDAY,Unaccompanied,,
+323336,1,0,450000.0,1354500.0,56029.5,1354500.0,,0.0123,,Cash loans,F,N,Y,Commercial associate,Higher education,Separated,House / apartment,0,SATURDAY,Unaccompanied,block of flats,Others
+275706,0,0,135000.0,900000.0,25924.5,900000.0,,,Sales staff,Cash loans,F,N,N,Commercial associate,Incomplete higher,Married,With parents,0,WEDNESDAY,Unaccompanied,,
+265285,0,0,360000.0,1350000.0,50161.5,1350000.0,,0.2059,Core staff,Cash loans,F,N,Y,State servant,Higher education,Married,House / apartment,0,WEDNESDAY,Unaccompanied,block of flats,Panel
+438623,0,0,225000.0,595453.5,30532.5,445500.0,,0.2145,Sales staff,Cash loans,F,N,N,Working,Secondary / secondary special,Married,Municipal apartment,0,THURSDAY,Unaccompanied,block of flats,Panel
+175467,0,1,135000.0,134775.0,6066.0,112500.0,24.0,,,Cash loans,M,Y,Y,Pensioner,Higher education,Married,House / apartment,0,SATURDAY,Unaccompanied,,
+372494,0,0,135000.0,900000.0,31887.0,900000.0,,,Laborers,Cash loans,M,N,N,Commercial associate,Secondary / secondary special,Married,Office apartment,1,WEDNESDAY,Unaccompanied,,
+273265,0,0,157500.0,1137820.5,48339.0,1017000.0,13.0,,,Cash loans,M,Y,Y,Pensioner,Secondary / secondary special,Married,House / apartment,0,SATURDAY,Unaccompanied,,
+309203,0,0,112500.0,524403.0,36625.5,495000.0,,0.0414,Managers,Cash loans,F,N,Y,Commercial associate,Secondary / secondary special,Married,House / apartment,1,MONDAY,"Spouse, partner",block of flats,Panel
+156126,0,0,157500.0,337500.0,16875.0,337500.0,,0.4658,Laborers,Revolving loans,F,N,Y,Working,Secondary / secondary special,Single / not married,House / apartment,1,TUESDAY,Unaccompanied,block of flats,Panel
+313975,0,1,315000.0,1800000.0,62568.0,1800000.0,,,,Cash loans,F,N,Y,Working,Higher education,Married,House / apartment,1,WEDNESDAY,Unaccompanied,,
+294760,0,1,112500.0,270000.0,13500.0,270000.0,,,,Revolving loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,THURSDAY,Family,,
+286834,0,0,135000.0,450000.0,30442.5,450000.0,,0.2174,Sales staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Single / not married,House / apartment,0,TUESDAY,Unaccompanied,block of flats,Panel
+337789,0,0,72000.0,135000.0,6750.0,135000.0,,0.0161,Security staff,Revolving loans,F,N,Y,Working,Lower secondary,Single / not married,House / apartment,0,SATURDAY,Unaccompanied,block of flats,Block
+242947,0,1,126000.0,513531.0,26347.5,459000.0,8.0,,Laborers,Cash loans,F,Y,Y,Working,Secondary / secondary special,Civil marriage,House / apartment,0,SATURDAY,Unaccompanied,,
+432287,0,1,112500.0,675000.0,22437.0,675000.0,,0.525,Sales staff,Cash loans,F,N,Y,Commercial associate,Secondary / secondary special,Single / not married,House / apartment,0,WEDNESDAY,Unaccompanied,block of flats,Panel
+259703,0,0,157500.0,640080.0,19534.5,450000.0,1.0,0.0888,Drivers,Cash loans,M,Y,N,Working,Secondary / secondary special,Married,House / apartment,0,TUESDAY,Unaccompanied,block of flats,"Stone, brick"
+237742,1,0,382500.0,521280.0,35392.5,450000.0,,,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Married,House / apartment,0,MONDAY,Family,,
+216370,0,0,112500.0,675000.0,24376.5,675000.0,,0.0875,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Single / not married,House / apartment,1,THURSDAY,Unaccompanied,block of flats,"Stone, brick"
+441514,0,0,171000.0,1298911.5,42030.0,1017000.0,,0.1205,Managers,Cash loans,F,N,Y,Working,Higher education,Married,House / apartment,0,THURSDAY,Unaccompanied,block of flats,"Stone, brick"
+148515,0,0,72000.0,101880.0,6939.0,90000.0,8.0,0.1633,Laborers,Cash loans,F,Y,Y,Working,Secondary / secondary special,Married,House / apartment,1,WEDNESDAY,Unaccompanied,block of flats,Panel
+257052,0,0,54000.0,240660.0,8775.0,157500.0,,0.0691,,Cash loans,F,N,N,Pensioner,Secondary / secondary special,Separated,Municipal apartment,0,TUESDAY,Unaccompanied,block of flats,Panel
+380729,0,0,315000.0,942300.0,27679.5,675000.0,10.0,0.0466,Managers,Cash loans,M,Y,Y,State servant,Higher education,Married,House / apartment,1,MONDAY,Unaccompanied,block of flats,"Stone, brick"
+401291,0,0,135000.0,472500.0,21478.5,472500.0,,0.0739,Laborers,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,1,THURSDAY,"Spouse, partner",,Mixed
+218120,0,0,157500.0,567000.0,30339.0,567000.0,19.0,,Cleaning staff,Cash loans,F,Y,Y,Commercial associate,Secondary / secondary special,Married,House / apartment,0,THURSDAY,Unaccompanied,,
+143518,1,0,135000.0,630000.0,24543.0,630000.0,,0.0094,Laborers,Cash loans,F,N,N,Commercial associate,Higher education,Married,House / apartment,0,TUESDAY,Unaccompanied,block of flats,"Stone, brick"
+128417,0,1,67500.0,242595.0,12699.0,202500.0,19.0,,,Cash loans,M,Y,N,Working,Secondary / secondary special,Married,House / apartment,0,TUESDAY,Unaccompanied,,
+121692,0,1,157500.0,1288350.0,37800.0,1125000.0,21.0,0.0248,Laborers,Cash loans,M,Y,Y,Working,Secondary / secondary special,Married,House / apartment,0,SATURDAY,Unaccompanied,block of flats,"Stone, brick"
+141735,0,0,112500.0,450346.5,24561.0,342000.0,,,Drivers,Cash loans,M,N,N,Working,Secondary / secondary special,Married,House / apartment,0,MONDAY,Unaccompanied,,
+112543,0,1,135000.0,373140.0,20965.5,337500.0,6.0,,Drivers,Cash loans,M,Y,N,Commercial associate,Secondary / secondary special,Married,With parents,0,MONDAY,Unaccompanied,,
+183835,0,0,292500.0,993082.5,39514.5,913500.0,,0.2266,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Married,House / apartment,0,FRIDAY,Unaccompanied,block of flats,"Stone, brick"
+214394,0,1,193500.0,1103292.0,39627.0,855000.0,14.0,0.0621,Accountants,Cash loans,F,Y,Y,Working,Secondary / secondary special,Married,House / apartment,1,THURSDAY,Unaccompanied,block of flats,Panel
+111012,0,0,135000.0,835380.0,35523.0,675000.0,,0.0106,Laborers,Cash loans,F,N,N,Working,Secondary / secondary special,Single / not married,With parents,0,FRIDAY,Unaccompanied,block of flats,"Stone, brick"
+262779,0,0,225000.0,585000.0,29250.0,585000.0,,0.221,High skill tech staff,Revolving loans,M,N,Y,Working,Higher education,Married,House / apartment,1,TUESDAY,Unaccompanied,,
+443502,0,0,157500.0,183294.0,16938.0,153000.0,,0.0589,,Cash loans,F,N,Y,Working,Higher education,Married,House / apartment,0,TUESDAY,Unaccompanied,,
+135418,0,1,157500.0,373500.0,10399.5,225000.0,,,Managers,Cash loans,F,N,N,Working,Secondary / secondary special,Married,House / apartment,0,FRIDAY,Unaccompanied,,
+130270,0,0,202500.0,808650.0,23305.5,675000.0,,0.0095,,Cash loans,F,N,N,Pensioner,Secondary / secondary special,Widow,House / apartment,0,WEDNESDAY,Unaccompanied,block of flats,"Stone, brick"
+345052,0,1,297000.0,1354500.0,35860.5,1354500.0,4.0,0.0498,,Cash loans,F,Y,Y,Pensioner,Higher education,Married,House / apartment,1,FRIDAY,Family,block of flats,"Stone, brick"
+240701,0,0,90000.0,127350.0,12532.5,112500.0,17.0,0.4617,,Cash loans,F,Y,Y,Pensioner,Secondary / secondary special,Married,House / apartment,0,TUESDAY,Unaccompanied,block of flats,Panel
+437054,0,0,112500.0,100737.0,10705.5,94500.0,,,Drivers,Cash loans,M,N,N,Working,Higher education,Married,House / apartment,0,TUESDAY,Unaccompanied,,
+407418,0,0,157500.0,86598.0,10404.0,76500.0,,,Managers,Cash loans,F,N,Y,Commercial associate,Incomplete higher,Single / not married,House / apartment,1,THURSDAY,Unaccompanied,,
+442227,0,2,81000.0,923454.0,29920.5,661500.0,16.0,,Sales staff,Cash loans,F,Y,Y,Commercial associate,Secondary / secondary special,Married,House / apartment,0,WEDNESDAY,Unaccompanied,,
+431872,0,0,180000.0,517923.0,33228.0,423000.0,,,Sales staff,Cash loans,F,N,N,Working,Secondary / secondary special,Civil marriage,House / apartment,0,TUESDAY,Family,,
+211758,0,0,265500.0,755190.0,38686.5,675000.0,1.0,0.0113,High skill tech staff,Cash loans,M,Y,Y,Working,Higher education,Married,House / apartment,0,WEDNESDAY,Unaccompanied,block of flats,"Stone, brick"
+301164,0,2,112500.0,170640.0,11236.5,135000.0,,,Laborers,Cash loans,M,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,SATURDAY,Unaccompanied,,
+184610,0,0,112500.0,675000.0,28597.5,675000.0,9.0,0.378,Sales staff,Cash loans,M,Y,Y,Working,Secondary / secondary special,Married,House / apartment,1,WEDNESDAY,Unaccompanied,block of flats,Panel
+330461,0,3,112500.0,1272888.0,41193.0,1111500.0,,,Accountants,Cash loans,F,N,N,Commercial associate,Secondary / secondary special,Married,House / apartment,1,TUESDAY,Unaccompanied,,
+338910,0,0,225000.0,922716.0,48829.5,855000.0,,0.1723,Private service staff,Cash loans,F,N,N,Commercial associate,Higher education,Single / not married,Rented apartment,1,THURSDAY,Unaccompanied,block of flats,"Stone, brick"
+195877,0,0,144000.0,378706.5,20673.0,306000.0,19.0,0.0148,Managers,Cash loans,M,Y,Y,Working,Secondary / secondary special,Married,House / apartment,0,SUNDAY,Family,block of flats,"Stone, brick"
+264216,0,0,202500.0,1258650.0,70281.0,1125000.0,65.0,0.1115,,Cash loans,F,Y,N,Working,Higher education,Married,House / apartment,1,MONDAY,Unaccompanied,block of flats,Panel
+206807,0,1,157500.0,270000.0,13500.0,270000.0,,0.1548,Core staff,Revolving loans,F,N,Y,Working,Higher education,Married,House / apartment,0,TUESDAY,Unaccompanied,block of flats,Panel
+393242,1,0,94500.0,592560.0,35937.0,450000.0,,,Medicine staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,MONDAY,Unaccompanied,,
+452629,1,0,90000.0,326439.0,15345.0,229500.0,,,Medicine staff,Cash loans,F,N,N,State servant,Secondary / secondary special,Civil marriage,Office apartment,0,SATURDAY,Unaccompanied,,
+188667,0,0,139500.0,254700.0,17149.5,225000.0,,0.0397,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Separated,House / apartment,0,WEDNESDAY,Unaccompanied,block of flats,"Stone, brick"
+175405,0,0,157500.0,157500.0,7875.0,157500.0,,,Sales staff,Revolving loans,F,N,Y,Commercial associate,Secondary / secondary special,Single / not married,House / apartment,0,SUNDAY,Unaccompanied,,
+445624,0,0,112500.0,405000.0,19480.5,405000.0,,0.0407,Laborers,Cash loans,M,N,N,Working,Secondary / secondary special,Single / not married,Municipal apartment,0,FRIDAY,Unaccompanied,block of flats,Panel
+326557,1,1,292500.0,1078200.0,34911.0,900000.0,,0.0438,Sales staff,Cash loans,F,N,Y,Commercial associate,Secondary / secondary special,Civil marriage,House / apartment,0,MONDAY,Unaccompanied,block of flats,"Stone, brick"
+150156,0,0,135000.0,256500.0,14449.5,256500.0,,0.0534,Managers,Cash loans,F,N,Y,Working,Higher education,Married,House / apartment,1,TUESDAY,"Spouse, partner",block of flats,"Stone, brick"
+423633,0,1,74250.0,545040.0,20677.5,450000.0,,,Core staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,MONDAY,Family,,
+440057,1,0,135000.0,765261.0,29277.0,684000.0,,,Managers,Cash loans,F,N,Y,Working,Higher education,Married,House / apartment,0,TUESDAY,Family,,
+146134,0,2,247500.0,180000.0,9000.0,180000.0,10.0,,,Revolving loans,M,Y,Y,Working,Secondary / secondary special,Married,Rented apartment,0,TUESDAY,Unaccompanied,,
+115743,0,0,180000.0,900000.0,38263.5,900000.0,1.0,,Core staff,Cash loans,F,Y,Y,State servant,Higher education,Single / not married,House / apartment,0,THURSDAY,Unaccompanied,,
+124877,0,0,135000.0,270000.0,13500.0,270000.0,,0.0828,,Revolving loans,M,N,Y,Commercial associate,Secondary / secondary special,Single / not married,With parents,0,MONDAY,Unaccompanied,block of flats,Block
+247120,1,1,135000.0,592560.0,16627.5,450000.0,,,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Widow,House / apartment,1,THURSDAY,Unaccompanied,,
+179463,0,1,67500.0,225000.0,11250.0,225000.0,0.0,0.2414,Laborers,Revolving loans,F,Y,Y,Commercial associate,Secondary / secondary special,Married,House / apartment,0,SATURDAY,Unaccompanied,block of flats,Panel
+320597,0,1,99000.0,327024.0,18904.5,270000.0,9.0,0.2234,Accountants,Cash loans,F,Y,Y,Working,Secondary / secondary special,Married,House / apartment,1,MONDAY,Unaccompanied,block of flats,Panel
+331780,0,0,157500.0,545040.0,26640.0,450000.0,,0.0173,Sales staff,Cash loans,F,N,Y,Commercial associate,Higher education,Civil marriage,House / apartment,1,FRIDAY,Unaccompanied,block of flats,"Stone, brick"
+314087,0,0,76500.0,94230.0,4810.5,67500.0,,0.0687,Core staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Single / not married,House / apartment,1,TUESDAY,Unaccompanied,block of flats,"Stone, brick"
+382621,0,0,90000.0,225000.0,12204.0,225000.0,11.0,0.0059,Laborers,Cash loans,M,Y,Y,Working,Secondary / secondary special,Married,House / apartment,1,TUESDAY,Unaccompanied,block of flats,"Stone, brick"
+330853,0,0,180000.0,381528.0,23472.0,315000.0,1.0,,Drivers,Cash loans,M,Y,N,Working,Secondary / secondary special,Married,House / apartment,0,WEDNESDAY,Unaccompanied,,
+305740,0,2,202500.0,412542.0,48960.0,387000.0,7.0,,Managers,Cash loans,M,Y,Y,Working,Secondary / secondary special,Married,House / apartment,0,SUNDAY,Unaccompanied,,
+299605,0,0,270000.0,1467612.0,58333.5,1350000.0,8.0,0.1384,,Cash loans,F,Y,N,Commercial associate,Secondary / secondary special,Married,House / apartment,0,FRIDAY,Unaccompanied,block of flats,Panel
+273025,0,1,135000.0,303489.0,19525.5,274500.0,,,Low-skill Laborers,Cash loans,M,N,Y,Working,Secondary / secondary special,Single / not married,House / apartment,0,THURSDAY,Unaccompanied,,
+219721,0,0,144000.0,677664.0,28615.5,585000.0,,,,Cash loans,F,N,N,Commercial associate,Higher education,Widow,House / apartment,0,MONDAY,Unaccompanied,,
+257114,1,1,112500.0,500490.0,51412.5,450000.0,,0.0771,Laborers,Cash loans,M,N,N,Working,Secondary / secondary special,Single / not married,Municipal apartment,0,SUNDAY,Unaccompanied,block of flats,Panel
+199269,0,0,90000.0,270000.0,13500.0,270000.0,13.0,,,Revolving loans,F,Y,Y,Pensioner,Secondary / secondary special,Married,House / apartment,1,MONDAY,Unaccompanied,,
+300251,0,0,225000.0,1125000.0,32895.0,1125000.0,,0.0854,Accountants,Cash loans,F,N,N,Working,Secondary / secondary special,Single / not married,House / apartment,1,MONDAY,Unaccompanied,block of flats,"Stone, brick"
+182721,1,0,81000.0,1125000.0,33025.5,1125000.0,,,Laborers,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,1,THURSDAY,Unaccompanied,,
+108094,1,0,90000.0,202500.0,10125.0,202500.0,,,Sales staff,Revolving loans,F,N,N,Working,Secondary / secondary special,Married,House / apartment,0,THURSDAY,Family,,
+435216,0,0,90000.0,526491.0,23319.0,454500.0,,,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Married,House / apartment,0,TUESDAY,Unaccompanied,,
+204267,0,3,270000.0,1258650.0,53325.0,1125000.0,4.0,,Laborers,Cash loans,M,Y,Y,Working,Secondary / secondary special,Married,House / apartment,1,SUNDAY,Unaccompanied,,
+172862,0,0,180000.0,1078200.0,31653.0,900000.0,,0.2878,,Cash loans,F,N,Y,Pensioner,Higher education,Single / not married,House / apartment,0,WEDNESDAY,Unaccompanied,block of flats,Panel
+342572,1,0,81000.0,450000.0,21109.5,450000.0,,,Drivers,Cash loans,M,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,SUNDAY,Unaccompanied,,
+353689,0,0,225000.0,1687266.0,67045.5,1575000.0,,0.0098,Core staff,Cash loans,M,N,Y,Commercial associate,Secondary / secondary special,Single / not married,House / apartment,0,THURSDAY,Unaccompanied,block of flats,"Stone, brick"
+156279,0,1,225000.0,679500.0,19998.0,679500.0,7.0,0.4487,,Cash loans,F,Y,N,Pensioner,Higher education,Married,House / apartment,0,TUESDAY,Unaccompanied,block of flats,Panel
+145437,1,2,144000.0,269550.0,18364.5,225000.0,,0.0607,Laborers,Cash loans,M,N,Y,Commercial associate,Secondary / secondary special,Married,House / apartment,0,MONDAY,Unaccompanied,block of flats,Panel
+316367,1,1,67500.0,202500.0,10125.0,,,0.0141,Security staff,Revolving loans,M,N,Y,Working,Secondary / secondary special,Married,House / apartment,1,MONDAY,,block of flats,Panel
+249134,0,0,157500.0,760225.5,32337.0,679500.0,,,,Cash loans,F,N,Y,Pensioner,Higher education,Married,House / apartment,1,SATURDAY,Unaccompanied,,
+232732,0,0,112500.0,101880.0,8176.5,90000.0,,0.3995,Laborers,Cash loans,F,N,Y,Commercial associate,Higher education,Separated,House / apartment,0,THURSDAY,Unaccompanied,block of flats,Panel
+180370,0,0,225000.0,354276.0,11443.5,292500.0,,0.4617,,Cash loans,F,N,Y,Pensioner,Higher education,Widow,House / apartment,0,TUESDAY,Unaccompanied,block of flats,Panel
+363929,0,0,180000.0,225000.0,6066.0,225000.0,3.0,,,Cash loans,M,Y,N,Working,Secondary / secondary special,Single / not married,With parents,0,FRIDAY,,,
+451284,0,0,135000.0,1223010.0,54558.0,1125000.0,,,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Married,House / apartment,0,THURSDAY,Family,,
+279241,0,2,45000.0,269550.0,16416.0,225000.0,,,Laborers,Cash loans,F,N,N,Working,Secondary / secondary special,Married,With parents,0,THURSDAY,Family,,
+368510,0,0,67500.0,135000.0,6750.0,135000.0,65.0,0.0183,,Revolving loans,F,Y,N,Commercial associate,Higher education,Separated,House / apartment,1,SATURDAY,Unaccompanied,block of flats,
+206087,0,0,180000.0,422235.0,22234.5,364500.0,,0.0943,Sales staff,Cash loans,F,N,Y,Commercial associate,Secondary / secondary special,Civil marriage,House / apartment,0,FRIDAY,Unaccompanied,block of flats,Panel
+343400,0,0,180000.0,1006920.0,40063.5,900000.0,23.0,,Core staff,Cash loans,F,Y,Y,Working,Secondary / secondary special,Civil marriage,House / apartment,0,THURSDAY,Unaccompanied,,
+132418,0,0,247500.0,775012.5,43407.0,661500.0,,0.0897,Managers,Cash loans,F,N,Y,Commercial associate,Higher education,Married,House / apartment,0,THURSDAY,Unaccompanied,block of flats,Panel
+162533,0,1,135000.0,360000.0,18000.0,360000.0,1.0,,,Revolving loans,F,Y,Y,Commercial associate,Secondary / secondary special,Married,House / apartment,0,TUESDAY,"Spouse, partner",,
+272864,0,0,112500.0,180000.0,9000.0,180000.0,,0.4085,Drivers,Revolving loans,M,N,Y,Working,Secondary / secondary special,Single / not married,House / apartment,1,MONDAY,Unaccompanied,block of flats,Panel
+454050,0,0,67500.0,135000.0,7749.0,135000.0,,,Sales staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Single / not married,House / apartment,1,WEDNESDAY,Unaccompanied,,
+221942,0,0,54000.0,148707.0,14485.5,139500.0,,,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Widow,House / apartment,0,WEDNESDAY,Unaccompanied,,
+383127,0,1,112500.0,135000.0,9261.0,135000.0,,0.3977,Sales staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Separated,House / apartment,0,WEDNESDAY,Unaccompanied,block of flats,Panel
+360159,0,2,112500.0,646344.0,17181.0,423000.0,14.0,,Managers,Cash loans,M,Y,N,Working,Secondary / secondary special,Married,House / apartment,0,FRIDAY,Unaccompanied,,
+358526,0,2,135000.0,224136.0,22297.5,198000.0,16.0,0.0498,Laborers,Cash loans,F,Y,Y,Working,Secondary / secondary special,Married,House / apartment,1,WEDNESDAY,Unaccompanied,block of flats,Panel
+414921,0,0,405000.0,314100.0,17037.0,225000.0,,0.039,Laborers,Cash loans,M,N,N,Commercial associate,Secondary / secondary special,Married,Office apartment,0,FRIDAY,Unaccompanied,block of flats,"Stone, brick"
+314187,0,0,128250.0,1293502.5,35698.5,1129500.0,,,Managers,Cash loans,F,N,Y,Working,Higher education,Married,House / apartment,0,TUESDAY,Unaccompanied,,
+371266,0,0,270000.0,942300.0,30528.0,675000.0,10.0,,,Cash loans,F,Y,Y,Working,Higher education,Married,House / apartment,0,FRIDAY,Unaccompanied,,
+444004,0,0,180000.0,337500.0,17361.0,337500.0,,0.1541,Accountants,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,WEDNESDAY,Unaccompanied,block of flats,Others
+366863,0,1,180000.0,180000.0,9000.0,180000.0,10.0,0.5041,Drivers,Revolving loans,M,Y,Y,Commercial associate,Secondary / secondary special,Civil marriage,House / apartment,0,THURSDAY,Unaccompanied,block of flats,Panel
+447322,0,0,135000.0,480784.5,31549.5,445500.0,,0.2141,,Cash loans,F,N,Y,Pensioner,Higher education,Separated,House / apartment,0,FRIDAY,Family,block of flats,Panel
+155512,0,0,225000.0,900000.0,57649.5,900000.0,,0.1081,Managers,Cash loans,F,N,Y,Commercial associate,Secondary / secondary special,Married,House / apartment,1,SUNDAY,Unaccompanied,block of flats,"Stone, brick"
+415238,0,0,135000.0,270000.0,26433.0,270000.0,,,Managers,Cash loans,M,N,Y,State servant,Higher education,Married,House / apartment,1,SUNDAY,Unaccompanied,,
+414962,0,1,112500.0,203760.0,22072.5,180000.0,,0.0384,,Cash loans,F,N,Y,State servant,Secondary / secondary special,Married,House / apartment,0,FRIDAY,Family,block of flats,
+115316,0,0,405000.0,1575000.0,43312.5,1575000.0,2.0,,Managers,Cash loans,F,Y,Y,State servant,Incomplete higher,Civil marriage,House / apartment,0,MONDAY,Family,,
+356999,0,0,157500.0,292500.0,14625.0,292500.0,21.0,,,Revolving loans,F,Y,N,Pensioner,Secondary / secondary special,Married,House / apartment,0,TUESDAY,Unaccompanied,,
+111068,0,0,90000.0,755190.0,33394.5,675000.0,4.0,0.0892,,Cash loans,F,Y,Y,Pensioner,Higher education,Separated,House / apartment,0,WEDNESDAY,Unaccompanied,block of flats,"Stone, brick"
+260745,0,0,157500.0,555273.0,16366.5,463500.0,2.0,,Core staff,Cash loans,F,Y,Y,State servant,Higher education,Married,House / apartment,0,THURSDAY,Unaccompanied,,
+390786,0,0,189000.0,143910.0,16402.5,135000.0,,,Drivers,Cash loans,M,N,N,Commercial associate,Secondary / secondary special,Married,House / apartment,0,MONDAY,Unaccompanied,,
+344094,0,0,189000.0,900000.0,24750.0,900000.0,,0.0278,,Cash loans,F,N,Y,Commercial associate,Higher education,Civil marriage,House / apartment,0,WEDNESDAY,Unaccompanied,block of flats,Panel
+273827,0,0,180000.0,1078200.0,31522.5,900000.0,,0.1926,Security staff,Cash loans,M,N,N,Commercial associate,Higher education,Single / not married,House / apartment,0,TUESDAY,Unaccompanied,block of flats,Panel
+272092,0,0,112500.0,270000.0,13500.0,270000.0,,,,Revolving loans,F,N,Y,Pensioner,Secondary / secondary special,Married,House / apartment,1,THURSDAY,Family,,
+106910,0,0,175500.0,871335.0,38511.0,715500.0,,0.002,Sales staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Single / not married,House / apartment,0,THURSDAY,Unaccompanied,block of flats,"Stone, brick"
+203497,0,1,175500.0,904500.0,50503.5,904500.0,,0.0688,,Cash loans,F,N,Y,Commercial associate,Secondary / secondary special,Married,House / apartment,1,THURSDAY,Unaccompanied,block of flats,"Stone, brick"
+212741,0,0,238500.0,331920.0,17077.5,225000.0,,0.0111,Laborers,Cash loans,M,N,Y,Working,Secondary / secondary special,Civil marriage,House / apartment,1,THURSDAY,Unaccompanied,block of flats,Panel
+446494,0,0,220500.0,364428.0,10152.0,238500.0,14.0,,Drivers,Cash loans,M,Y,Y,Working,Secondary / secondary special,Married,House / apartment,0,FRIDAY,Family,,
+269825,0,0,90000.0,814041.0,23931.0,679500.0,,,Cooking staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,MONDAY,Family,,
+431878,0,0,225000.0,808650.0,31464.0,675000.0,,,,Cash loans,M,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,MONDAY,Unaccompanied,,
+354040,1,0,211500.0,112500.0,9018.0,112500.0,,,Core staff,Cash loans,F,N,Y,Commercial associate,Higher education,Single / not married,House / apartment,1,THURSDAY,Unaccompanied,,
+425987,0,2,225000.0,1824480.0,57415.5,1575000.0,8.0,0.0688,Laborers,Cash loans,M,Y,Y,Commercial associate,Higher education,Married,House / apartment,0,THURSDAY,Unaccompanied,block of flats,"Stone, brick"
+221088,0,0,180000.0,337500.0,33007.5,337500.0,,0.1652,,Cash loans,M,N,N,Pensioner,Secondary / secondary special,Married,House / apartment,1,SATURDAY,Family,block of flats,Panel
+280182,0,0,81000.0,370629.0,13441.5,306000.0,,0.0343,,Cash loans,F,N,N,Pensioner,Secondary / secondary special,Married,House / apartment,0,TUESDAY,Family,block of flats,Panel
+390704,0,2,306000.0,1176228.0,81864.0,1080000.0,,,Managers,Cash loans,F,N,N,Commercial associate,Secondary / secondary special,Married,House / apartment,0,MONDAY,Unaccompanied,,
+338344,1,1,90000.0,135000.0,12379.5,135000.0,,,Sales staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Civil marriage,House / apartment,0,SATURDAY,Family,,
+455269,0,0,157500.0,521280.0,22216.5,450000.0,,,,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,SATURDAY,Unaccompanied,,
+156075,0,0,117000.0,1256400.0,36864.0,900000.0,,0.1809,Medicine staff,Cash loans,F,N,N,State servant,Higher education,Single / not married,House / apartment,0,SATURDAY,Unaccompanied,block of flats,Panel
+209047,0,0,202500.0,640764.0,17032.5,459000.0,,0.0083,Laborers,Cash loans,M,N,N,Working,Higher education,Married,House / apartment,0,THURSDAY,Unaccompanied,block of flats,"Stone, brick"
+379028,0,0,90000.0,740700.0,24610.5,562500.0,,0.0655,Security staff,Cash loans,F,N,Y,State servant,Secondary / secondary special,Civil marriage,House / apartment,0,MONDAY,Unaccompanied,,
+243974,0,2,310500.0,545040.0,36553.5,450000.0,6.0,,Accountants,Cash loans,F,Y,Y,Commercial associate,Higher education,Married,House / apartment,1,WEDNESDAY,Unaccompanied,,
+182418,0,0,157500.0,1166724.0,34245.0,913500.0,,0.179,Laborers,Cash loans,M,N,Y,Commercial associate,Secondary / secondary special,Married,House / apartment,0,WEDNESDAY,Unaccompanied,block of flats,Panel
+398017,0,0,135000.0,1288350.0,37800.0,1125000.0,,,Laborers,Cash loans,M,N,Y,Working,Secondary / secondary special,Married,House / apartment,1,SATURDAY,Unaccompanied,,
+195024,0,1,112500.0,225000.0,23053.5,225000.0,,0.0844,Core staff,Cash loans,F,N,N,Working,Secondary / secondary special,Married,House / apartment,0,SUNDAY,Unaccompanied,block of flats,Panel
+168266,0,0,247500.0,1319269.5,38704.5,1152000.0,,,Core staff,Cash loans,F,N,Y,State servant,Higher education,Married,House / apartment,1,SUNDAY,"Spouse, partner",,
+401800,0,1,180000.0,382500.0,19125.0,382500.0,8.0,,Core staff,Revolving loans,M,Y,Y,Working,Higher education,Married,House / apartment,0,MONDAY,Unaccompanied,,
+326143,0,0,58500.0,134775.0,6066.0,112500.0,,,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Married,House / apartment,0,WEDNESDAY,Unaccompanied,,
+262610,0,1,202500.0,1325475.0,56290.5,1125000.0,,0.0735,Laborers,Cash loans,F,N,Y,Working,Secondary / secondary special,Civil marriage,House / apartment,0,THURSDAY,Unaccompanied,block of flats,
+159148,0,2,202500.0,270000.0,13500.0,270000.0,9.0,0.2392,,Revolving loans,M,Y,Y,Commercial associate,Higher education,Married,House / apartment,0,SATURDAY,Unaccompanied,block of flats,Panel
+246706,0,0,121500.0,284400.0,19134.0,225000.0,,,Cleaning staff,Cash loans,F,N,N,Working,Lower secondary,Single / not married,Office apartment,0,THURSDAY,Unaccompanied,,
+447558,0,1,112500.0,286704.0,24655.5,247500.0,,0.1457,Security staff,Cash loans,M,N,Y,Working,Secondary / secondary special,Civil marriage,House / apartment,0,THURSDAY,Unaccompanied,block of flats,Panel
+226147,0,3,112500.0,225000.0,11250.0,225000.0,12.0,,,Revolving loans,F,Y,Y,Working,Higher education,Married,House / apartment,0,THURSDAY,Unaccompanied,,
+428487,0,0,292500.0,431280.0,22018.5,360000.0,13.0,,Core staff,Cash loans,M,Y,N,State servant,Secondary / secondary special,Civil marriage,House / apartment,0,TUESDAY,Unaccompanied,,
+445955,0,0,117000.0,454500.0,13153.5,454500.0,,,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Separated,House / apartment,1,THURSDAY,Unaccompanied,,
+446809,0,0,67500.0,180000.0,9000.0,180000.0,,,Private service staff,Revolving loans,F,N,N,Working,Higher education,Married,With parents,0,TUESDAY,Unaccompanied,,
+422649,0,0,112500.0,255960.0,17104.5,202500.0,,0.0079,Laborers,Cash loans,M,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,WEDNESDAY,Unaccompanied,block of flats,"Stone, brick"
+380799,0,0,157500.0,765261.0,32553.0,684000.0,,,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Married,House / apartment,0,MONDAY,Unaccompanied,,
+447922,0,0,135000.0,942300.0,30528.0,675000.0,,,Medicine staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,MONDAY,Family,,
+245073,0,0,540000.0,904500.0,90054.0,904500.0,,,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Married,House / apartment,1,MONDAY,Family,,
+322382,0,0,180000.0,679500.0,68022.0,679500.0,15.0,0.126,Core staff,Cash loans,F,Y,Y,Working,Secondary / secondary special,Civil marriage,House / apartment,0,SATURDAY,Family,block of flats,"Stone, brick"
+438335,0,1,76500.0,135000.0,6750.0,135000.0,,0.0955,Secretaries,Revolving loans,F,N,N,Commercial associate,Secondary / secondary special,Married,House / apartment,0,MONDAY,Unaccompanied,block of flats,Panel
+381632,0,0,103500.0,202500.0,9846.0,202500.0,,,,Cash loans,F,N,N,State servant,Secondary / secondary special,Civil marriage,House / apartment,0,WEDNESDAY,Family,,
+103241,0,1,103500.0,381528.0,18684.0,315000.0,,,Laborers,Cash loans,F,N,N,Working,Secondary / secondary special,Separated,House / apartment,0,THURSDAY,Family,,
+230902,0,0,117000.0,172021.5,12361.5,148500.0,,0.0661,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Married,House / apartment,0,TUESDAY,Unaccompanied,block of flats,Panel
+107858,0,1,180000.0,517788.0,25312.5,427500.0,,,Sales staff,Cash loans,F,N,Y,Commercial associate,Higher education,Married,House / apartment,0,WEDNESDAY,Unaccompanied,,
+256942,0,0,90000.0,127350.0,12726.0,112500.0,,0.2531,Cleaning staff,Cash loans,F,N,N,Working,Secondary / secondary special,Married,Municipal apartment,0,THURSDAY,Unaccompanied,block of flats,"Stone, brick"
+350795,0,0,157500.0,314100.0,19111.5,225000.0,10.0,0.1119,Drivers,Cash loans,M,Y,Y,Working,Secondary / secondary special,Single / not married,House / apartment,0,MONDAY,Unaccompanied,block of flats,Panel
+378530,0,1,90000.0,270000.0,13500.0,270000.0,,,Laborers,Revolving loans,M,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,WEDNESDAY,Other_A,,
+340811,0,1,112500.0,117162.0,12559.5,103500.0,7.0,0.0744,High skill tech staff,Cash loans,F,Y,Y,Working,Secondary / secondary special,Married,House / apartment,0,SUNDAY,Unaccompanied,block of flats,Panel
+286159,0,0,157500.0,512064.0,25033.5,360000.0,7.0,,Laborers,Cash loans,M,Y,Y,State servant,Secondary / secondary special,Married,House / apartment,1,TUESDAY,Unaccompanied,,
+135534,0,2,81000.0,454500.0,23337.0,454500.0,,,Core staff,Cash loans,F,N,Y,Working,Higher education,Married,House / apartment,1,WEDNESDAY,Unaccompanied,,
+167822,0,2,112500.0,587619.0,17311.5,490500.0,,0.0809,Medicine staff,Cash loans,F,N,Y,State servant,Higher education,Married,House / apartment,0,SATURDAY,Unaccompanied,block of flats,"Stone, brick"
+318981,0,0,234000.0,570739.5,55597.5,549000.0,1.0,,Drivers,Cash loans,M,Y,Y,Working,Secondary / secondary special,Married,House / apartment,1,FRIDAY,Unaccompanied,,
+292907,0,0,90000.0,481500.0,21339.0,481500.0,,0.1206,,Cash loans,F,N,Y,Pensioner,Higher education,Single / not married,House / apartment,0,TUESDAY,Unaccompanied,block of flats,Panel
+231367,0,0,112500.0,284400.0,22468.5,225000.0,,,,Cash loans,F,N,Y,State servant,Secondary / secondary special,Single / not married,With parents,0,MONDAY,Unaccompanied,,
+376029,0,1,270000.0,957033.0,51120.0,904500.0,4.0,0.3068,Laborers,Cash loans,M,Y,N,Commercial associate,Secondary / secondary special,Married,House / apartment,0,WEDNESDAY,Unaccompanied,block of flats,Panel
+226848,0,0,180000.0,1042560.0,34587.0,900000.0,,0.0793,Laborers,Cash loans,M,N,N,Commercial associate,Secondary / secondary special,Married,House / apartment,1,THURSDAY,Unaccompanied,block of flats,"Stone, brick"
+104196,0,0,112500.0,180000.0,9000.0,180000.0,0.0,0.3876,Sales staff,Revolving loans,F,Y,Y,Working,Secondary / secondary special,Separated,House / apartment,0,WEDNESDAY,Family,,
+318338,0,0,193500.0,1071909.0,31473.0,936000.0,4.0,,Laborers,Cash loans,F,Y,N,Working,Secondary / secondary special,Married,House / apartment,1,MONDAY,Unaccompanied,,
+301973,0,0,126000.0,454500.0,25375.5,454500.0,6.0,,Core staff,Cash loans,F,Y,Y,Working,Secondary / secondary special,Widow,House / apartment,1,WEDNESDAY,Family,,
+369682,0,1,202500.0,625536.0,25114.5,540000.0,19.0,0.1476,Sales staff,Cash loans,F,Y,N,Working,Secondary / secondary special,Separated,House / apartment,0,MONDAY,Unaccompanied,block of flats,Panel
+258062,0,1,99000.0,267102.0,21415.5,247500.0,15.0,,Drivers,Cash loans,M,Y,N,Working,Secondary / secondary special,Civil marriage,Municipal apartment,1,MONDAY,Unaccompanied,,
+306081,0,0,157500.0,808650.0,26217.0,675000.0,,,Cleaning staff,Cash loans,F,N,Y,Working,Lower secondary,Single / not married,House / apartment,0,FRIDAY,Unaccompanied,,
+410554,0,0,225000.0,900000.0,48082.5,900000.0,,0.0984,Medicine staff,Cash loans,F,N,N,Working,Higher education,Married,House / apartment,1,TUESDAY,Unaccompanied,block of flats,Panel
+205046,0,1,216000.0,640080.0,29970.0,450000.0,,0.439,Core staff,Cash loans,F,N,Y,Commercial associate,Higher education,Married,House / apartment,1,FRIDAY,Family,block of flats,"Stone, brick"
+230798,0,0,135000.0,441481.5,21469.5,364500.0,,,Secretaries,Cash loans,F,N,N,Working,Secondary / secondary special,Civil marriage,With parents,0,FRIDAY,Unaccompanied,,
+232936,0,0,112500.0,566055.0,18387.0,472500.0,,0.0698,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Married,House / apartment,0,THURSDAY,Family,block of flats,"Stone, brick"
+184725,1,0,171000.0,450000.0,22018.5,450000.0,8.0,0.3295,Laborers,Cash loans,M,Y,N,Working,Secondary / secondary special,Married,House / apartment,0,THURSDAY,Unaccompanied,block of flats,Panel
+424669,0,0,225000.0,254700.0,14220.0,225000.0,,0.0487,,Cash loans,F,N,N,Pensioner,Higher education,Single / not married,House / apartment,0,SUNDAY,Unaccompanied,block of flats,"Stone, brick"
+253558,0,0,36000.0,225000.0,10620.0,225000.0,,,Private service staff,Cash loans,F,N,N,Working,Secondary / secondary special,Civil marriage,House / apartment,0,SUNDAY,Unaccompanied,,
+114874,0,0,90000.0,625536.0,20803.5,540000.0,9.0,,,Cash loans,M,Y,Y,Pensioner,Secondary / secondary special,Single / not married,House / apartment,0,THURSDAY,Unaccompanied,,
+363976,0,0,103500.0,1129500.0,35464.5,1129500.0,,0.0236,Core staff,Cash loans,F,N,N,State servant,Higher education,Married,House / apartment,1,WEDNESDAY,Unaccompanied,,"Stone, brick"
+313740,0,0,135000.0,1030500.0,40869.0,1030500.0,,0.1503,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Married,Municipal apartment,0,THURSDAY,Unaccompanied,block of flats,Panel
+391057,0,2,135000.0,73944.0,5971.5,58500.0,,0.0928,Sales staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Separated,House / apartment,1,MONDAY,Unaccompanied,block of flats,"Stone, brick"
+347906,0,0,135000.0,755190.0,36459.0,675000.0,,0.0518,Secretaries,Cash loans,F,N,Y,Commercial associate,Secondary / secondary special,Married,House / apartment,1,THURSDAY,Unaccompanied,block of flats,Others
+377710,0,0,360000.0,675000.0,33750.0,675000.0,2.0,,Managers,Revolving loans,F,Y,Y,Working,Higher education,Single / not married,House / apartment,0,SUNDAY,Unaccompanied,,
+260660,0,1,144000.0,521280.0,23089.5,450000.0,11.0,0.0148,High skill tech staff,Cash loans,M,Y,Y,Working,Secondary / secondary special,Married,House / apartment,1,WEDNESDAY,Unaccompanied,block of flats,"Stone, brick"
+300734,0,1,135000.0,604152.0,29196.0,540000.0,,0.0936,Core staff,Cash loans,M,N,Y,State servant,Secondary / secondary special,Married,House / apartment,1,FRIDAY,Unaccompanied,block of flats,Panel
+276253,0,0,67500.0,101880.0,10971.0,90000.0,,,Accountants,Cash loans,F,N,Y,Commercial associate,Secondary / secondary special,Married,Office apartment,0,THURSDAY,Unaccompanied,,
+194582,0,1,112500.0,275040.0,13504.5,180000.0,,0.1328,Sales staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Civil marriage,House / apartment,0,TUESDAY,Family,block of flats,"Stone, brick"
+326845,0,0,76500.0,663669.0,22063.5,504000.0,,,Cleaning staff,Cash loans,F,N,Y,State servant,Secondary / secondary special,Married,House / apartment,0,FRIDAY,Children,,
+131252,0,0,450000.0,1350000.0,37255.5,1350000.0,3.0,0.0852,Managers,Cash loans,M,Y,N,Commercial associate,Incomplete higher,Married,House / apartment,1,MONDAY,Unaccompanied,block of flats,Panel
+332605,0,0,225000.0,652500.0,28872.0,652500.0,,,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Single / not married,House / apartment,1,TUESDAY,Unaccompanied,,
+154627,0,1,90000.0,270000.0,13261.5,270000.0,,,Sales staff,Cash loans,F,N,N,Commercial associate,Secondary / secondary special,Civil marriage,House / apartment,0,SATURDAY,Unaccompanied,,
+411441,0,0,67500.0,232438.5,17986.5,211500.0,,0.0533,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Married,House / apartment,0,SATURDAY,Unaccompanied,block of flats,"Stone, brick"
+292595,1,0,148500.0,668304.0,24894.0,540000.0,7.0,0.0092,Laborers,Cash loans,M,Y,N,Working,Secondary / secondary special,Married,House / apartment,0,SATURDAY,"Spouse, partner",block of flats,"Stone, brick"
+450292,0,0,225000.0,371245.5,13995.0,261000.0,,,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Married,House / apartment,1,TUESDAY,Family,,
+175301,0,2,315000.0,254700.0,20250.0,225000.0,15.0,,Accountants,Cash loans,F,Y,Y,Working,Higher education,Married,House / apartment,0,MONDAY,Unaccompanied,,
+410422,1,1,166500.0,81666.0,5062.5,58500.0,,0.0441,Managers,Cash loans,F,N,Y,Working,Secondary / secondary special,Single / not married,Municipal apartment,0,MONDAY,Unaccompanied,block of flats,Panel
+325589,0,0,225000.0,270000.0,13500.0,270000.0,6.0,,Drivers,Revolving loans,M,Y,Y,Working,Higher education,Married,House / apartment,0,THURSDAY,Unaccompanied,,
+102240,0,0,180000.0,679500.0,36333.0,679500.0,,,Managers,Cash loans,M,N,N,Working,Higher education,Married,Rented apartment,1,THURSDAY,Unaccompanied,,
+148399,0,0,373230.0,1506816.0,45684.0,1350000.0,,0.066,Accountants,Cash loans,F,N,Y,Working,Higher education,Widow,House / apartment,0,FRIDAY,Unaccompanied,block of flats,Panel
+185218,0,1,157500.0,1123164.0,47718.0,963000.0,,0.1689,,Cash loans,F,N,N,Commercial associate,Higher education,Married,House / apartment,1,SATURDAY,Unaccompanied,block of flats,Panel
+117597,0,1,108000.0,495985.5,24255.0,409500.0,,0.0135,High skill tech staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,WEDNESDAY,Family,block of flats,Wooden
+379419,0,3,112500.0,573628.5,27724.5,463500.0,14.0,,Laborers,Cash loans,M,Y,Y,Working,Secondary / secondary special,Married,House / apartment,0,MONDAY,Unaccompanied,,
+241412,0,1,112500.0,490536.0,18621.0,405000.0,,0.0157,Sales staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Civil marriage,House / apartment,0,THURSDAY,Unaccompanied,block of flats,"Stone, brick"
+421463,0,0,90000.0,248760.0,25488.0,225000.0,,,,Cash loans,M,N,N,Pensioner,Secondary / secondary special,Married,House / apartment,0,FRIDAY,Unaccompanied,,
+210368,0,0,90000.0,508495.5,21672.0,454500.0,4.0,,,Cash loans,F,Y,N,Commercial associate,Secondary / secondary special,Married,House / apartment,1,THURSDAY,Family,,
+342037,0,0,157500.0,180000.0,9000.0,180000.0,5.0,,,Revolving loans,F,Y,Y,Pensioner,Higher education,Civil marriage,House / apartment,0,WEDNESDAY,Unaccompanied,,
+201769,0,0,76500.0,693301.5,23040.0,598500.0,,0.0372,,Cash loans,F,N,Y,Pensioner,Lower secondary,Married,House / apartment,0,SATURDAY,Family,block of flats,Panel
+105526,0,0,229500.0,814041.0,23800.5,679500.0,,0.0405,Managers,Cash loans,F,N,Y,Commercial associate,Secondary / secondary special,Married,House / apartment,1,SUNDAY,Unaccompanied,block of flats,Panel
+264054,0,0,117000.0,284400.0,19134.0,225000.0,,0.0675,Private service staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Single / not married,Co-op apartment,0,THURSDAY,Unaccompanied,block of flats,"Stone, brick"
+140079,0,0,225000.0,180000.0,9000.0,180000.0,,0.1413,,Revolving loans,F,N,N,Working,Secondary / secondary special,Married,House / apartment,0,TUESDAY,Unaccompanied,,
+142520,0,1,360000.0,331632.0,34951.5,315000.0,17.0,,High skill tech staff,Cash loans,M,Y,N,Working,Secondary / secondary special,Civil marriage,Rented apartment,0,MONDAY,Unaccompanied,,
+216559,0,1,343890.0,1147500.0,30267.0,1147500.0,,0.0044,Managers,Cash loans,F,N,N,Commercial associate,Higher education,Single / not married,House / apartment,0,MONDAY,Unaccompanied,block of flats,"Stone, brick"
+183851,0,0,99000.0,1260000.0,34780.5,1260000.0,,0.0088,,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,MONDAY,Unaccompanied,,
+144494,0,2,135000.0,463500.0,23796.0,463500.0,7.0,0.0328,Laborers,Cash loans,F,Y,Y,Working,Secondary / secondary special,Married,House / apartment,0,FRIDAY,Unaccompanied,block of flats,"Stone, brick"
+290912,0,0,72000.0,269550.0,18891.0,225000.0,,,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Married,House / apartment,0,TUESDAY,Unaccompanied,,
+196140,0,0,90000.0,450000.0,22018.5,450000.0,,0.054,,Cash loans,F,N,N,Working,Secondary / secondary special,Single / not married,With parents,0,SUNDAY,Unaccompanied,block of flats,Panel
+373456,0,0,58500.0,99000.0,7794.0,99000.0,,0.0449,,Cash loans,F,N,Y,Pensioner,Incomplete higher,Separated,House / apartment,1,THURSDAY,Children,block of flats,"Stone, brick"
+125866,0,0,540000.0,1211049.0,35536.5,1057500.0,6.0,,Laborers,Cash loans,M,Y,N,Working,Secondary / secondary special,Civil marriage,House / apartment,0,TUESDAY,Unaccompanied,,
+130432,0,0,67500.0,343800.0,16155.0,225000.0,13.0,0.2899,,Cash loans,M,Y,Y,Pensioner,Secondary / secondary special,Married,House / apartment,0,THURSDAY,Unaccompanied,block of flats,Panel
+123986,0,0,135000.0,398160.0,25573.5,315000.0,28.0,,Laborers,Cash loans,M,Y,Y,Working,Secondary / secondary special,Married,House / apartment,0,MONDAY,Family,,
+127121,0,0,270000.0,497520.0,32521.5,450000.0,,0.0289,Sales staff,Cash loans,F,N,Y,Commercial associate,Higher education,Single / not married,House / apartment,1,TUESDAY,Unaccompanied,block of flats,Panel
+340788,0,2,90000.0,247500.0,12375.0,247500.0,1.0,,Core staff,Revolving loans,F,Y,N,Working,Higher education,Married,Office apartment,0,SATURDAY,"Spouse, partner",,
+141866,0,0,135000.0,345510.0,14638.5,247500.0,30.0,,Low-skill Laborers,Cash loans,M,Y,Y,Working,Secondary / secondary special,Married,House / apartment,0,WEDNESDAY,Unaccompanied,,
+179170,0,0,45000.0,247275.0,16600.5,225000.0,6.0,,Sales staff,Cash loans,F,Y,N,Working,Secondary / secondary special,Single / not married,Rented apartment,0,MONDAY,Unaccompanied,,
+258935,0,5,54000.0,180000.0,9000.0,180000.0,9.0,,,Revolving loans,F,Y,N,Working,Secondary / secondary special,Married,House / apartment,0,THURSDAY,Unaccompanied,,
+215764,0,2,810000.0,270000.0,13500.0,270000.0,2.0,0.0429,Managers,Revolving loans,M,Y,Y,Working,Higher education,Married,With parents,1,TUESDAY,Unaccompanied,block of flats,"Stone, brick"
+126495,0,0,225000.0,497520.0,39438.0,450000.0,8.0,0.0727,Managers,Cash loans,M,Y,Y,Commercial associate,Higher education,Civil marriage,House / apartment,0,FRIDAY,Unaccompanied,block of flats,"Stone, brick"
+452473,0,0,112500.0,1066500.0,31180.5,1066500.0,,0.0076,Sales staff,Cash loans,F,N,N,Working,Higher education,Married,House / apartment,1,WEDNESDAY,Unaccompanied,block of flats,"Stone, brick"
+138171,0,3,157500.0,1125000.0,47794.5,1125000.0,16.0,,,Cash loans,F,Y,Y,Working,Secondary / secondary special,Married,House / apartment,0,MONDAY,Family,,
+159429,1,1,135000.0,254700.0,27558.0,225000.0,15.0,,Sales staff,Cash loans,M,Y,N,Working,Secondary / secondary special,Married,With parents,0,SUNDAY,Unaccompanied,,
+105710,0,1,157500.0,170640.0,8428.5,135000.0,,0.0135,Core staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,SATURDAY,Unaccompanied,block of flats,"Stone, brick"
+295002,0,2,225000.0,1023691.5,57289.5,967500.0,0.0,,Core staff,Cash loans,F,Y,Y,Working,Secondary / secondary special,Married,House / apartment,0,TUESDAY,Unaccompanied,,
+229636,0,1,180000.0,417915.0,30411.0,378000.0,,0.0507,Drivers,Cash loans,M,N,N,Working,Secondary / secondary special,Married,House / apartment,1,SATURDAY,Family,block of flats,Panel
+135234,0,0,247500.0,301500.0,13122.0,301500.0,0.0,0.493,Managers,Cash loans,F,Y,N,Commercial associate,Higher education,Married,With parents,0,THURSDAY,"Spouse, partner",block of flats,Panel
+412857,0,0,157500.0,1374480.0,45553.5,1125000.0,,0.2761,,Cash loans,F,N,Y,Working,Higher education,Separated,House / apartment,1,TUESDAY,Unaccompanied,block of flats,Panel
+177071,0,1,135000.0,225000.0,23053.5,225000.0,7.0,0.219,,Cash loans,F,Y,Y,Working,Higher education,Married,Municipal apartment,0,SATURDAY,Family,block of flats,"Stone, brick"
+300946,0,2,337500.0,1436850.0,46480.5,1125000.0,12.0,0.1967,Core staff,Cash loans,M,Y,N,Working,Higher education,Married,House / apartment,0,MONDAY,Unaccompanied,block of flats,Panel
+219844,0,0,202500.0,188460.0,10350.0,135000.0,23.0,0.079,Laborers,Cash loans,M,Y,Y,Working,Secondary / secondary special,Civil marriage,House / apartment,1,FRIDAY,Unaccompanied,block of flats,"Stone, brick"
+228941,0,0,135000.0,382500.0,19125.0,382500.0,,,Core staff,Revolving loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,WEDNESDAY,Unaccompanied,,
+420182,0,0,135000.0,117000.0,12118.5,117000.0,2.0,0.0062,Core staff,Cash loans,F,Y,N,State servant,Higher education,Single / not married,Rented apartment,0,SATURDAY,Unaccompanied,block of flats,Wooden
+167506,0,1,225000.0,270000.0,21460.5,270000.0,,,,Cash loans,M,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,SATURDAY,Unaccompanied,,
+208938,1,2,180000.0,1206000.0,34690.5,1206000.0,,0.0995,Accountants,Cash loans,F,N,N,Working,Secondary / secondary special,Married,House / apartment,0,MONDAY,"Spouse, partner",block of flats,Panel
+449896,0,1,67500.0,202500.0,10125.0,202500.0,,0.0784,Laborers,Revolving loans,F,N,N,Working,Secondary / secondary special,Civil marriage,House / apartment,0,FRIDAY,Family,block of flats,"Stone, brick"
+413601,0,0,180000.0,490495.5,27517.5,454500.0,7.0,0.032,,Cash loans,F,Y,Y,Pensioner,Secondary / secondary special,Widow,House / apartment,0,THURSDAY,Unaccompanied,block of flats,"Stone, brick"
+293979,0,0,90000.0,270000.0,11421.0,270000.0,7.0,,Laborers,Cash loans,F,Y,Y,Working,Secondary / secondary special,Married,House / apartment,0,WEDNESDAY,Family,,
+191646,0,0,360000.0,2013840.0,55377.0,1800000.0,,0.1709,Managers,Cash loans,F,N,N,Commercial associate,Higher education,Married,House / apartment,1,WEDNESDAY,Unaccompanied,block of flats,"Stone, brick"
+374801,0,0,126000.0,552555.0,16879.5,477000.0,,,,Cash loans,F,N,N,Pensioner,Secondary / secondary special,Civil marriage,House / apartment,0,FRIDAY,Children,,
+382652,0,0,252000.0,495000.0,21933.0,495000.0,28.0,0.0578,,Cash loans,F,Y,Y,Pensioner,Higher education,Married,House / apartment,0,MONDAY,Unaccompanied,block of flats,"Stone, brick"
+452201,0,0,193500.0,675000.0,26154.0,675000.0,,0.1766,,Cash loans,M,N,N,Working,Higher education,Married,House / apartment,0,WEDNESDAY,Unaccompanied,block of flats,Panel
+332419,0,0,45000.0,414792.0,18400.5,315000.0,8.0,,Sales staff,Cash loans,F,Y,N,Working,Secondary / secondary special,Married,House / apartment,1,SUNDAY,Children,,
+219214,0,0,382500.0,2250000.0,59485.5,2250000.0,7.0,0.1785,Core staff,Cash loans,F,Y,Y,State servant,Higher education,Married,House / apartment,0,FRIDAY,"Spouse, partner",block of flats,"Stone, brick"
+228226,0,0,90000.0,180000.0,9000.0,180000.0,,,Security staff,Revolving loans,M,N,Y,Commercial associate,Secondary / secondary special,Civil marriage,House / apartment,0,TUESDAY,"Spouse, partner",,
+113409,0,1,225000.0,1928304.0,71590.5,1800000.0,,0.0708,,Cash loans,F,N,Y,Commercial associate,Secondary / secondary special,Married,House / apartment,0,SUNDAY,Family,block of flats,Panel
+416459,0,2,157500.0,192024.0,7366.5,135000.0,,0.0522,Core staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Single / not married,House / apartment,0,THURSDAY,Unaccompanied,block of flats,Panel
+416416,1,0,135000.0,562491.0,15916.5,454500.0,,0.0535,Sales staff,Cash loans,F,N,Y,Commercial associate,Secondary / secondary special,Married,House / apartment,0,WEDNESDAY,Unaccompanied,block of flats,"Stone, brick"
+124139,0,1,130500.0,508495.5,24592.5,454500.0,7.0,0.0537,Managers,Cash loans,F,Y,Y,Working,Secondary / secondary special,Married,House / apartment,0,SATURDAY,Unaccompanied,,
+241452,0,0,166500.0,900000.0,26446.5,900000.0,,,High skill tech staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Civil marriage,Rented apartment,0,THURSDAY,Unaccompanied,,
+356419,0,0,67500.0,90000.0,9351.0,90000.0,8.0,0.0138,,Cash loans,F,Y,Y,Pensioner,Secondary / secondary special,Married,House / apartment,0,SATURDAY,Unaccompanied,block of flats,Wooden
+328885,0,1,180000.0,284400.0,18643.5,225000.0,2.0,,Sales staff,Cash loans,F,Y,Y,Working,Secondary / secondary special,Married,House / apartment,1,THURSDAY,Other_B,,
+395039,0,0,65250.0,225000.0,12694.5,225000.0,,0.0718,,Cash loans,F,N,Y,Pensioner,Higher education,Separated,House / apartment,0,TUESDAY,Unaccompanied,block of flats,Panel
+347108,0,0,202500.0,1129500.0,33025.5,1129500.0,1.0,,Drivers,Cash loans,M,Y,N,Working,Secondary / secondary special,Married,House / apartment,1,MONDAY,Unaccompanied,,
+107656,0,0,121500.0,945000.0,38619.0,945000.0,,0.3872,Drivers,Cash loans,M,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,FRIDAY,Unaccompanied,block of flats,Panel
+382283,0,0,135000.0,180000.0,9000.0,180000.0,,,,Revolving loans,M,N,Y,Commercial associate,Secondary / secondary special,Married,House / apartment,0,FRIDAY,Unaccompanied,,
+368331,0,0,112500.0,571446.0,21123.0,477000.0,,0.0619,Sales staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,MONDAY,Unaccompanied,block of flats,"Stone, brick"
+307474,0,0,67500.0,1030302.0,40860.0,832500.0,12.0,,Accountants,Cash loans,F,Y,N,Working,Higher education,Married,House / apartment,0,MONDAY,Unaccompanied,,
+135122,0,0,94500.0,1125000.0,32895.0,1125000.0,,0.0534,,Cash loans,F,N,Y,Commercial associate,Secondary / secondary special,Married,House / apartment,0,WEDNESDAY,Unaccompanied,block of flats,"Stone, brick"
+379293,0,2,103500.0,808650.0,23643.0,675000.0,2.0,,Core staff,Cash loans,F,Y,N,State servant,Higher education,Married,House / apartment,1,THURSDAY,Unaccompanied,,
+106964,0,0,135000.0,225000.0,16951.5,225000.0,,0.0686,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Widow,House / apartment,1,MONDAY,Unaccompanied,block of flats,"Stone, brick"
+106764,0,0,112050.0,450000.0,22977.0,450000.0,,,Sales staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,1,SUNDAY,Unaccompanied,,
+377861,0,2,135000.0,1777500.0,61915.5,1777500.0,,0.0562,Accountants,Cash loans,F,N,Y,Working,Incomplete higher,Married,House / apartment,0,THURSDAY,Family,block of flats,Panel
+372590,0,0,135000.0,319981.5,21775.5,243000.0,16.0,0.0794,,Cash loans,M,Y,Y,Pensioner,Higher education,Married,House / apartment,0,THURSDAY,Unaccompanied,block of flats,Panel
+227384,0,0,135000.0,508495.5,22527.0,454500.0,,,Secretaries,Cash loans,F,N,N,Commercial associate,Secondary / secondary special,Married,House / apartment,0,THURSDAY,Unaccompanied,,
+362203,1,1,112500.0,545040.0,26640.0,450000.0,19.0,0.0761,Drivers,Cash loans,M,Y,Y,Working,Secondary / secondary special,Civil marriage,House / apartment,1,MONDAY,"Spouse, partner",block of flats,"Stone, brick"
+162318,0,0,292500.0,180000.0,9000.0,180000.0,1.0,0.0619,Laborers,Revolving loans,M,Y,N,Working,Secondary / secondary special,Married,With parents,0,THURSDAY,Unaccompanied,block of flats,"Stone, brick"
+249317,0,0,112500.0,135000.0,6750.0,135000.0,12.0,,Low-skill Laborers,Revolving loans,M,Y,Y,Working,Secondary / secondary special,Married,House / apartment,1,SUNDAY,Unaccompanied,,
+164616,0,2,225000.0,1174005.0,81837.0,1125000.0,0.0,0.0696,Accountants,Cash loans,F,Y,Y,Working,Secondary / secondary special,Married,House / apartment,1,THURSDAY,Unaccompanied,block of flats,Panel
+249312,0,1,135000.0,216000.0,11848.5,216000.0,,0.0013,Sales staff,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,1,THURSDAY,Unaccompanied,,
+165119,0,0,99000.0,234369.0,17185.5,193500.0,,0.0138,,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,WEDNESDAY,Family,block of flats,Panel
+394607,0,1,157500.0,1078200.0,34911.0,900000.0,7.0,0.0618,,Cash loans,F,Y,Y,Pensioner,Secondary / secondary special,Married,Municipal apartment,1,SATURDAY,Unaccompanied,block of flats,"Stone, brick"
+251685,0,0,112500.0,523237.5,25578.0,432000.0,,,Sales staff,Cash loans,F,N,N,Working,Secondary / secondary special,Married,Municipal apartment,1,FRIDAY,Unaccompanied,,
+278793,0,0,270000.0,343377.0,19710.0,283500.0,64.0,0.0761,Accountants,Cash loans,F,Y,Y,Working,Higher education,Single / not married,House / apartment,0,TUESDAY,Unaccompanied,block of flats,"Stone, brick"
+159059,1,0,157500.0,225000.0,14778.0,225000.0,17.0,,Drivers,Cash loans,M,Y,Y,Commercial associate,Secondary / secondary special,Single / not married,House / apartment,0,WEDNESDAY,Unaccompanied,,
+106305,0,2,225000.0,814041.0,23931.0,679500.0,,0.0571,Drivers,Cash loans,M,N,Y,Working,Secondary / secondary special,Single / not married,House / apartment,0,SATURDAY,Unaccompanied,block of flats,Panel
+375884,0,0,67500.0,261000.0,11623.5,261000.0,,0.112,,Cash loans,F,N,Y,Commercial associate,Secondary / secondary special,Single / not married,House / apartment,1,SUNDAY,Unaccompanied,block of flats,Panel
+140716,0,2,112500.0,323388.0,32116.5,292500.0,,0.0778,Laborers,Cash loans,F,N,N,Working,Secondary / secondary special,Married,House / apartment,0,MONDAY,Unaccompanied,block of flats,Panel
+139949,0,0,225000.0,1113840.0,57001.5,900000.0,10.0,,Laborers,Cash loans,M,Y,N,State servant,Secondary / secondary special,Married,Municipal apartment,1,WEDNESDAY,Family,,
+134092,0,0,135000.0,274500.0,14143.5,274500.0,,,,Cash loans,F,N,Y,State servant,Secondary / secondary special,Single / not married,House / apartment,0,WEDNESDAY,Unaccompanied,,
+434117,0,0,243000.0,763056.0,27405.0,630000.0,,0.0369,Accountants,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,1,SATURDAY,"Spouse, partner",block of flats,Block
+357674,0,0,373500.0,1155555.0,41634.0,895500.0,,0.3264,Sales staff,Cash loans,F,N,Y,Commercial associate,Higher education,Married,House / apartment,0,TUESDAY,Family,block of flats,Panel
+150566,0,0,360000.0,585000.0,17235.0,585000.0,1.0,0.2138,Accountants,Cash loans,F,Y,Y,Commercial associate,Higher education,Single / not married,House / apartment,1,MONDAY,Unaccompanied,block of flats,Panel
+453692,0,0,112500.0,514777.5,27553.5,477000.0,,0.3285,,Cash loans,F,N,Y,Commercial associate,Secondary / secondary special,Single / not married,House / apartment,1,SATURDAY,Unaccompanied,block of flats,Block
+163475,0,0,175500.0,202500.0,10467.0,202500.0,,,Laborers,Cash loans,M,N,Y,Commercial associate,Secondary / secondary special,Civil marriage,House / apartment,0,SATURDAY,Unaccompanied,,
+202841,0,0,112500.0,225000.0,12694.5,225000.0,,0.1301,,Cash loans,F,N,Y,Pensioner,Lower secondary,Married,House / apartment,0,SATURDAY,Unaccompanied,block of flats,Panel
+236388,0,0,90000.0,270000.0,13500.0,270000.0,7.0,,,Revolving loans,F,Y,Y,Pensioner,Higher education,Married,House / apartment,1,THURSDAY,Unaccompanied,,
+403591,0,0,135000.0,297130.5,18085.5,256500.0,,,Laborers,Cash loans,M,N,Y,Working,Secondary / secondary special,Married,House / apartment,1,WEDNESDAY,Unaccompanied,,
+142204,0,0,67500.0,168102.0,16506.0,148500.0,,0.0849,Laborers,Cash loans,M,N,N,Working,Secondary / secondary special,Married,House / apartment,0,MONDAY,Unaccompanied,block of flats,"Stone, brick"
+323429,0,0,292500.0,592560.0,35937.0,450000.0,9.0,0.0481,Laborers,Cash loans,M,Y,Y,Working,Secondary / secondary special,Married,House / apartment,0,SATURDAY,Unaccompanied,block of flats,Panel
+288581,0,0,112500.0,900000.0,38263.5,900000.0,,0.4041,Sales staff,Cash loans,F,N,Y,Commercial associate,Secondary / secondary special,Civil marriage,Municipal apartment,1,WEDNESDAY,Family,block of flats,Mixed
+133757,0,0,157500.0,231813.0,10341.0,193500.0,,0.0403,Laborers,Cash loans,M,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,FRIDAY,Unaccompanied,block of flats,Block
+403121,0,0,103500.0,180000.0,9000.0,180000.0,,0.0654,,Revolving loans,F,N,Y,Pensioner,Secondary / secondary special,Separated,House / apartment,0,THURSDAY,Unaccompanied,block of flats,"Stone, brick"
+170866,0,1,184500.0,612612.0,26086.5,495000.0,2.0,0.1362,Managers,Cash loans,M,Y,Y,Working,Higher education,Married,House / apartment,0,WEDNESDAY,Unaccompanied,block of flats,Panel
+260430,1,0,220500.0,497520.0,39438.0,450000.0,,,Laborers,Cash loans,M,N,Y,Working,Secondary / secondary special,Single / not married,House / apartment,0,FRIDAY,Unaccompanied,,
+107560,0,0,216000.0,341280.0,27094.5,270000.0,,0.1715,Laborers,Cash loans,F,N,Y,Commercial associate,Incomplete higher,Single / not married,With parents,0,WEDNESDAY,Unaccompanied,block of flats,Panel
+437024,0,0,202500.0,1155226.5,37395.0,904500.0,12.0,,Managers,Cash loans,M,Y,Y,Commercial associate,Higher education,Married,House / apartment,0,WEDNESDAY,Unaccompanied,,
+271765,1,1,157500.0,380533.5,19557.0,328500.0,,,,Cash loans,F,N,Y,Working,Higher education,Civil marriage,House / apartment,0,TUESDAY,Unaccompanied,,
+292678,0,0,270000.0,363190.5,38268.0,328500.0,,0.0683,Sales staff,Cash loans,F,N,Y,Commercial associate,Higher education,Separated,House / apartment,0,MONDAY,Unaccompanied,block of flats,"Stone, brick"
+231276,0,0,225000.0,958500.0,38011.5,958500.0,,0.1991,,Cash loans,M,N,Y,Working,Higher education,Married,House / apartment,0,THURSDAY,Unaccompanied,block of flats,Panel
+109302,0,2,135000.0,269550.0,19300.5,225000.0,,0.1432,Low-skill Laborers,Cash loans,M,N,N,Working,Secondary / secondary special,Married,Municipal apartment,0,TUESDAY,Unaccompanied,block of flats,"Stone, brick"
+299622,0,2,126000.0,270000.0,13500.0,270000.0,,,Core staff,Revolving loans,F,N,N,State servant,Higher education,Married,House / apartment,0,TUESDAY,Family,,
+268309,0,1,76500.0,348264.0,23404.5,315000.0,,0.0639,Laborers,Cash loans,M,N,Y,State servant,Secondary / secondary special,Married,With parents,0,THURSDAY,Unaccompanied,block of flats,"Stone, brick"
+456125,0,0,315000.0,1391130.0,77809.5,1305000.0,,0.0709,,Cash loans,F,N,Y,Pensioner,Secondary / secondary special,Married,House / apartment,1,THURSDAY,Unaccompanied,block of flats,Panel
+251335,0,2,81000.0,675000.0,21775.5,675000.0,,,,Cash loans,F,N,N,Working,Secondary / secondary special,Married,House / apartment,0,SATURDAY,Unaccompanied,,
+172450,0,0,180000.0,432661.5,18459.0,373500.0,,0.1639999999999999,,Cash loans,F,N,Y,Pensioner,Higher education,Single / not married,House / apartment,0,WEDNESDAY,Unaccompanied,block of flats,"Stone, brick"
+455165,0,0,135000.0,1078200.0,31653.0,900000.0,,0.2752,Laborers,Cash loans,F,N,Y,Working,Secondary / secondary special,Married,House / apartment,0,WEDNESDAY,Family,block of flats,Panel
