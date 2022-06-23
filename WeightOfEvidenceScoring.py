@@ -288,9 +288,11 @@ class WoeEncoder:
             X (pd.DataFrame): Data with discrete feature
             y (pd.Series): Dichotomic response
         """
-        self.features = list(X.columns)
-        X['binary_target'] = y
-        self._woe_encoding_map = dict(ChainMap(*map(lambda feature:self._woe_transformation(X,feature,'binary_target'),self.features)))
+        aux = X.copy()
+        self.features = list(aux.columns)
+
+        aux['binary_target'] = y
+        self._woe_encoding_map = dict(ChainMap(*map(lambda feature:self._woe_transformation(aux,feature,'binary_target'),self.features)))
         self.__is_fitted = True
 
     @staticmethod
@@ -324,12 +326,13 @@ class WoeEncoder:
         Returns:
             pd.DataFrame: WoE encoded data
         """
+        aux = X.copy()
         if not self.__is_fitted:
             raise Exception('Please call fit method first with the required parameters')
         else:
             for feature,woe_map in self._woe_encoding_map.items():
-                X[feature] = X[feature].replace(woe_map)
-            return X
+                aux[feature] = aux[feature].replace(woe_map)
+            return aux
     def inverse_transform(self,X:pd.DataFrame)->pd.DataFrame:
         """Performs Inverse WoE transformation
 
@@ -393,6 +396,7 @@ class WoeBaseFeatureSelector:
         """
         aux = pd.concat([X,y],axis=1)
         aux.columns = ['x','y']
+        aux = aux.loc[aux['x']!='MISSING'].reset_index(drop=True)
         aux = aux.groupby('x').mean()
         aux = list(aux['y'])
         return (len(aux)>=2) and ((sorted(aux) == aux)|(list(reversed(sorted(aux)))==aux))
