@@ -12,6 +12,12 @@ from sklearn.linear_model import LogisticRegression
 from multiprocessing import Pool
 
 def frequency_table(df:pd.DataFrame,var:list):
+    """Displays a frequency table 
+
+    Args:
+        df (pd.DataFrame): Data
+        var (list): List of variables 
+    """
     if type(var)==str:
         var = [var]
     for v in var:
@@ -647,13 +653,3 @@ class CreditScoring:
                     aux[feature].replace(points_map,inplace=True)
                 aux['score'] = aux[features].sum(axis=1) 
                 return aux
-                
-
-
-        
-        
-        
-
-
-
-        
