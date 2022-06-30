@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CreditScoringToolkit package &mdash; Credit Scoring Toolkit 1.0.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="CreditScoringToolkit" href="modules.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> Credit Scoring Toolkit
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">CreditScoringToolkit</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">CreditScoringToolkit package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-CreditScoringToolkit.CreditScoring">CreditScoringToolkit.CreditScoring module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-CreditScoringToolkit.DiscreteNormalizer">CreditScoringToolkit.DiscreteNormalizer module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-CreditScoringToolkit.Discretizer">CreditScoringToolkit.Discretizer module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-CreditScoringToolkit.WoeBaseFeatureSelector">CreditScoringToolkit.WoeBaseFeatureSelector module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-CreditScoringToolkit.WoeContinuousFeatureSelector">CreditScoringToolkit.WoeContinuousFeatureSelector module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-CreditScoringToolkit.WoeDiscreteFeatureSelector">CreditScoringToolkit.WoeDiscreteFeatureSelector module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-CreditScoringToolkit.WoeEncoder">CreditScoringToolkit.WoeEncoder module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-CreditScoringToolkit.frequency_table">CreditScoringToolkit.frequency_table module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-CreditScoringToolkit">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Credit Scoring Toolkit</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="modules.html">CreditScoringToolkit</a> &raquo;</li>
+      <li>CreditScoringToolkit package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/CreditScoringToolkit.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="creditscoringtoolkit-package">
+<h1>CreditScoringToolkit package<a class="headerlink" href="#creditscoringtoolkit-package" title="Permalink to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-CreditScoringToolkit.CreditScoring">
+<span id="creditscoringtoolkit-creditscoring-module"></span><h2>CreditScoringToolkit.CreditScoring module<a class="headerlink" href="#module-CreditScoringToolkit.CreditScoring" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="CreditScoringToolkit.CreditScoring.CreditScoring">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">CreditScoringToolkit.CreditScoring.</span></span><span class="sig-name descname"><span class="pre">CreditScoring</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pdo</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">20</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">base_score</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">400</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">base_odds</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/CreditScoringToolkit/CreditScoring.html#CreditScoring"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CreditScoringToolkit.CreditScoring.CreditScoring" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Implements credit risk scorecards following the methodology proposed in
+Siddiqi, N. (2012). Credit risk scorecards: developing and implementing intelligent credit scoring (Vol. 3). John Wiley &amp; Sons.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="CreditScoringToolkit.CreditScoring.CreditScoring.alpha">
+<span class="sig-name descname"><span class="pre">alpha</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#CreditScoringToolkit.CreditScoring.CreditScoring.alpha" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="CreditScoringToolkit.CreditScoring.CreditScoring.base_odds">
+<span class="sig-name descname"><span class="pre">base_odds</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#CreditScoringToolkit.CreditScoring.CreditScoring.base_odds" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="CreditScoringToolkit.CreditScoring.CreditScoring.base_score">
+<span class="sig-name descname"><span class="pre">base_score</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#CreditScoringToolkit.CreditScoring.CreditScoring.base_score" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="CreditScoringToolkit.CreditScoring.CreditScoring.betas">
+<span class="sig-name descname"><span class="pre">betas</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#CreditScoringToolkit.CreditScoring.CreditScoring.betas" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="CreditScoringToolkit.CreditScoring.CreditScoring.factor">
+<span class="sig-name descname"><span class="pre">factor</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#CreditScoringToolkit.CreditScoring.CreditScoring.factor" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="CreditScoringToolkit.CreditScoring.CreditScoring.features">
+<span class="sig-name descname"><span class="pre">features</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#CreditScoringToolkit.CreditScoring.CreditScoring.features" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="CreditScoringToolkit.CreditScoring.CreditScoring.fit">
+<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Xw:</span> <span class="pre">~pandas.core.frame.DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">woe_encoder:</span> <span class="pre">&lt;module</span> <span class="pre">'CreditScoringToolkit.WoeEncoder'</span> <span class="pre">from</span> <span class="pre">'/home/jose/cloudsync/code/woe_credit_scoring/CreditScoringToolkit/WoeEncoder.py'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">logistic_regression:</span> <span class="pre">~sklearn.linear_model._logistic.LogisticRegression</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/CreditScoringToolkit/CreditScoring.html#CreditScoring.fit"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CreditScoringToolkit.CreditScoring.CreditScoring.fit" title="Permalink to this definition"></a></dt>
+<dd><p>Learns scoring map</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>Xw</strong> (<em>pd.DataFrame</em>) – WoE transformed data</p></li>
+<li><p><strong>woe_encoder</strong> (<a class="reference internal" href="#CreditScoringToolkit.WoeEncoder.WoeEncoder" title="CreditScoringToolkit.WoeEncoder.WoeEncoder"><em>WoeEncoder</em></a>) – WoE encoder fitted object</p></li>
+<li><p><strong>logistic_regression</strong> (<em>LogisticRegression</em>) – Fitted logistic regression model</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="CreditScoringToolkit.CreditScoring.CreditScoring.logistic_regression">
+<span class="sig-name descname"><span class="pre">logistic_regression</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#CreditScoringToolkit.CreditScoring.CreditScoring.logistic_regression" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="CreditScoringToolkit.CreditScoring.CreditScoring.n">
+<span class="sig-name descname"><span class="pre">n</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#CreditScoringToolkit.CreditScoring.CreditScoring.n" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="CreditScoringToolkit.CreditScoring.CreditScoring.offset">
+<span class="sig-name descname"><span class="pre">offset</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#CreditScoringToolkit.CreditScoring.CreditScoring.offset" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="CreditScoringToolkit.CreditScoring.CreditScoring.pdo">
+<span class="sig-name descname"><span class="pre">pdo</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#CreditScoringToolkit.CreditScoring.CreditScoring.pdo" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="CreditScoringToolkit.CreditScoring.CreditScoring.scorecard">
+<span class="sig-name descname"><span class="pre">scorecard</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#CreditScoringToolkit.CreditScoring.CreditScoring.scorecard" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="CreditScoringToolkit.CreditScoring.CreditScoring.scoring_map">
+<span class="sig-name descname"><span class="pre">scoring_map</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#CreditScoringToolkit.CreditScoring.CreditScoring.scoring_map" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="CreditScoringToolkit.CreditScoring.CreditScoring.transform">
+<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">DataFrame</span></span></span><a class="reference internal" href="_modules/CreditScoringToolkit/CreditScoring.html#CreditScoring.transform"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CreditScoringToolkit.CreditScoring.CreditScoring.transform" title="Permalink to this definition"></a></dt>
+<dd><p>Converts discrete data to scores</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>X</strong> (<em>pd.DataFrame</em>) – Discrete predictor data</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>Exception</strong> – If fit method is not called first.</p></li>
+<li><p><strong>Exception</strong> – If a fitted feature is not present in data.</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Total score and scores for each feature</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>pd.DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-CreditScoringToolkit.DiscreteNormalizer">
+<span id="creditscoringtoolkit-discretenormalizer-module"></span><h2>CreditScoringToolkit.DiscreteNormalizer module<a class="headerlink" href="#module-CreditScoringToolkit.DiscreteNormalizer" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="CreditScoringToolkit.DiscreteNormalizer.DiscreteNormalizer">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">CreditScoringToolkit.DiscreteNormalizer.</span></span><span class="sig-name descname"><span class="pre">DiscreteNormalizer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">normalization_threshold</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.05</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default_category</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'OTHER'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/CreditScoringToolkit/DiscreteNormalizer.html#DiscreteNormalizer"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CreditScoringToolkit.DiscreteNormalizer.DiscreteNormalizer" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class for normalizing discrete data for a given relative frequency threshold</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="CreditScoringToolkit.DiscreteNormalizer.DiscreteNormalizer.X">
+<span class="sig-name descname"><span class="pre">X</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#CreditScoringToolkit.DiscreteNormalizer.DiscreteNormalizer.X" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="CreditScoringToolkit.DiscreteNormalizer.DiscreteNormalizer.default_category">
+<span class="sig-name descname"><span class="pre">default_category</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#CreditScoringToolkit.DiscreteNormalizer.DiscreteNormalizer.default_category" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="CreditScoringToolkit.DiscreteNormalizer.DiscreteNormalizer.features">
+<span class="sig-name descname"><span class="pre">features</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#CreditScoringToolkit.DiscreteNormalizer.DiscreteNormalizer.features" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="CreditScoringToolkit.DiscreteNormalizer.DiscreteNormalizer.fit">
+<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/CreditScoringToolkit/DiscreteNormalizer.html#DiscreteNormalizer.fit"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CreditScoringToolkit.DiscreteNormalizer.DiscreteNormalizer.fit" title="Permalink to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>Learns discrete normalization mapping taking into account the following rules:</dt><dd><ol class="arabic simple">
+<li><p>All missing values will be filled with the category ‘MISSING’</p></li>
+<li><p>Categories which relative frequency is less than normalization threshold will be mapped to default_category</p></li>
+<li><p>If default_category as a group doesn’t reach the relative frequency threshold, then it will be mapped to the most frequent category</p></li>
+</ol>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>X</strong> (<em>pd.DataFrame</em>) – Data to be normalized</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>Exception</strong> – If provided data is not a pandas DataFrame object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="CreditScoringToolkit.DiscreteNormalizer.DiscreteNormalizer.mode">
+<span class="sig-name descname"><span class="pre">mode</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#CreditScoringToolkit.DiscreteNormalizer.DiscreteNormalizer.mode" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="CreditScoringToolkit.DiscreteNormalizer.DiscreteNormalizer.new_categories">
+<span class="sig-name descname"><span class="pre">new_categories</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#CreditScoringToolkit.DiscreteNormalizer.DiscreteNormalizer.new_categories" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="CreditScoringToolkit.DiscreteNormalizer.DiscreteNormalizer.normalization_map">
+<span class="sig-name descname"><span class="pre">normalization_map</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#CreditScoringToolkit.DiscreteNormalizer.DiscreteNormalizer.normalization_map" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="CreditScoringToolkit.DiscreteNormalizer.DiscreteNormalizer.normalization_threshold">
+<span class="sig-name descname"><span class="pre">normalization_threshold</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#CreditScoringToolkit.DiscreteNormalizer.DiscreteNormalizer.normalization_threshold" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="CreditScoringToolkit.DiscreteNormalizer.DiscreteNormalizer.transform">
+<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">DataFrame</span></span></span><a class="reference internal" href="_modules/CreditScoringToolkit/DiscreteNormalizer.html#DiscreteNormalizer.transform"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CreditScoringToolkit.DiscreteNormalizer.DiscreteNormalizer.transform" title="Permalink to this definition"></a></dt>
+<dd><p>Transforms Discrete data into its normalized form</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>X</strong> (<em>pd.DataFrame</em>) – Data to be transformed</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>Exception</strong> – If fit method not called previously</p></li>
+<li><p><strong>Exception</strong> – If features analyzed during fit are not present in X</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Normalized discrete data</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>pd.DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-CreditScoringToolkit.Discretizer">
+<span id="creditscoringtoolkit-discretizer-module"></span><h2>CreditScoringToolkit.Discretizer module<a class="headerlink" href="#module-CreditScoringToolkit.Discretizer" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="CreditScoringToolkit.Discretizer.Discretizer">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">CreditScoringToolkit.Discretizer.</span></span><span class="sig-name descname"><span class="pre">Discretizer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">min_segments</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_segments</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strategy</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'quantile'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/CreditScoringToolkit/Discretizer.html#Discretizer"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CreditScoringToolkit.Discretizer.Discretizer" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class for discretizing continuous data into bins</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="CreditScoringToolkit.Discretizer.Discretizer.X">
+<span class="sig-name descname"><span class="pre">X</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#CreditScoringToolkit.Discretizer.Discretizer.X" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="CreditScoringToolkit.Discretizer.Discretizer.edges_map">
+<span class="sig-name descname"><span class="pre">edges_map</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#CreditScoringToolkit.Discretizer.Discretizer.edges_map" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="CreditScoringToolkit.Discretizer.Discretizer.features">
+<span class="sig-name descname"><span class="pre">features</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#CreditScoringToolkit.Discretizer.Discretizer.features" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="CreditScoringToolkit.Discretizer.Discretizer.fit">
+<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_threads</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/CreditScoringToolkit/Discretizer.html#Discretizer.fit"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CreditScoringToolkit.Discretizer.Discretizer.fit" title="Permalink to this definition"></a></dt>
+<dd><p>Learns discretization edges
+:param X: data to be discretized
+:type X: pd.DataFrame
+:param n_threads: number of pooling threads. Defaults to 1.
+:type n_threads: int, optional</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="CreditScoringToolkit.Discretizer.Discretizer.make_pool">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">make_pool</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">params</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">threads</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span></span></span><a class="reference internal" href="_modules/CreditScoringToolkit/Discretizer.html#Discretizer.make_pool"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CreditScoringToolkit.Discretizer.Discretizer.make_pool" title="Permalink to this definition"></a></dt>
+<dd><p>executes a function with a set of parameters using pooling threads</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>func</strong> (<em>function</em>) – function to be executed</p></li>
+<li><p><strong>params</strong> (<em>list</em>) – list of tuples, each tuple is a parameter combination</p></li>
+<li><p><strong>threads</strong> (<em>int</em>) – number of pooling threads to use</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>all execution results in a list</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="CreditScoringToolkit.Discretizer.Discretizer.max_segments">
+<span class="sig-name descname"><span class="pre">max_segments</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">5</span></em><a class="headerlink" href="#CreditScoringToolkit.Discretizer.Discretizer.max_segments" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="CreditScoringToolkit.Discretizer.Discretizer.min_segments">
+<span class="sig-name descname"><span class="pre">min_segments</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#CreditScoringToolkit.Discretizer.Discretizer.min_segments" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="CreditScoringToolkit.Discretizer.Discretizer.strategy">
+<span class="sig-name descname"><span class="pre">strategy</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'quantile'</span></em><a class="headerlink" href="#CreditScoringToolkit.Discretizer.Discretizer.strategy" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="CreditScoringToolkit.Discretizer.Discretizer.transform">
+<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_threads</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">DataFrame</span></span></span><a class="reference internal" href="_modules/CreditScoringToolkit/Discretizer.html#Discretizer.transform"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CreditScoringToolkit.Discretizer.Discretizer.transform" title="Permalink to this definition"></a></dt>
+<dd><p>Transforms continuous data into its discrete form</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>X</strong> (<em>pd.DataFrame</em>) – Data to be discretized</p></li>
+<li><p><strong>n_threads</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of pooling threads to speed computation. Defaults to 1.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>Exception</strong> – If fit method not called previously</p></li>
+<li><p><strong>Exception</strong> – If features analyzed during fit are not present in X</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Discretized Data</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>pd.DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-CreditScoringToolkit.WoeBaseFeatureSelector">
+<span id="creditscoringtoolkit-woebasefeatureselector-module"></span><h2>CreditScoringToolkit.WoeBaseFeatureSelector module<a class="headerlink" href="#module-CreditScoringToolkit.WoeBaseFeatureSelector" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="CreditScoringToolkit.WoeBaseFeatureSelector.WoeBaseFeatureSelector">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">CreditScoringToolkit.WoeBaseFeatureSelector.</span></span><span class="sig-name descname"><span class="pre">WoeBaseFeatureSelector</span></span><a class="reference internal" href="_modules/CreditScoringToolkit/WoeBaseFeatureSelector.html#WoeBaseFeatureSelector"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CreditScoringToolkit.WoeBaseFeatureSelector.WoeBaseFeatureSelector" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Base class for selecting features based on their WoE transformation and
+Information Value statistic.</p>
+</dd></dl>
+
+</section>
+<section id="module-CreditScoringToolkit.WoeContinuousFeatureSelector">
+<span id="creditscoringtoolkit-woecontinuousfeatureselector-module"></span><h2>CreditScoringToolkit.WoeContinuousFeatureSelector module<a class="headerlink" href="#module-CreditScoringToolkit.WoeContinuousFeatureSelector" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="CreditScoringToolkit.WoeContinuousFeatureSelector.WoeContinuousFeatureSelector">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">CreditScoringToolkit.WoeContinuousFeatureSelector.</span></span><span class="sig-name descname"><span class="pre">WoeContinuousFeatureSelector</span></span><a class="reference internal" href="_modules/CreditScoringToolkit/WoeContinuousFeatureSelector.html#WoeContinuousFeatureSelector"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CreditScoringToolkit.WoeContinuousFeatureSelector.WoeContinuousFeatureSelector" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#CreditScoringToolkit.WoeBaseFeatureSelector.WoeBaseFeatureSelector" title="CreditScoringToolkit.WoeBaseFeatureSelector.WoeBaseFeatureSelector"><code class="xref py py-class docutils literal notranslate"><span class="pre">WoeBaseFeatureSelector</span></code></a></p>
+<p>Class for selecting continuous features based on their WoE transformation and
+Information Value statistic.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="CreditScoringToolkit.WoeContinuousFeatureSelector.WoeContinuousFeatureSelector.discretizers">
+<span class="sig-name descname"><span class="pre">discretizers</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#CreditScoringToolkit.WoeContinuousFeatureSelector.WoeContinuousFeatureSelector.discretizers" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="CreditScoringToolkit.WoeContinuousFeatureSelector.WoeContinuousFeatureSelector.fit">
+<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Series</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'quantile'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">iv_threshold</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_bins</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_bins</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_threads</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strictly_monotonic</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/CreditScoringToolkit/WoeContinuousFeatureSelector.html#WoeContinuousFeatureSelector.fit"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CreditScoringToolkit.WoeContinuousFeatureSelector.WoeContinuousFeatureSelector.fit" title="Permalink to this definition"></a></dt>
+<dd><p>Learns the best features given an IV threshold. Monotonic risk restriction can be applied.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>X</strong> (<em>pd.DataFrame</em>) – Predictors data</p></li>
+<li><p><strong>y</strong> (<em>pd.Series</em>) – Dichotomic response feature</p></li>
+<li><p><strong>method</strong> (<em>str</em><em>, </em><em>optional</em>) – {‘quantile’,’uniform’,’kmeans’,’gaussian’,’dcc’,’dec’}. Discretization</p></li>
+<li><p><strong>quantile</strong> (<em>technique. For</em>) – </p></li>
+<li><p><strong>uniform</strong> – </p></li>
+<li><p><strong>dce</strong> (<em>kmeans and gaussian only one method is applied. Regarding dcc and</em>) – </p></li>
+<li><p><strong>methods</strong> (<em>Discrete Competitive Combination and Discrete Exhaustive Combination respectively</em>) – </p></li>
+<li><p><strong>dcc</strong> – Selects the best discretization method for each predictor-</p></li>
+<li><p><strong>dec</strong> – Includes the best feasible discretization for each method so they can complement each other.</p></li>
+<li><p><strong>'quantile'.</strong> (<em>Defaults to</em>) – </p></li>
+<li><p><strong>iv_threshold</strong> (<em>float</em><em>, </em><em>optional</em>) – IV value for a feature to be included in final selection. Defaults to 0.1.</p></li>
+<li><p><strong>min_bins</strong> (<em>int</em><em>, </em><em>optional</em>) – Minimun number of discretization bins. Defaults to 2.</p></li>
+<li><p><strong>max_bins</strong> (<em>int</em><em>, </em><em>optional</em>) – Maximun number of discretization bins. Defaults to 5.</p></li>
+<li><p><strong>n_threads</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of multiprocessing threads. Defaults to 1.</p></li>
+<li><p><strong>strictly_monotonic</strong> (<em>bool</em><em>, </em><em>optional</em>) – Indicates if only monotonic risk features should be selected.</p></li>
+<li><p><strong>False.</strong> (<em>Defaults to</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>Exception</strong> – If strictly_monotonic=True and no monotonic feature is present in the final selection.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="CreditScoringToolkit.WoeContinuousFeatureSelector.WoeContinuousFeatureSelector.selected_features">
+<span class="sig-name descname"><span class="pre">selected_features</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#CreditScoringToolkit.WoeContinuousFeatureSelector.WoeContinuousFeatureSelector.selected_features" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="CreditScoringToolkit.WoeContinuousFeatureSelector.WoeContinuousFeatureSelector.transform">
+<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">DataFrame</span></span></span><a class="reference internal" href="_modules/CreditScoringToolkit/WoeContinuousFeatureSelector.html#WoeContinuousFeatureSelector.transform"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CreditScoringToolkit.WoeContinuousFeatureSelector.WoeContinuousFeatureSelector.transform" title="Permalink to this definition"></a></dt>
+<dd><p>Converts continuous features to their best discretization</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>X</strong> (<em>pd.DataFrame</em>) – Continuous predictors data.</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>Exception</strong> – If fit method is not called first.</p></li>
+<li><p><strong>Exception</strong> – If a fitted feature is not present in data.</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Best discretization transformed data.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>pd.DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-CreditScoringToolkit.WoeDiscreteFeatureSelector">
+<span id="creditscoringtoolkit-woediscretefeatureselector-module"></span><h2>CreditScoringToolkit.WoeDiscreteFeatureSelector module<a class="headerlink" href="#module-CreditScoringToolkit.WoeDiscreteFeatureSelector" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="CreditScoringToolkit.WoeDiscreteFeatureSelector.WoeDiscreteFeatureSelector">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">CreditScoringToolkit.WoeDiscreteFeatureSelector.</span></span><span class="sig-name descname"><span class="pre">WoeDiscreteFeatureSelector</span></span><a class="reference internal" href="_modules/CreditScoringToolkit/WoeDiscreteFeatureSelector.html#WoeDiscreteFeatureSelector"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CreditScoringToolkit.WoeDiscreteFeatureSelector.WoeDiscreteFeatureSelector" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#CreditScoringToolkit.WoeBaseFeatureSelector.WoeBaseFeatureSelector" title="CreditScoringToolkit.WoeBaseFeatureSelector.WoeBaseFeatureSelector"><code class="xref py py-class docutils literal notranslate"><span class="pre">WoeBaseFeatureSelector</span></code></a></p>
+<p>Class for selecting discrete features based on their WoE transformation and
+Information Value statistic.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="CreditScoringToolkit.WoeDiscreteFeatureSelector.WoeDiscreteFeatureSelector.fit">
+<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Series</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">iv_threshold</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.1</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/CreditScoringToolkit/WoeDiscreteFeatureSelector.html#WoeDiscreteFeatureSelector.fit"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CreditScoringToolkit.WoeDiscreteFeatureSelector.WoeDiscreteFeatureSelector.fit" title="Permalink to this definition"></a></dt>
+<dd><p>Learns best features given an IV threshold.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>X</strong> (<em>pd.DataFrame</em>) – Discrete predictors data</p></li>
+<li><p><strong>y</strong> (<em>pd.Series</em>) – Dichotomic response feature</p></li>
+<li><p><strong>iv_threshold</strong> (<em>float</em><em>, </em><em>optional</em>) – IV value for a feature to be included in final selection. Defaults to 0.1.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="CreditScoringToolkit.WoeDiscreteFeatureSelector.WoeDiscreteFeatureSelector.transform">
+<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">DataFrame</span></span></span><a class="reference internal" href="_modules/CreditScoringToolkit/WoeDiscreteFeatureSelector.html#WoeDiscreteFeatureSelector.transform"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CreditScoringToolkit.WoeDiscreteFeatureSelector.WoeDiscreteFeatureSelector.transform" title="Permalink to this definition"></a></dt>
+<dd><p>Transforms data keeping only the selected features</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>X</strong> (<em>pd.DataFrame</em>) – Discrete predictors data</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>Exception</strong> – If fit method is not called first.</p></li>
+<li><p><strong>Exception</strong> – If a fitted feature is not present in data.</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Data containing best discrete features</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>pd.DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-CreditScoringToolkit.WoeEncoder">
+<span id="creditscoringtoolkit-woeencoder-module"></span><h2>CreditScoringToolkit.WoeEncoder module<a class="headerlink" href="#module-CreditScoringToolkit.WoeEncoder" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="CreditScoringToolkit.WoeEncoder.WoeEncoder">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">CreditScoringToolkit.WoeEncoder.</span></span><span class="sig-name descname"><span class="pre">WoeEncoder</span></span><a class="reference internal" href="_modules/CreditScoringToolkit/WoeEncoder.html#WoeEncoder"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CreditScoringToolkit.WoeEncoder.WoeEncoder" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class for encoding discrete features into Weight of Evidence(WoE) transformation</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="CreditScoringToolkit.WoeEncoder.WoeEncoder.features">
+<span class="sig-name descname"><span class="pre">features</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#CreditScoringToolkit.WoeEncoder.WoeEncoder.features" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="CreditScoringToolkit.WoeEncoder.WoeEncoder.fit">
+<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Series</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/CreditScoringToolkit/WoeEncoder.html#WoeEncoder.fit"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CreditScoringToolkit.WoeEncoder.WoeEncoder.fit" title="Permalink to this definition"></a></dt>
+<dd><p>Learns WoE encoding</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>X</strong> (<em>pd.DataFrame</em>) – Data with discrete feature</p></li>
+<li><p><strong>y</strong> (<em>pd.Series</em>) – Dichotomic response</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="CreditScoringToolkit.WoeEncoder.WoeEncoder.inverse_transform">
+<span class="sig-name descname"><span class="pre">inverse_transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">DataFrame</span></span></span><a class="reference internal" href="_modules/CreditScoringToolkit/WoeEncoder.html#WoeEncoder.inverse_transform"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CreditScoringToolkit.WoeEncoder.WoeEncoder.inverse_transform" title="Permalink to this definition"></a></dt>
+<dd><p>Performs Inverse WoE transformation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>X</strong> (<em>pd.DataFrame</em>) – WoE data to be transformed</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>Exception</strong> – If fit method not called previously</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>WoE encoded data</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>pd.DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="CreditScoringToolkit.WoeEncoder.WoeEncoder.transform">
+<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">DataFrame</span></span></span><a class="reference internal" href="_modules/CreditScoringToolkit/WoeEncoder.html#WoeEncoder.transform"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CreditScoringToolkit.WoeEncoder.WoeEncoder.transform" title="Permalink to this definition"></a></dt>
+<dd><p>Performs WoE transformation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>X</strong> (<em>pd.DataFrame</em>) – Discrete data to be transformed</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>Exception</strong> – If fit method not called previously</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>WoE encoded data</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>pd.DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-CreditScoringToolkit.frequency_table">
+<span id="creditscoringtoolkit-frequency-table-module"></span><h2>CreditScoringToolkit.frequency_table module<a class="headerlink" href="#module-CreditScoringToolkit.frequency_table" title="Permalink to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="CreditScoringToolkit.frequency_table.frequency_table">
+<span class="sig-prename descclassname"><span class="pre">CreditScoringToolkit.frequency_table.</span></span><span class="sig-name descname"><span class="pre">frequency_table</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/CreditScoringToolkit/frequency_table.html#frequency_table"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CreditScoringToolkit.frequency_table.frequency_table" title="Permalink to this definition"></a></dt>
+<dd><p>Displays a frequency table</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>df</strong> (<em>pd.DataFrame</em>) – Data</p></li>
+<li><p><strong>var</strong> (<em>list</em>) – List of variables</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-CreditScoringToolkit">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-CreditScoringToolkit" title="Permalink to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="modules.html" class="btn btn-neutral float-left" title="CreditScoringToolkit" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, José Fuentes,Daniel Valtierra.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
