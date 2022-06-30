@@ -26,7 +26,7 @@
 In finance is a common practice to create risk scorecards to assess the credit worthiness for a given customer. Unfortunately, out of the box credit scoring tools are quite expensive and scatter, that's why we created this toolkit: to empower all credit scoring practicioners and spread the use of weight of evidence based scoring techniques for alternative uses cases (virtually any binary classification problem).
 
 <br />
-<a href="docs/_build/html/index.html"><strong>Explore the documentation»</strong></a>
+<a href="docs/build/html/index.html"><strong>Explore the documentation»</strong></a>
 <br />
 <a href="https://github.com/JGFuentesC/woe_credit_scoring/issues">Report Bug</a>
 
