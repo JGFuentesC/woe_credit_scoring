@@ -76,7 +76,8 @@ class Discretizer:
         if strategy!='gaussian':
             kb = KBinsDiscretizer(n_bins=nbins,encode='ordinal',strategy=strategy)
             kb.fit(nonmiss[[feature]])
-            return {'feature':feature,'nbins':nbins,'edges':list(kb.bin_edges_[0])}
+            edges = list(kb.bin_edges_[0])
+            return {'feature':feature,'nbins':nbins,'edges':[-np.inf]+edges[1:-1]+[np.inf]}
         elif strategy == 'gaussian':
             kb = GaussianMixture(n_components=nbins)
             kb.fit(nonmiss[[feature]])
@@ -86,7 +87,7 @@ class Discretizer:
             edges.sort_values(by='lower_bound',inplace=True)
             edges = list(edges['lower_bound'])+list(edges['upper_bound'])[-1:]
             edges = sorted(set(edges))
-            return {'feature':feature,'nbins':nbins,'edges':edges}
+            return {'feature':feature,'nbins':nbins,'edges':[-np.inf]+edges[1:-1]+[np.inf]}
 
     @staticmethod
     def _encode(X:pd.DataFrame,feature:str,nbins:int,edges:list,strategy:str)->pd.DataFrame:
