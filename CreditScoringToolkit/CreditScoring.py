@@ -64,7 +64,7 @@ class CreditScoring:
         X = Xw.copy()
         self.betas = list(logistic_regression.coef_[0])
         self.alpha = logistic_regression.intercept_[0]
-        self.features = dict(zip(logistic_regression.feature_names_in_,self.betas))
+        self.features = dict(zip(Xw.columns,self.betas))
         self.n = len(self.betas)
         for feature,beta in self.features.items():
             X[f'P_{feature}'] = np.floor((-X[feature]*beta+self.alpha/self.n)*self.factor+self.offset/self.n).astype(int)
