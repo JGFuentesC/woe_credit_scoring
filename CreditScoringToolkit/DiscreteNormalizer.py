@@ -66,6 +66,7 @@ class DiscreteNormalizer:
         """
        
         aux = X[feature].value_counts(1).to_frame()
+        aux.columns = [feature]
         aux['mapping'] = np.where(aux[feature]<threshold,default_category,aux.index)
         mode = aux.head(1)['mapping'].values[0]
         if aux.loc[aux['mapping']==default_category][feature].sum()<threshold:
