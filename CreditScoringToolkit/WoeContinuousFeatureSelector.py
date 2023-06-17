@@ -12,6 +12,7 @@ class WoeContinuousFeatureSelector(WoeBaseFeatureSelector):
     __is_fitted = False 
     _Xd = None 
     discretizers = None 
+    iv_report = None
 
     def __init__(self) -> None:
         super().__init__()
@@ -64,6 +65,8 @@ class WoeContinuousFeatureSelector(WoeBaseFeatureSelector):
             else:
                 disc_features = [x for x,y in mono.items() if y]
         iv = [(feature,self._information_value(self._Xd[feature],self._Xd['binary_target'])) for feature in disc_features]
+        self.iv_report = pd.DataFrame(iv,columns=['feature','iv'])
+        self.iv_report['relevant'] = self.iv_report['iv']>=iv_threshold
         iv = [(feature,value) for feature,value in iv if value>=iv_threshold]
         iv = pd.DataFrame(iv,columns=['feature','iv'])
         iv['root_feature'] = iv['feature'].map(lambda x:"_".join(x.split('_')[1:-2]))
@@ -71,14 +74,17 @@ class WoeContinuousFeatureSelector(WoeBaseFeatureSelector):
         iv['method'] = iv['feature'].map(lambda x:x.split('_')[-1])
         if method in ('quantile','uniform','kmeans','gaussian','dcc'):
             iv = iv.sort_values(by=['root_feature','iv','nbins'],ascending=[True,False,True]).reset_index(drop=True)
-            iv['index'] = iv.groupby('root_feature').cumcount()+1
+            iv['index'] = iv.groupby('root_feature').cumcount()+1            
         elif method == 'dec':
             iv = iv.sort_values(by=['root_feature','method','iv','nbins'],ascending=[True,True,False,True]).reset_index(drop=True)
             iv['index'] = iv.groupby(['root_feature','method']).cumcount()+1
         iv = iv.loc[iv['index']==1].reset_index(drop=True)
+        self.iv_report['selected'] = self.iv_report['feature'].isin(iv.loc[iv['index']==1,'feature'])
+        self.iv_report.sort_values(by=['selected','relevant'],ascending=[False,False],inplace=True)
         cont_features = list(set(iv['root_feature']))
         for disc in self.discretizers:
                 disc.fit(X[cont_features],n_threads=n_threads) 
+        
         self.selected_features =  iv.drop('index',axis=1).to_dict(orient='records')
         self.__is_fitted = True
     

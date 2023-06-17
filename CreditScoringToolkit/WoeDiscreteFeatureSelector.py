@@ -6,6 +6,7 @@ class WoeDiscreteFeatureSelector(WoeBaseFeatureSelector):
         Class for selecting discrete features based on their WoE transformation and 
         Information Value statistic. 
     """
+    iv_report = None 
     def __init__(self):
         super().__init__()
     
@@ -21,6 +22,9 @@ class WoeDiscreteFeatureSelector(WoeBaseFeatureSelector):
         aux = X.copy()
         aux['binary_target'] = y 
         iv = [(feature,self._information_value(aux[feature],aux['binary_target'])) for feature in disc_features]
+        self.iv_report = pd.DataFrame(iv,columns=['feature','iv'])
+        self.iv_report['selected'] = self.iv_report['iv']>=iv_threshold
+        self.iv_report.sort_values('selected',ascending=False,inplace=True)
         iv = [(feature,value) for feature,value in iv if value>=iv_threshold]
         iv = pd.DataFrame(iv,columns=['feature','iv'])
         disc_features = list(iv['feature'])
