@@ -780,7 +780,7 @@ Project Link: [https://github.com/JGFuentesC/woe_credit_scoring](https://github.
 ## Citing  
 If you use this software in scientific publications, we would appreciate citations to the following paper:
 
-[Credit scoring model for payroll issuers: a real case](https://link.springer.com/chapter/10.1007/978-3-319-27101-9_42) Fuentes-Cabrera, J., & Pérez-Vicente, H. (2015, October). (pp. 547-559). Springer, Cham.
+[Combination of Unsupervised Discretization Methods for Credit Risk](https://journals.plos.org/plosone/article/authors?id=10.1371/journal.pone.0289130) José G. Fuentes Cabrera, Hugo A. Pérez Vicente, Sebastián Maldonado,Jonás Velasco
 
 <p  align="right">(<a  href="#top">back to top</a>)</p>
 
