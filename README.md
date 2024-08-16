@@ -769,8 +769,6 @@ Distributed under the GNU General Public License v3.0 License. See `LICENSE` for
 ## Contact
 
 José G Fuentes - [@jgusteacher](https://twitter.com/jgusteacher) - jose.gustavo.fuentes@comunidad.unam.mx
-
-Daniel Valtierra - [@jgusteacher](https://twitter.com/jgusteacher) - jose.gustavo.fuentes@comunidad.unam.mx
   
 
 Project Link: [https://github.com/JGFuentesC/woe_credit_scoring](https://github.com/JGFuentesC/woe_credit_scoring)
