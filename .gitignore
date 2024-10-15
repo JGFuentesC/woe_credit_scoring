@@ -1,10 +1,7 @@
 # Byte-compiled / optimized / DLL files
-__pycache__/
+**/__pycache__/
 *.py[cod]
 *$py.class
-
-# C extensions
-*.so
 
 # Distribution / packaging
 .Python
@@ -128,3 +125,5 @@ dmypy.json
 #pip
 pyproject.toml
 setup.py
+
+**/.venv/

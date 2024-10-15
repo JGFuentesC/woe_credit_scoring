@@ -110,6 +110,6 @@ class DiscreteNormalizer:
                             replacement = self.default_category
                         else:
                             replacement = self.normalization_map[feat]['mode']
-                        aux[feat].replace(dict(zip(new_categories,repeat(replacement))),inplace=True)
-                    aux[feat].replace(mapping,inplace=True)
+                        aux[feat] = aux[feat].replace(dict(zip(new_categories,repeat(replacement))))
+                    aux[feat] = aux[feat].replace(mapping)
                 return aux 
