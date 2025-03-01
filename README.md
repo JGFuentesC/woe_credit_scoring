@@ -343,7 +343,7 @@ frequency_table(Xt,vard)
 
 
 ```python
-unary = [v for v in vard if Xt[v].nunique==1]
+unary = [v for v in vard if Xt[v].nunique()==1]
 unary
 ```
 
