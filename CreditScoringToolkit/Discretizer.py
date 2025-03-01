@@ -4,135 +4,162 @@ from sklearn.preprocessing import KBinsDiscretizer
 from sklearn.mixture import GaussianMixture
 from functools import reduce
 from multiprocessing import Pool
+from typing import List, Tuple, Dict, Union
 
 class Discretizer:
-    """ 
-        Class for discretizing continuous data into bins
     """
-    __is_fitted = False 
-    X = None
-    min_segments = 2
-    max_segments = 5
-    strategy = 'quantile' 
-    features = None
-    edges_map = {} 
+    Discretizer class for transforming continuous data into discrete bins.
 
-    def __init__(self,min_segments:int=2,max_segments:int=5,strategy:str='quantile') -> None:
+    This class provides methods to fit a discretization model to continuous data and transform the data into discrete bins.
+    It supports multiple discretization strategies including 'uniform', 'quantile', 'kmeans', and 'gaussian'.
+    The class uses parallel processing to speed up the computation when dealing with large datasets.
+
+    Attributes:
+        min_segments (int): Minimum number of bins to create.
+        max_segments (int): Maximum number of bins to create.
+        strategy (str): Discretization strategy to use.
+        X (pd.DataFrame): The input data used for fitting the model.
+        features (List[str]): List of feature names in the input data.
+        edges_map (Dict): Dictionary mapping features to their respective bin edges.
+        __is_fitted (bool): Flag indicating whether the model has been fitted.
+
+    Methods:
+        _make_pool(func, params, threads): Executes a function with a set of parameters using pooling threads.
+        fit(X, n_threads): Learns discretization edges from the input data.
+        transform(X, n_threads): Transforms continuous data into its discrete form.
+        _discretize(X, feature, nbins, strategy): Discretizes a series into a specified number of bins using the given strategy.
+        _encode(X, feature, nbins, edges, strategy): Encodes a continuous feature into a discrete bin.
+    """
+    def __init__(self, min_segments: int = 2, max_segments: int = 5, strategy: str = 'quantile') -> None:
+        self.__is_fitted = False 
+        self.X = None
         self.min_segments = min_segments
         self.max_segments = max_segments
         self.strategy = strategy
-    
+        self.features = None
+        self.edges_map = {} 
+
     @staticmethod
-    def make_pool(func, params:list, threads:int)->list:
-        """executes a function with a set of parameters using pooling threads
+    def _make_pool(func, params: List[Tuple], threads: int) -> List:
+        """
+        Executes a function with a set of parameters using pooling threads.
 
         Args:
-            func (function): function to be executed
-            params (list): list of tuples, each tuple is a parameter combination 
-            threads (int): number of pooling threads to use
+            func (function): Function to be executed.
+            params (list): List of tuples, each tuple is a parameter combination.
+            threads (int): Number of pooling threads to use.
 
         Returns:
-            list: all execution results in a list 
+            list: All execution results in a list.
         """
-        pool = Pool(threads)
-        data = pool.starmap(func, params)
-        pool.close()
-        pool.join()
-        del pool
-        return [x for x in data]
+        with Pool(threads) as pool:
+            data = pool.starmap(func, params)
+        return data
 
-    def fit(self,X:pd.DataFrame,n_threads:int=1)->None:
-        """Learns discretization edges 
+    def fit(self, X: pd.DataFrame, n_threads: int = 1) -> None:
+        """
+        Learns discretization edges.
+
         Args:
-            X (pd.DataFrame): data to be discretized
-            n_threads (int, optional): number of pooling threads. Defaults to 1.
+            X (pd.DataFrame): Data to be discretized.
+            n_threads (int, optional): Number of pooling threads. Defaults to 1.
         """
         self.X = X.copy()
-        features = list(self.X.columns)
-        self.edges_map = self.make_pool(self._discretize,[(self.X,feat,nbins,self.strategy,) for feat in features for nbins in range(self.min_segments,self.max_segments+1)],threads=n_threads)
+        self.features = list(self.X.columns)
+        self.edges_map = self._make_pool(
+            self._discretize,
+            [(self.X, feat, nbins, self.strategy) for feat in self.features for nbins in range(self.min_segments, self.max_segments + 1)],
+            threads=n_threads
+        )
         self.__is_fitted = True
 
     @staticmethod
-    def _discretize(X:pd.DataFrame,feature:str,nbins:int,strategy:str)->pd.DataFrame:
-        """Discretizes a series in a particular number of bins using the given strategy
+    def _discretize(X: pd.DataFrame, feature: str, nbins: int, strategy: str) -> Dict:
+        """
+        Discretizes a series in a particular number of bins using the given strategy.
 
         Args:
-            X (pd.DataFrame): Data to be discretized
-            feature (str): Feature name
-            nbins (int): Number of expected bins 
-            strategy (str): {'uniform','quantile','kmeans','gaussian'}, discretization method to be used.
+            X (pd.DataFrame): Data to be discretized.
+            feature (str): Feature name.
+            nbins (int): Number of expected bins.
+            strategy (str): {'uniform', 'quantile', 'kmeans', 'gaussian'}, discretization method to be used.
 
         Returns:
-            pd.DataFrame: Discretized data 
+            dict: Discretized data.
+
+        Reference:
+            For more details on the discretization strategies, see
+            https://journals.plos.org/plosone/article/authors?id=10.1371/journal.pone.0289130
         """
         aux = X[[feature]].copy()
         
-        _has_missing = len(aux[feature].isnull().value_counts())==2
-        if _has_missing:
-            nonmiss,_ = [data for _,data in aux.groupby(aux[feature].isnull())]
+        has_missing = aux[feature].isnull().any()
+        if has_missing:
+            nonmiss = aux.dropna()
         else:
-            nonmiss  = aux.copy()
+            nonmiss = aux.copy()
         
-        if strategy!='gaussian':
-            kb = KBinsDiscretizer(n_bins=nbins,encode='ordinal',strategy=strategy)
+        if strategy != 'gaussian':
+            kb = KBinsDiscretizer(n_bins=nbins, encode='ordinal', strategy=strategy)
             kb.fit(nonmiss[[feature]])
             edges = list(kb.bin_edges_[0])
-            return {'feature':feature,'nbins':nbins,'edges':[-np.inf]+edges[1:-1]+[np.inf]}
-        elif strategy == 'gaussian':
-            kb = GaussianMixture(n_components=nbins)
-            kb.fit(nonmiss[[feature]])
-            nonmiss['cluster'] = kb.predict(nonmiss[[feature]])
-            edges = nonmiss.groupby('cluster').agg(['min','max'])
-            edges.columns = ['lower_bound','upper_bound']
-            edges.sort_values(by='lower_bound',inplace=True)
-            edges = list(edges['lower_bound'])+list(edges['upper_bound'])[-1:]
-            edges = sorted(set(edges))
-            return {'feature':feature,'nbins':nbins,'edges':[-np.inf]+edges[1:-1]+[np.inf]}
+            return {'feature': feature, 'nbins': nbins, 'edges': [-np.inf] + edges[1:-1] + [np.inf]}
+        else:
+            gm = GaussianMixture(n_components=nbins)
+            gm.fit(nonmiss[[feature]])
+            nonmiss['cluster'] = gm.predict(nonmiss[[feature]])
+            edges = nonmiss.groupby('cluster')[feature].agg(['min', 'max']).sort_values(by='min')
+            edges = sorted(set(edges['min'].tolist() + edges['max'].tolist()))
+            return {'feature': feature, 'nbins': nbins, 'edges': [-np.inf] + edges[1:-1] + [np.inf]}
 
     @staticmethod
-    def _encode(X:pd.DataFrame,feature:str,nbins:int,edges:list,strategy:str)->pd.DataFrame:
+    def _encode(X: pd.DataFrame, feature: str, nbins: int, edges: List[float], strategy: str) -> pd.DataFrame:
         """
-        Encodes continuous feature into a discrete bin
+        Encodes continuous feature into a discrete bin.
 
         Args:
-            X (pd.DataFrame): Continuous data
-            feature (str): Feature to be encoded
-            nbins (int): Number of encoding bins 
-            edges (list): Bin edges list
-            strategy (str): {'uniform','quantile','kmeans','gaussian'}, Discretization strategy 
+            X (pd.DataFrame): Continuous data.
+            feature (str): Feature to be encoded.
+            nbins (int): Number of encoding bins.
+            edges (list): Bin edges list.
+            strategy (str): {'uniform', 'quantile', 'kmeans', 'gaussian'}, discretization strategy.
 
         Returns:
-            pd.DataFrame: Encoded data
+            pd.DataFrame: Encoded data.
         """
-        aux = pd.cut(X[feature],bins=edges,include_lowest=True)
-        aux = pd.Series(np.where(aux.isnull(),'MISSING',aux)).to_frame().astype(str)
+        aux = pd.cut(X[feature], bins=edges, include_lowest=True)
+        aux = pd.Series(np.where(aux.isnull(), 'MISSING', aux)).to_frame().astype(str)
         discretized_feature_name = f'disc_{feature}_{nbins}_{strategy}'
         aux.columns = [discretized_feature_name]
         return aux
 
-    def transform(self,X:pd.DataFrame,n_threads:int=1)->pd.DataFrame:
-        """Transforms continuous data into its discrete form
+    def transform(self, X: pd.DataFrame, n_threads: int = 1) -> pd.DataFrame:
+        """
+        Transforms continuous data into its discrete form.
 
         Args:
-            X (pd.DataFrame): Data to be discretized
+            X (pd.DataFrame): Data to be discretized.
             n_threads (int, optional): Number of pooling threads to speed computation. Defaults to 1.
 
         Raises:
-            Exception: If fit method not called previously
-            Exception: If features analyzed during fit are not present in X
+            Exception: If fit method not called previously.
+            Exception: If features analyzed during fit are not present in X.
 
         Returns:
-            pd.DataFrame: Discretized Data
+            pd.DataFrame: Discretized Data.
         """
         if not self.__is_fitted:
             raise Exception('Please call fit method first with the required parameters')
-        else:
-            aux = X.copy()
-            features = list(set([edge['feature'] for edge in self.edges_map]))
-            non_present_features = [f for f in features if f not in X.columns]
-            if len(non_present_features)>0:
-                print(f'{",".join(non_present_features)} feature{"s" if len(non_present_features)>1 else ""} not present in data')
-                raise Exception("Missing features")
-            else:
-                encoded_data = self.make_pool(self._encode,[(X,edge_map['feature'],edge_map['nbins'],edge_map['edges'],self.strategy,) for edge_map in self.edges_map] ,threads=n_threads)
-                return reduce(lambda x,y:pd.merge(x,y,left_index=True,right_index=True,how='inner'),encoded_data).copy()            
+        
+        aux = X.copy()
+        features = list(set(edge['feature'] for edge in self.edges_map))
+        non_present_features = [f for f in features if f not in X.columns]
+        if non_present_features:
+            raise Exception(f"Missing features: {', '.join(non_present_features)}")
+        
+        encoded_data = self._make_pool(
+            self._encode,
+            [(X, edge_map['feature'], edge_map['nbins'], edge_map['edges'], self.strategy) for edge_map in self.edges_map],
+            threads=n_threads
+        )
+        return reduce(lambda x, y: pd.merge(x, y, left_index=True, right_index=True, how='inner'), encoded_data).copy()

@@ -1,18 +1,30 @@
 import pandas as pd
-def frequency_table(df:pd.DataFrame,var:list):
-    """Displays a frequency table 
+from typing import List, Union
+
+def frequency_table(df: pd.DataFrame, variables: Union[List[str], str]) -> None:
+    """
+    Displays a frequency table for the specified variables in the DataFrame.
 
     Args:
-        df (pd.DataFrame): Data
-        var (list): List of variables 
+        df (pd.DataFrame): The input DataFrame.
+        variables (Union[List[str], str]): List of variables (column names) to generate frequency tables for.
+
+    Returns:
+        None
     """
-    if type(var)==str:
-        var = [var]
-    for v in var:
-        aux = df[v].value_counts().to_frame().sort_index()
-        aux.columns = ['Abs. Freq.']
-        aux['Rel. Freq.'] = aux['Abs. Freq.']/aux['Abs. Freq.'].sum()
-        aux[['Cumm. Abs. Freq.','Cumm. Rel. Freq.']] = aux.cumsum()
-        print(f'****Frequency Table  {v}  ***\n\n')
-        print(aux)
-        print("\n"*3)
+    if isinstance(variables, str):
+        variables = [variables]
+    
+    for variable in variables:
+        if variable not in df.columns:
+            print(f"Warning: {variable} not found in DataFrame columns.")
+            continue
+        
+        frequency_df = df[variable].value_counts().to_frame().sort_index()
+        frequency_df.columns = ['Abs. Freq.']
+        frequency_df['Rel. Freq.'] = frequency_df['Abs. Freq.'] / frequency_df['Abs. Freq.'].sum()
+        frequency_df[['Cum. Abs. Freq.', 'Cum. Rel. Freq.']] = frequency_df.cumsum()
+        
+        print(f'**** Frequency Table for {variable} ****\n')
+        print(frequency_df)
+        print("\n" * 3)

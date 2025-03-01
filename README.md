@@ -123,12 +123,12 @@ pip install woe-credit-scoring
 
 ```python
 import pandas as pd 
-from CreditScoringToolkit.frequency_table import frequency_table
-from CreditScoringToolkit.DiscreteNormalizer import DiscreteNormalizer
-from CreditScoringToolkit.WoeEncoder import WoeEncoder
-from CreditScoringToolkit.WoeContinuousFeatureSelector import WoeContinuousFeatureSelector
-from CreditScoringToolkit.WoeDiscreteFeatureSelector import WoeDiscreteFeatureSelector
-from CreditScoringToolkit.CreditScoring import CreditScoring
+from CreditScoringToolkit import frequency_table
+from CreditScoringToolkit import DiscreteNormalizer
+from CreditScoringToolkit import WoeEncoder
+from CreditScoringToolkit import WoeContinuousFeatureSelector
+from CreditScoringToolkit import WoeDiscreteFeatureSelector
+from CreditScoringToolkit import CreditScoring
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import roc_auc_score
 
@@ -343,7 +343,7 @@ frequency_table(Xt,vard)
 
 
 ```python
-unary = [v for v in vard if Xt[v].nunique==1]
+unary = [v for v in vard if Xt[v].nunique()==1]
 unary
 ```
 
@@ -525,7 +525,7 @@ cs.scorecard
 
 
 <div>
-<style scoped>
+<style>
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -710,34 +710,11 @@ for s,d in score.groupby('sample'):
     ax = aux.plot(kind='bar',stacked=True,color=['purple','black'])
     plt.title(s)
 ```
-
-
-    <Figure size 432x288 with 0 Axes>
-
-
-
     
 ![png](Usage%20Example_files/Usage%20Example_24_1.png)
     
-
-
-
-    <Figure size 432x288 with 0 Axes>
-
-
-
-    
 ![png](Usage%20Example_files/Usage%20Example_24_3.png)
     
-
-
-
-```python
-
-```
-
-  
-
 <p  align="right">(<a  href="#top">back to top</a>)</p>
 
 
