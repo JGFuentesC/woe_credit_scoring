@@ -7,11 +7,12 @@ from woe_credit_scoring import (DiscreteNormalizer,
                                 WoeEncoder,
                                 WoeContinuousFeatureSelector,
                                 WoeDiscreteFeatureSelector,
-                                CreditScoring
+                                CreditScoring,
+                                AutoCreditScoring
                                 )
 
 __all__ = [
     "DiscreteNormalizer", "frequency_table", "WoeBaseFeatureSelector",
     "Discretizer", "WoeEncoder", "WoeContinuousFeatureSelector", "WoeDiscreteFeatureSelector",
-    "CreditScoring"
+    "CreditScoring", "AutoCreditScoring"
 ]

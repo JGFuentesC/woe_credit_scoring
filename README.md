@@ -96,6 +96,9 @@ Siddiqi, N. (2012). Credit risk scorecards: developing and implementing intellig
 * [Pandas](https://pandas.pydata.org/)
 * [Jupyter](https://jupyter.org/)
 * [Scikit-Learn](https://scikit-learn.org/stable/)
+* [Matplotlib](https://matplotlib.org/)
+* [Seaborn](https://seaborn.pydata.org/)
+* [SciPy](https://scipy.org/)
 
 <p  align="right">(<a  href="#top">back to top</a>)</p>
 
@@ -681,13 +684,13 @@ for s,d in score.groupby('sample'):
 
 
     
-![png](Usage%20Example_files/Usage%20Example_22_0.png)
+![png](images/Usage%20Example_22_0.png)
     
 
 
 
     
-![png](Usage%20Example_files/Usage%20Example_22_1.png)
+![png](images/Usage%20Example_22_1.png)
     
 
 
@@ -695,7 +698,7 @@ for s,d in score.groupby('sample'):
 
 
 ```python
-#   Finally, we can observe that, the greater the score, the lower the probability of being a 
+#    We can observe that, the greater the score, the lower the probability of being a 
 #   bad customer (label=1) for both samples. Now all complexity is absorbed   
 score['score_range'] = pd.cut(score['score'],bins=6,include_lowest=True).astype(str)
 for s,d in score.groupby('sample'):
@@ -711,11 +714,32 @@ for s,d in score.groupby('sample'):
     plt.title(s)
 ```
     
-![png](Usage%20Example_files/Usage%20Example_24_1.png)
+![png](images/Usage%20Example_24_1.png)
     
-![png](Usage%20Example_files/Usage%20Example_24_3.png)
-    
+![png](images/Usage%20Example_24_3.png)
+```python
+# If you prefer, use AutoCreditScoring class to perform all the steps in a single call with additional features
+# like outlier detection and treatment, feature selection, reporting and more.
+from CreditScoringToolkit import AutoCreditScoring
+
+data = pd.concat([train,valid],axis=0)
+kwargs = {'iv_feature_threshold':0.02,'max_discretization_bins':6,'strictly_monotonic':True}
+acs = AutoCreditScoring(data,'TARGET',varc,vard)
+acs.fit(**kwargs)
+
+# You can also save the reports to a folder in PNG format
+acs.save_reports('reports') 
+```
+![png](images/score_histogram.png)
+![png](images/score_kde.png)
+![png](images/event_range_5.png)
+![png](images/event_range_10.png)
+![png](images/feature_importance.png)
+![png](images/roc_auc_curve.png)
+
+
 <p  align="right">(<a  href="#top">back to top</a>)</p>
+
 
 
 <!-- CONTRIBUTING -->
