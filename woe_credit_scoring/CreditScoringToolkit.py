@@ -754,14 +754,11 @@ class WoeDiscreteFeatureSelector(WoeBaseFeatureSelector):
         self.iv_report = pd.DataFrame(iv, columns=['feature', 'iv']).dropna().reset_index(drop=True)
         self.iv_report['selected'] = self.iv_report['iv'] >= iv_threshold
         self.iv_report = self.iv_report.sort_values('selected', ascending=False)
-        iv = [(feature, value)
-              for feature, value in iv if value >= iv_threshold]
-        iv = pd.DataFrame(iv, columns=['feature', 'iv'])
-        disc_features = list(iv['feature'])
+        disc_features = list(self.iv_report.loc[self.iv_report['selected']]['feature'])
         if len(disc_features) == 0:
             raise Exception(
                 'No relevant feature found. Please try increasing the IV threshold')
-        self.selected_features: dict[str, float] = iv.set_index('feature')[
+        self.selected_features: dict[str, float] =self.iv_report.loc[self.iv_report['selected']].set_index('feature')[
             'iv'].to_dict()
         self.__is_fitted: bool = True
 
@@ -1015,7 +1012,6 @@ class AutoCreditScoring:
     data: pd.DataFrame
     train: pd.DataFrame
     valid: pd.DataFrame
-    apply_multicolinearity: bool = False 
     iv_feature_threshold: float = 0.05
     treat_outliers: bool = False
     outlier_threshold: float = 0.01
@@ -1045,6 +1041,7 @@ class AutoCreditScoring:
 
     def fit(self,
             target_proportion_tolerance:float = None, 
+            train_proportion:float = None,
             treat_outliers:bool = None, 
             discrete_normalization_threshold:float = None,
             discrete_normalization_default_category:str = None,
@@ -1059,6 +1056,10 @@ class AutoCreditScoring:
             create_reporting:bool = None,
             verbose:bool=False):
         
+        #Train proportion control
+        if train_proportion is not None:
+            self.train_size = train_proportion
+    
         # Verbosity control
         if verbose:
             logger.setLevel(logging.INFO)

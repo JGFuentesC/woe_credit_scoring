@@ -11,7 +11,7 @@
 
 [![Issues][issues-shield]][issues-url]
 
-[![MIT License][license-shield]][license-url]
+[![GPLv3 License][license-shield]][license-url]
 
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
