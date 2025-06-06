@@ -1005,6 +1005,10 @@ class AutoCreditScoring:
         Creates various reports and visualizations for model evaluation and interpretation.
     save_reports(self, folder: str = '.')
         Saves the generated reports and visualizations to the specified folder.
+    predict(self, X: pd.DataFrame) -> pd.DataFrame
+        Predicts scores for a given raw dataset.
+    fit_predict(self, **kwargs) -> pd.DataFrame
+        Fits the model and returns the scores for the entire dataset.
     """
     continuous_features: List[str]
     discrete_features: List[str]
@@ -1142,9 +1146,66 @@ class AutoCreditScoring:
         if create_reporting is not None:
             self.create_reporting = create_reporting
         # Reporting
-        self.__reporting()
+        if self.create_reporting:
+            self.__reporting()
         self.is_fitted = True
         
+    def predict(self, X: pd.DataFrame) -> pd.DataFrame:
+        """
+        Predicts scores for a given raw dataset.
+
+        The input data should have the same features as the training data.
+        The method applies the same pipeline of transformations as used during training.
+
+        Args:
+            X (pd.DataFrame): Raw data to be scored.
+
+        Returns:
+            pd.DataFrame: A DataFrame with scores and feature contributions.
+        
+        Raises:
+            Exception: If the model is not fitted yet.
+            ValueError: If the input data is missing required features.
+        """
+        if not self.is_fitted:
+            raise Exception("This AutoCreditScoring instance is not fitted yet. Call 'fit' with appropriate arguments before using this method.")
+
+        required_features = self.continuous_features + self.discrete_features
+        missing_features = [f for f in required_features if f not in X.columns]
+        if missing_features:
+            raise ValueError(f"The following required columns are missing from the input data: {', '.join(missing_features)}")
+
+        aux = X.copy()
+        
+        # Apply the full pipeline
+        data_woe = self.__apply_pipeline(aux)
+        
+        # Inverse transform to get discrete bins
+        data_discrete_binned = self.woe_encoder.inverse_transform(data_woe)
+        
+        # Get scores
+        scored_data = self.credit_scoring.transform(data_discrete_binned)
+        
+        rename_dict = {
+            binned_name: f"pts_{original_name}"
+            for binned_name, original_name in self.feature_name_mapping.items()
+            if binned_name in scored_data.columns
+        }
+        scored_data.rename(columns=rename_dict, inplace=True)
+
+        scored_data['score'] = scored_data['score'].astype(float)
+        
+        # Clip scores to the defined range
+        scored_data['score'] = scored_data['score'].clip(self.min_score, self.max_score)
+        
+        # Add score ranges
+        for k in [5, 10]:
+            step = (self.max_score - self.min_score) / k
+            bins = np.arange(self.min_score, self.max_score + step, step)
+            scored_data[f'range_score_{k}'] = pd.cut(scored_data['score'], bins=bins, include_lowest=True)
+            
+        return scored_data
+
     def __partition_data(self):
         logger.info("Partitioning data...")
         self.train, self.valid = train_test_split(self.data, train_size=self.train_size)
@@ -1249,6 +1310,14 @@ class AutoCreditScoring:
                 logger.error("No features selected")
                 raise RuntimeError("No features selected")
             logger.info(f"Selected features ({len(self.candidate_features)}): {self.candidate_features}")
+            
+            self.feature_name_mapping = {}
+            if len(self.continuous_features)>0 and hasattr(self, 'iv_report_continuous'):
+                self.feature_name_mapping.update(self.iv_report_continuous.set_index('feature')['root_feature'].to_dict())
+
+            if len(self.discrete_features)>0 and hasattr(self, 'woe_discrete_selector') and self.woe_discrete_selector.selected_features:
+                self.feature_name_mapping.update({f: f for f in self.woe_discrete_selector.selected_features.keys()})
+
             logger.info("Feature selection...Done")
         except Exception as err:
             logger.error(f"Error in feature selection: {err}")
@@ -1311,25 +1380,54 @@ class AutoCreditScoring:
     def __scoring(self):
         logger.info("Scoring...")
         cs = CreditScoring()
-        cs.fit(self.train_woe,self.woe_encoder,self.logistic_model)
-        self.scored_train = cs.transform(self.woe_encoder.inverse_transform(self.train_woe))
-        self.scored_valid = cs.transform(self.woe_encoder.inverse_transform(self.valid_woe))
-        self.credit_scoring = cs 
-        self.scored_train['score'] = self.scored_train['score'].astype(float)
-        self.scored_valid['score'] = self.scored_valid['score'].astype(float)
-        self.min_output_score = min(self.scored_train['score'].min(),self.scored_valid['score'].min())
-        self.max_output_score = max(self.scored_train['score'].max(),self.scored_valid['score'].max())
+        cs.fit(self.train_woe, self.woe_encoder, self.logistic_model)
+        self.credit_scoring = cs
+
+        # Get original scores to find min/max for scaling
+        scored_train_orig = self.credit_scoring.transform(self.woe_encoder.inverse_transform(self.train_woe))
+        scored_valid_orig = self.credit_scoring.transform(self.woe_encoder.inverse_transform(self.valid_woe))
+
+        self.min_output_score = min(scored_train_orig['score'].min(), scored_valid_orig['score'].min())
+        self.max_output_score = max(scored_train_orig['score'].max(), scored_valid_orig['score'].max())
+
         logger.info(f"Min output score: {self.min_output_score}")
         logger.info(f"Max output score: {self.max_output_score}")
         logger.info(f"Linear transformation to a {self.min_score}-{self.max_score} scale")
-        self.scored_train['score'] = self.min_score+(self.scored_train['score']-self.min_output_score)*(self.max_score-self.min_score)/(self.max_output_score-self.min_output_score)
-        self.scored_valid['score'] = self.min_score+(self.scored_valid['score']-self.min_output_score)*(self.max_score-self.min_score)/(self.max_output_score-self.min_output_score)        
+
+        n = self.credit_scoring.n
+
+        if self.max_output_score == self.min_output_score:
+            logger.warning("All scores are the same, cannot apply linear transformation. Setting all scores to the average of min_score and max_score.")
+            avg_score = (self.min_score + self.max_score) / 2
+            self.credit_scoring.scorecard['points'] = np.floor(avg_score / n).astype(int)
+        else:
+            # Scaling parameters
+            a = (self.max_score - self.min_score) / (self.max_output_score - self.min_output_score)
+            b = self.min_score - a * self.min_output_score
+            # Update scorecard points
+            self.credit_scoring.scorecard['points'] = np.floor(a * self.credit_scoring.scorecard['points'] + b / n).astype(int)
+
+        # Update scoring_map from the updated scorecard
+        self.credit_scoring.scoring_map = dict(ChainMap(*[{f: d[['attribute', 'points']].set_index('attribute')['points'].to_dict()} for f, d in self.credit_scoring.scorecard.reset_index().groupby('feature')]))
+        
+        # Recalculate scores with the updated scorecard
+        self.scored_train = self.credit_scoring.transform(self.woe_encoder.inverse_transform(self.train_woe))
+        self.scored_valid = self.credit_scoring.transform(self.woe_encoder.inverse_transform(self.valid_woe))
+        
+        self.scored_train['score'] = self.scored_train['score'].astype(float)
+        self.scored_valid['score'] = self.scored_valid['score'].astype(float)
+
+        self.scored_train['score'] = self.scored_train['score'].clip(self.min_score, self.max_score)
+        self.scored_valid['score'] = self.scored_valid['score'].clip(self.min_score, self.max_score)
+
         logger.info(f'Transformed min score: {self.scored_train["score"].min()}')
         logger.info(f'Transformed max score: {self.scored_train["score"].max()}')
+        
         for k in [5,10]:
             step = (self.max_score-self.min_score)/k
-            self.scored_train[f'range_score_{k}'] = pd.cut(self.scored_train['score'],bins=np.arange(self.min_score,self.max_score+step,step),include_lowest=True)
-            self.scored_valid[f'range_score_{k}'] = pd.cut(self.scored_valid['score'],bins=np.arange(self.min_score,self.max_score+step,step),include_lowest=True)
+            bins = np.arange(self.min_score, self.max_score+step, step)
+            self.scored_train[f'range_score_{k}'] = pd.cut(self.scored_train['score'],bins=bins,include_lowest=True)
+            self.scored_valid[f'range_score_{k}'] = pd.cut(self.scored_valid['score'],bins=bins,include_lowest=True)
         logger.info("Scoring...Done")
     
     def __reporting(self):
@@ -1385,6 +1483,9 @@ class AutoCreditScoring:
         logger.info("ROC Curve...Done")
         
     def save_reports(self,folder='.'):
+        if not self.create_reporting:
+            raise RuntimeError("Reports were not generated. Please run fit() with create_reporting=True before saving reports.")
+
         if not os.path.exists(folder):
             os.makedirs(folder)
         self.score_histogram_fig.savefig(f'{folder}/score_histogram.png')
