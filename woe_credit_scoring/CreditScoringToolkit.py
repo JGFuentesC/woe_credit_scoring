@@ -1495,3 +1495,121 @@ class AutoCreditScoring:
             getattr(self,f'event_rate_fig_{k}').savefig(f'{folder}/event_rate_{k}.png')
         self.roc_curve_fig.savefig(f'{folder}/roc_curve.png')
         logger.info(f"Reports saved in {folder}")
+
+
+class IVCalculator:
+    """
+    A class to calculate the Information Value (IV) for both discrete and continuous features.
+    It provides a simple interface that abstracts away the manual steps of discretization and normalization.
+
+    Example:
+        >>> from woe_credit_scoring import IVCalculator
+        >>> import pandas as pd
+        >>> data = pd.read_csv('example_data/hmeq.csv')
+        >>> iv_calculator = IVCalculator(
+        ...     data=data,
+        ...     target='BAD',
+        ...     continuous_features=['LOAN', 'MORTDUE', 'VALUE', 'YOJ', 'DEROG', 'DELINQ', 'CLAGE', 'NINQ', 'CLNO', 'DEBTINC'],
+        ...     discrete_features=['REASON', 'JOB']
+        ... )
+        >>> iv_report = iv_calculator.calculate_iv()
+        >>> print(iv_report)
+
+    """
+    def __init__(self, data: pd.DataFrame, target: str, continuous_features: List[str] = None, discrete_features: List[str] = None):
+        """
+        Initializes the IVCalculator object.
+
+        Args:
+            data (pd.DataFrame): The input data containing features and target.
+            target (str): The target variable name.
+            continuous_features (List[str], optional): List of continuous feature names. Defaults to None.
+            discrete_features (List[str], optional): List of discrete feature names. Defaults to None.
+        """
+        if not isinstance(data, pd.DataFrame):
+            raise TypeError("data must be a pandas DataFrame.")
+        if target not in data.columns:
+            raise ValueError(f"Target column '{target}' not found in the DataFrame.")
+
+        self.data = data
+        self.target = target
+        self.continuous_features = continuous_features if continuous_features is not None else []
+        self.discrete_features = discrete_features if discrete_features is not None else []
+
+        if not self.continuous_features and not self.discrete_features:
+            logger.warning("No continuous or discrete features provided.")
+
+    def calculate_iv(self,
+                     max_discretization_bins: int = 5,
+                     strictly_monotonic: bool = False,
+                     discretization_method: str = 'quantile',
+                     n_threads: int = 1,
+                     discrete_normalization_threshold: float = 0.05,
+                     discrete_normalization_default_category: str = 'OTHER'
+                     ) -> pd.DataFrame:
+        """
+        Calculates the Information Value (IV) for the provided features.
+
+        Args:
+            max_discretization_bins (int, optional): The maximum number of bins for discretization. Defaults to 5.
+            strictly_monotonic (bool, optional): Whether to enforce strictly monotonic WoE transformation for continuous features. Defaults to False.
+            discretization_method (str, optional): The method for discretization ('quantile', 'uniform', 'kmeans', 'gaussian', 'dcc', 'dec'). Defaults to 'quantile'.
+            n_threads (int, optional): The number of threads to use for parallel processing. Defaults to 1.
+            discrete_normalization_threshold (float, optional): The threshold for discrete feature normalization. Defaults to 0.05.
+            discrete_normalization_default_category (str, optional): The default category for discrete feature normalization. Defaults to 'OTHER'.
+
+        Returns:
+            pd.DataFrame: A DataFrame containing the IV report for all features, sorted by IV in descending order.
+        """
+        iv_reports = []
+
+        if self.continuous_features:
+            logger.info("Calculating IV for continuous features...")
+            woe_continuous_selector = WoeContinuousFeatureSelector()
+            try:
+                woe_continuous_selector.fit(
+                    self.data[self.continuous_features],
+                    self.data[self.target],
+                    max_bins=max_discretization_bins,
+                    strictly_monotonic=strictly_monotonic,
+                    iv_threshold=-np.inf,  # Using a very low threshold to get IV for all features
+                    method=discretization_method,
+                    n_threads=n_threads
+                )
+                iv_report_continuous = woe_continuous_selector.iv_report
+                iv_report_continuous = iv_report_continuous[['root_feature', 'iv']].rename(columns={'root_feature': 'feature'})
+                iv_report_continuous['feature_type'] = 'continuous'
+                iv_reports.append(iv_report_continuous)
+                logger.info("IV for continuous features calculated successfully.")
+            except Exception as e:
+                logger.error(f"Could not calculate IV for continuous features. Error: {e}")
+
+        if self.discrete_features:
+            logger.info("Calculating IV for discrete features...")
+            try:
+                dn = DiscreteNormalizer(
+                    normalization_threshold=discrete_normalization_threshold,
+                    default_category=discrete_normalization_default_category
+                )
+                dn.fit(self.data[self.discrete_features])
+                normalized_discrete_data = dn.transform(self.data[self.discrete_features])
+
+                woe_discrete_selector = WoeDiscreteFeatureSelector()
+                woe_discrete_selector.fit(
+                    normalized_discrete_data,
+                    self.data[self.target],
+                    iv_threshold=-np.inf  # Using a very low threshold to get IV for all features
+                )
+                iv_report_discrete = woe_discrete_selector.iv_report[['feature', 'iv']]
+                iv_report_discrete['feature_type'] = 'discrete'
+                iv_reports.append(iv_report_discrete)
+                logger.info("IV for discrete features calculated successfully.")
+            except Exception as e:
+                logger.error(f"Could not calculate IV for discrete features. Error: {e}")
+
+        if not iv_reports:
+            logger.warning("IV calculation did not produce any results.")
+            return pd.DataFrame(columns=['feature', 'iv', 'feature_type'])
+
+        final_iv_report = pd.concat(iv_reports, axis=0).sort_values('iv', ascending=False).reset_index(drop=True)
+        return final_iv_report
