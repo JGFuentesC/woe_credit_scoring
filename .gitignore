@@ -123,7 +123,5 @@ dmypy.json
 .pyre/
 
 #pip
-pyproject.toml
-setup.py
 
 **/.venv/

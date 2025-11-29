@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "woe_credit_scoring"
+version = "2.0.3"
+description = "A toolkit for Credit Scoring using Weight of Evidence (WoE) and Logistic Regression"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  {name = "Jose Gustavo Fuentes Cabrera", email = "j.gustavo.fuentes@gmail.com"},
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "numpy>=1.21.0",
+    "pandas>=1.3.0",
+    "scikit-learn>=1.0.0",
+    "seaborn>=0.11.0",
+    "matplotlib>=3.4.0",
+    "scipy>=1.7.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/JGFuentesC/woe_credit_scoring"
+"Bug Tracker" = "https://github.com/JGFuentesC/woe_credit_scoring/issues"
+
+[tool.setuptools.packages.find]
+where = ["woe_credit_scoring"]
