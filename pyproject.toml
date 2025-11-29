@@ -8,9 +8,6 @@ version = "2.0.3"
 description = "A toolkit for Credit Scoring using Weight of Evidence (WoE) and Logistic Regression"
 readme = "README.md"
 requires-python = ">=3.10"
-authors = [
-  {name = "Jose Gustavo Fuentes Cabrera", email = "j.gustavo.fuentes@gmail.com"},
-]
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
