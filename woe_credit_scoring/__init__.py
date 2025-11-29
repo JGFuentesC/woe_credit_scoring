@@ -8,10 +8,11 @@ from .CreditScoringToolkit import (DiscreteNormalizer,
                                    WoeContinuousFeatureSelector,
                                    WoeDiscreteFeatureSelector,
                                    CreditScoring,
-                                   AutoCreditScoring)
+                                   AutoCreditScoring,
+                                   IVCalculator)
 
 __all__ = [
     "DiscreteNormalizer", "frequency_table", "WoeBaseFeatureSelector",
     "Discretizer", "WoeEncoder", "WoeContinuousFeatureSelector", "WoeDiscreteFeatureSelector",
-    "CreditScoring", "AutoCreditScoring"
+    "CreditScoring", "AutoCreditScoring", "IVCalculator"
 ]

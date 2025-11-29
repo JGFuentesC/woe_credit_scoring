@@ -48,6 +48,7 @@ In finance is a common practice to create risk scorecards to assess the credit w
     <li><a href="#woecontinuousfeatureselector">WoeContinuousFeatureSelector</a></li>
     <li><a href="#woediscretefeatureselector">WoeDiscreteFeatureSelector</a></li>
     <li><a href="#creditscoring">CreditScoring</a></li>
+    <li><a href="#ivcalculator">IVCalculator</a></li>
     <li><a href="#built-with">Built With</a></li>
   </ol>
   <li><a href="#installation">Installation</a></li>
@@ -88,6 +89,8 @@ Information Value statistic.
 ### CreditScoring
 Implements credit risk scorecards following the methodology proposed in 
 Siddiqi, N. (2012). Credit risk scorecards: developing and implementing intelligent credit scoring (Vol. 3). John Wiley & Sons.
+### IVCalculator
+A utility class to quickly calculate Information Value (IV) for both continuous and discrete features. This class provides a simple interface that abstracts away the manual steps of discretization and normalization, making it easy to assess feature predictive power.
 
 ### Built With
 
@@ -192,6 +195,40 @@ predictions.head()
 ```
 
 This will return a DataFrame with the individual point contributions for each feature (`pts_*` columns) and the final score.
+
+### IV Calculator
+
+The `IVCalculator` class provides a quick and easy way to calculate Information Value (IV) for your features without going through the entire credit scoring workflow. This is useful for initial feature analysis and selection.
+
+```python
+from CreditScoringToolkit import IVCalculator
+
+# Initialize IVCalculator with your data
+iv_calculator = IVCalculator(
+    data=train,
+    target='TARGET',
+    continuous_features=varc,
+    discrete_features=vard
+)
+
+# Calculate IV for all features
+iv_report = iv_calculator.calculate_iv(
+    max_discretization_bins=5,
+    strictly_monotonic=False,
+    discretization_method='quantile',
+    discrete_normalization_threshold=0.05
+)
+
+# Display the report
+print(iv_report)
+```
+
+The output will be a DataFrame with columns:
+- `feature`: Feature name
+- `iv`: Information Value
+- `feature_type`: 'continuous' or 'discrete'
+
+This allows you to quickly identify which features have the most predictive power before building your full credit scoring model.
 
 <p  align="right">(<a  href="#top">back to top</a>)</p>
 
