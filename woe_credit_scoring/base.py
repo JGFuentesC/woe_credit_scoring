@@ -28,6 +28,15 @@ class WoeBaseFeatureSelector:
     def __init__(self):
         pass
 
+    def __repr__(self) -> str:
+        return "WoeBaseFeatureSelector()"
+
+    def get_params(self, deep: bool = True) -> dict:
+        return {}
+
+    def set_params(self, **params) -> 'WoeBaseFeatureSelector':
+        return self
+
     @staticmethod
     def _information_value(X: pd.Series, y: pd.Series) -> Union[float, None]:
         """
@@ -50,10 +59,13 @@ class WoeBaseFeatureSelector:
         aux = aux.pivot_table(index='x', columns='y',
                               values='nrow', aggfunc='sum', fill_value=0)
         aux /= aux.sum()
-        aux['woe'] = np.log(aux[0] / aux[1])
-        aux['iv'] = (aux[0] - aux[1]) * aux['woe']
+        with np.errstate(divide='ignore', invalid='ignore'):
+            aux['woe'] = np.log(aux.iloc[:, 0] / aux.iloc[:, 1])
+            aux['iv'] = (aux.iloc[:, 0] - aux.iloc[:, 1]) * aux['woe']
         iv = aux['iv'].sum()
-        return None if np.isinf(iv) else iv
+        if np.isinf(iv) or np.isnan(iv):
+            return None
+        return iv
 
     @staticmethod
     def _check_monotonic(X: pd.Series, y: pd.Series) -> bool:

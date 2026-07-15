@@ -367,7 +367,7 @@ class WoeDiscreteFeatureSelector(WoeBaseFeatureSelector):
         disc_features = list(self.iv_report.loc[self.iv_report['selected']]['feature'])
         if len(disc_features) == 0:
             raise Exception(
-                'No relevant feature found. Please try increasing the IV threshold')
+                'No relevant feature found. Please try decreasing the IV threshold')
         self.selected_features: dict[str, float] =self.iv_report.loc[self.iv_report['selected']].set_index('feature')[
             'iv'].to_dict()
         self.__is_fitted: bool = True

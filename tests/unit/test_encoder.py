@@ -79,7 +79,7 @@ def test_woe_inverse_transform(woe_data):
     transformed = encoder.transform(woe_data[['feature']])
     inversed = encoder.inverse_transform(transformed)
     
-    pd.testing.assert_frame_equal(inversed, woe_data[['feature']])
+    pd.testing.assert_frame_equal(inversed, woe_data[['feature']].astype(object))
 
 def test_woe_with_missing_values():
     

@@ -62,6 +62,23 @@ class CreditScoring:
         self.factor = self.pdo / np.log(2)
         self.offset = self.base_score - self.factor * np.log(self.base_odds)
 
+    def __repr__(self) -> str:
+        status = "fitted" if self.__is_fitted else "not fitted"
+        return (f"CreditScoring({status}, pdo={self.pdo}, "
+                f"base_score={self.base_score}, base_odds={self.base_odds})")
+
+    def get_params(self, deep: bool = True) -> dict:
+        return {
+            'pdo': self.pdo,
+            'base_score': self.base_score,
+            'base_odds': self.base_odds,
+        }
+
+    def set_params(self, **params) -> 'CreditScoring':
+        for key, value in params.items():
+            setattr(self, key, value)
+        return self
+
     @staticmethod
     def _get_scorecard(X: pd.DataFrame, feature: str) -> pd.DataFrame:
         """Generates scorecard points for a given feature
@@ -132,6 +149,10 @@ class CreditScoring:
                 raise Exception("Missing features")
             else:
                 for feature, points_map in self.scoring_map.items():
-                    aux[feature] = aux[feature].replace(points_map)
+                    aux[feature] = pd.to_numeric(aux[feature].replace(points_map), errors='coerce')
+                if aux[features].isna().any().any():
+                    problem_cols = [f for f in features if aux[f].isna().any()]
+                    logger.warning(f"Unseen categories found in columns: {problem_cols}. Setting unknown values to 0 points.")
+                    aux[features] = aux[features].fillna(0)
                 aux['score'] = aux[features].sum(axis=1)
                 return aux

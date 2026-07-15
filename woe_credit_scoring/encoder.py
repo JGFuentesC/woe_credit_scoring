@@ -30,6 +30,17 @@ class WoeEncoder:
         self.__is_fitted = False
         self._woe_reverse_map = None
 
+    def __repr__(self) -> str:
+        status = "fitted" if self.__is_fitted else "not fitted"
+        n_feat = len(self.features) if self.features else 0
+        return f"WoeEncoder({status}, {n_feat} features)"
+
+    def get_params(self, deep: bool = True) -> dict:
+        return {}
+
+    def set_params(self, **params) -> 'WoeEncoder':
+        return self
+
     def fit(self, X: pd.DataFrame, y: pd.Series, target_col: str = 'binary_target') -> None:
         """Learns WoE encoding.
 
@@ -68,8 +79,10 @@ class WoeEncoder:
         aux = aux.pivot_table(index=feature, columns=bin_target,
                               values='n_row', aggfunc='sum', fill_value=0)
         aux /= aux.sum()
-        aux['woe'] = np.log(aux[0] / aux[1])
-        aux = aux.drop(columns=[0, 1])
+        target_levels = aux.columns.tolist()
+        with np.errstate(divide='ignore', invalid='ignore'):
+            aux['woe'] = np.log(aux.iloc[:, 0] / aux.iloc[:, 1])
+        aux = aux.drop(columns=target_levels)
         return {feature: aux['woe'].to_dict()}
 
     def transform(self, X: pd.DataFrame) -> pd.DataFrame:

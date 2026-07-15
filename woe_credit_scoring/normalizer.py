@@ -75,6 +75,23 @@ class DiscreteNormalizer:
         )))
         self.__is_fitted = True
 
+    def __repr__(self) -> str:
+        status = "fitted" if self.__is_fitted else "not fitted"
+        n_feat = len(self.features) if self.features else 0
+        return (f"DiscreteNormalizer({status}, {n_feat} features, "
+                f"threshold={self.normalization_threshold})")
+
+    def get_params(self, deep: bool = True) -> dict:
+        return {
+            'normalization_threshold': self.normalization_threshold,
+            'default_category': self.default_category,
+        }
+
+    def set_params(self, **params) -> 'DiscreteNormalizer':
+        for key, value in params.items():
+            setattr(self, key, value)
+        return self
+
     @staticmethod
     def _prepare_feature(feature: pd.Series) -> pd.Series:
         """Prepares a feature by filling missing values and converting to string."""
@@ -136,6 +153,7 @@ class DiscreteNormalizer:
             raise Exception(
                 f"Missing features: {', '.join(non_present_features)}")
 
+        self.new_categories = {}
         for feat in features:
             aux[feat] = self._prepare_feature(aux[feat])
             mapping = self.normalization_map[feat]['replacement_map']

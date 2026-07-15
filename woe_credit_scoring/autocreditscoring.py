@@ -11,7 +11,7 @@ from collections import ChainMap
 import os
 import logging
 from .normalizer import DiscreteNormalizer
-from .binning import WoeContinuousFeatureSelector, WoeDiscreteFeatureSelector
+from .feature_selectors import WoeContinuousFeatureSelector, WoeDiscreteFeatureSelector
 from .encoder import WoeEncoder
 from .scoring import CreditScoring
 
@@ -114,29 +114,29 @@ class AutoCreditScoring:
     iv_feature_threshold: float = 0.05
     treat_outliers: bool = False
     outlier_threshold: float = 0.01
-    min_score = 400
-    max_score = 900
-    max_discretization_bins = 5
-    discrete_normalization_threshold = 0.05
-    discrete_normalization_default_category = 'OTHER'
+    min_score: int = 400
+    max_score: int = 900
+    discrete_normalization_threshold: float = 0.05
+    discrete_normalization_default_category: str = 'OTHER'
     transformation: Optional[str] = None
     model: Optional[LogisticRegression] = None
     max_iter: int = 5
     train_size: float = 0.7
     target_proportion_tolerance: float = 0.01
-    max_discretization_bins:int=6
-    strictly_monotonic:bool=True
-    discretization_method:str = 'quantile'
-    n_threads:int = 1
-    overfitting_tolerance:float = 0.01
-    create_reporting:bool = False
-    is_fitted:bool = False
+    max_discretization_bins: int = 6
+    strictly_monotonic: bool = True
+    discretization_method: str = 'quantile'
+    n_threads: int = 1
+    overfitting_tolerance: float = 0.01
+    create_reporting: bool = False
+    is_fitted: bool = False
 
-    def __init__(self, data: pd.DataFrame, target: str, continuous_features: List[str]=None, discrete_features: List[str]=None):
+    def __init__(self, data: pd.DataFrame, target: str, continuous_features: List[str] = None, discrete_features: List[str] = None, random_state: int = None):
         self.data = data
-        self.continuous_features = continuous_features
-        self.discrete_features = discrete_features
+        self.continuous_features = continuous_features.copy() if continuous_features is not None else None
+        self.discrete_features = discrete_features.copy() if discrete_features is not None else None
         self.target = target
+        self.random_state = random_state
 
     def fit(self,
             target_proportion_tolerance:float = None,
@@ -245,6 +245,18 @@ class AutoCreditScoring:
             self.__reporting()
         self.is_fitted = True
 
+    def fit_predict(self, **kwargs) -> pd.DataFrame:
+        """
+        Fits the model and returns the scores for the entire dataset.
+
+        Args:
+            **kwargs: Arguments passed to fit().
+
+        Returns:
+            pd.DataFrame: A DataFrame with scores and feature contributions for the entire dataset.
+        """
+        self.fit(**kwargs)
+        return self.predict(self.data)
     def predict(self, X: pd.DataFrame) -> pd.DataFrame:
         """
         Predicts scores for a given raw dataset.
@@ -303,7 +315,7 @@ class AutoCreditScoring:
 
     def __partition_data(self):
         logger.info("Partitioning data...")
-        self.train, self.valid = train_test_split(self.data, train_size=self.train_size)
+        self.train, self.valid = train_test_split(self.data, train_size=self.train_size, random_state=self.random_state)
         self.train.reset_index(drop=True, inplace=True)
         self.valid.reset_index(drop=True, inplace=True)
         # Check if target proportions are compatible between train and valid
@@ -313,7 +325,7 @@ class AutoCreditScoring:
             logger.info(f"Partitioning data...Iteration {iter}")
             logger.info(f"Train target proportion: {self.train[self.target].mean()}")
             logger.info(f"Valid target proportion: {self.valid[self.target].mean()}")
-            self.train, self.valid = train_test_split(self.data, train_size=self.train_size)
+            self.train, self.valid = train_test_split(self.data, train_size=self.train_size, random_state=self.random_state)
             self.train.reset_index(drop=True, inplace=True)
             self.valid.reset_index(drop=True, inplace=True)
             iter+=1
@@ -351,7 +363,7 @@ class AutoCreditScoring:
         if len(self.unary_columns)>0:
             logger.warning(f"Normalization produced unary columns: {self.unary_columns}")
             logger.warning(f"Removing unary columns from discrete features")
-            self.discrete_features = [f for f in self.discrete_features if f not in self.unary_columns]
+            self.discrete_features = [f for f in list(self.discrete_features) if f not in self.unary_columns]
             logger.warning(f"Discrete features after unary columns removal: {self.discrete_features}")
         else:
             logger.info("No unary columns produced by normalization")
@@ -422,28 +434,29 @@ class AutoCreditScoring:
         self.woe_encoder = WoeEncoder()
         self.woe_encoder.fit(self.train_candidate, self.train[self.target])
         self.train_woe = self.woe_encoder.transform(self.train_candidate)
-        if self.train_woe.isna().max().max():
+        if self.train_woe.isna().any().any():
             logger.error("NAs found in transformed data")
             raise RuntimeError("NAs found in transformed data, Maybe tiny missing in continuous?")
 
-    def __apply_pipeline(self,data:pd.DataFrame)->pd.DataFrame:
+    def __apply_pipeline(self, data: pd.DataFrame) -> pd.DataFrame:
         try:
-            if len(self.continuous_features)>0:
+            data_local = data.copy()
+            if len(self.continuous_features) > 0:
                 if self.treat_outliers:
                     for f in self.continuous_features:
-                        data[f] = winsorize(data[f], limits=[self.outlier_threshold, self.outlier_threshold])
-                data_continuous_candidate = self.woe_continuous_selector.transform(data[self.continuous_features])
-            if len(self.discrete_features)>0:
-                data_discrete_normalized = self.discrete_normalizer.transform(data[self.discrete_features])
+                        data_local.loc[:, f] = winsorize(data_local[f], limits=[self.outlier_threshold, self.outlier_threshold])
+                data_continuous_candidate = self.woe_continuous_selector.transform(data_local[self.continuous_features])
+            if len(self.discrete_features) > 0:
+                data_discrete_normalized = self.discrete_normalizer.transform(data_local[self.discrete_features])
                 data_discrete_candidate = self.woe_discrete_selector.transform(data_discrete_normalized)
-            if len(self.continuous_features)>0 and len(self.discrete_features)==0:
+            if len(self.continuous_features) > 0 and len(self.discrete_features) == 0:
                 data_candidate = data_continuous_candidate.copy()
-            if len(self.continuous_features)==0 and len(self.discrete_features)>0:
+            if len(self.continuous_features) == 0 and len(self.discrete_features) > 0:
                 data_candidate = data_discrete_candidate.copy()
-            if len(self.continuous_features)>0 and len(self.discrete_features)>0:
+            if len(self.continuous_features) > 0 and len(self.discrete_features) > 0:
                 data_candidate = pd.concat([data_continuous_candidate, data_discrete_candidate], axis=1)
             data_woe = self.woe_encoder.transform(data_candidate)
-            if data_woe.isna().max().max():
+            if data_woe.isna().any().any():
                 logger.error("NAs found in transformed data")
                 raise RuntimeError("NAs found in transformed data, Maybe tiny missing in continuous?")
             return data_woe
