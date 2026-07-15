@@ -9,6 +9,7 @@ from .iv_calculator import IVCalculator
 from .encoder import WoeEncoder
 from .scoring import CreditScoring
 from .autocreditscoring import AutoCreditScoring
+from .validation import ValidationReport
 from .eda import dataset_profile, psi, event_rate_by_feature, woe_profile, vif
 from .models import PipelineConfig, FeatureInfo, ScorecardResult, DatasetProfile
 from .plots import (
@@ -19,7 +20,7 @@ from .plots import (
 __all__ = [
     "DiscreteNormalizer", "frequency_table", "WoeBaseFeatureSelector",
     "Discretizer", "WoeEncoder", "WoeContinuousFeatureSelector", "WoeDiscreteFeatureSelector",
-    "CreditScoring", "AutoCreditScoring", "IVCalculator",
+    "CreditScoring",     "AutoCreditScoring", "ValidationReport", "IVCalculator",
     "dataset_profile", "psi", "event_rate_by_feature", "woe_profile", "vif",
     "PipelineConfig", "FeatureInfo", "ScorecardResult", "DatasetProfile",
     "roc_curve_plot", "roc_comparison_plot", "ks_plot", "iv_barplot",

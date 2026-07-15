@@ -22,6 +22,12 @@ dependencies = [
     "scipy>=1.7.0",
 ]
 
+[project.optional-dependencies]
+mcp = ["fastmcp>=2.0"]
+
+[project.scripts]
+woe-mcp = "woe_credit_scoring.mcp_server:main"
+
 [project.urls]
 "Homepage" = "https://github.com/JGFuentesC/woe_credit_scoring"
 "Bug Tracker" = "https://github.com/JGFuentesC/woe_credit_scoring/issues"

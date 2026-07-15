@@ -3,6 +3,7 @@ import numpy as np
 import pandas as pd
 from scipy.stats.mstats import winsorize
 from sklearn.linear_model import LogisticRegression
+from sklearn.isotonic import IsotonicRegression
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import roc_auc_score, roc_curve, auc
 import matplotlib.pyplot as plt
@@ -153,6 +154,7 @@ class AutoCreditScoring:
             min_score:int = None,
             max_score:int = None,
             create_reporting:bool = None,
+            calibrate:bool = False,
             verbose:bool=False):
 
         #Train proportion control
@@ -223,6 +225,14 @@ class AutoCreditScoring:
             self.overfitting_tolerance = overfitting_tolerance
         # Train model
         self.__train_model()
+
+        # Calibration
+        if calibrate:
+            probas = self.model.predict_proba(self.train_woe)[:, 1]
+            self.calibrator = IsotonicRegression(out_of_bounds='clip', y_min=0, y_max=1)
+            self.calibrator.fit(probas, self.train[self.target])
+        else:
+            self.calibrator = None
 
         # Check if min_score is provided
         if min_score is not None:
@@ -312,6 +322,21 @@ class AutoCreditScoring:
             scored_data[f'range_score_{k}'] = pd.cut(scored_data['score'], bins=bins, include_lowest=True)
 
         return scored_data
+
+    def predict_proba(self, X: pd.DataFrame) -> np.ndarray:
+        if not self.is_fitted:
+            raise Exception("This AutoCreditScoring instance is not fitted yet. Call 'fit' with appropriate arguments before using this method.")
+
+        required_features = self.continuous_features + self.discrete_features
+        missing_features = [f for f in required_features if f not in X.columns]
+        if missing_features:
+            raise ValueError(f"The following required columns are missing from the input data: {', '.join(missing_features)}")
+
+        X_woe = self.__apply_pipeline(X.copy())
+        raw_probas = self.model.predict_proba(X_woe)[:, 1]
+        if self.calibrator is not None:
+            return self.calibrator.predict(raw_probas)
+        return raw_probas
 
     def __partition_data(self):
         logger.info("Partitioning data...")
@@ -615,6 +640,267 @@ class AutoCreditScoring:
             getattr(self,f'event_rate_fig_{k}').savefig(f'{folder}/event_rate_{k}.png')
         self.roc_curve_fig.savefig(f'{folder}/roc_curve.png')
         logger.info(f"Reports saved in {folder}")
+
+    def validation_report(self) -> "ValidationReport":
+        from .validation import ValidationReport
+        if not self.is_fitted:
+            raise RuntimeError("Model is not fitted.")
+        return ValidationReport(
+            y_true_train=self.train[self.target].values,
+            y_score_train=self.model.predict_proba(self.train_woe)[:, 1],
+            y_true_valid=self.valid[self.target].values,
+            y_score_valid=self.model.predict_proba(self.valid_woe)[:, 1],
+            scores_train=self.scored_train,
+            scores_valid=self.scored_valid,
+            psi_data=None,
+        )
+
+    def plot_discretized_features(self, ncols: int = 3) -> 'plt.Figure':
+        """Subplot grid showing event rate per bin for each discretized continuous feature.
+
+        Each subplot contains bars for the target event rate per bin,
+        with WOE values annotated and the feature's IV in the title.
+
+        Args:
+            ncols: Number of columns in the subplot grid.
+
+        Returns:
+            matplotlib Figure.
+        """
+        if not self.is_fitted:
+            raise RuntimeError("Model is not fitted. Call fit() first.")
+
+        if not hasattr(self, 'woe_continuous_selector') or self.woe_continuous_selector.selected_features is None:
+            fig, ax = plt.subplots(figsize=(8, 4))
+            ax.text(0.5, 0.5, "No continuous features were selected.",
+                    ha='center', va='center', transform=ax.transAxes, fontsize=12)
+            ax.axis('off')
+            return fig
+
+        iv_report = self.woe_continuous_selector.iv_report
+        selected_iv = iv_report[iv_report['relevant']].copy()
+
+        if len(selected_iv) == 0:
+            fig, ax = plt.subplots(figsize=(8, 4))
+            ax.text(0.5, 0.5, "No continuous features were selected.",
+                    ha='center', va='center', transform=ax.transAxes, fontsize=12)
+            ax.axis('off')
+            return fig
+
+        n_features = len(selected_iv)
+        nrows = int(np.ceil(n_features / ncols))
+        fig, axes = plt.subplots(nrows, ncols, figsize=(5 * ncols, 4 * nrows))
+
+        axes = np.atleast_1d(axes).flatten()
+
+        woe_map_all = self.woe_encoder._woe_encoding_map
+        xd = self.woe_continuous_selector._Xd
+
+        for idx, (_, row) in enumerate(selected_iv.iterrows()):
+            ax = axes[idx]
+            disc_feat = row['feature']
+            root_feat = row['root_feature']
+            iv_val = row['iv']
+
+            if disc_feat in xd.columns:
+                event_rate = xd.groupby(disc_feat)['binary_target'].mean().sort_index()
+                woe = woe_map_all.get(disc_feat, {})
+                categories = list(event_rate.index)
+                rates = list(event_rate.values)
+
+                x_pos = range(len(categories))
+                ax.bar(x_pos, rates, color='steelblue', edgecolor='white')
+                ax.set_xticks(x_pos)
+                ax.set_xticklabels(categories, rotation=45, ha='right', fontsize=8)
+
+                for xp, cat, rate_val in zip(x_pos, categories, rates):
+                    woe_val = woe.get(cat, np.nan)
+                    if not np.isnan(woe_val):
+                        ax.text(xp, rate_val + 0.01, f'{woe_val:.2f}',
+                                ha='center', va='bottom', fontsize=7)
+
+                ax.set_title(f'{root_feat} (IV={iv_val:.4f})')
+                ax.set_ylabel('Event Rate')
+
+        for idx in range(n_features, len(axes)):
+            axes[idx].set_visible(False)
+
+        plt.tight_layout()
+        return fig
+
+    def explain(self, observation: dict) -> pd.DataFrame:
+        """Per-feature score breakdown for a single observation.
+
+        Args:
+            observation: Dictionary mapping feature names to their values.
+
+        Returns:
+            DataFrame with columns: feature, attribute, woe, beta, points,
+            including a TOTAL row at the bottom.
+
+        Raises:
+            RuntimeError: If the model has not been fitted yet.
+        """
+        if not self.is_fitted:
+            raise RuntimeError("Model is not fitted. Call fit() first.")
+
+        obs_df = pd.DataFrame([observation])
+
+        woe_df = self.__apply_pipeline(obs_df)
+
+        disc_df = self.woe_encoder.inverse_transform(woe_df)
+
+        rows = []
+        for feat in self.candidate_features:
+            original_name = self.feature_name_mapping.get(feat, feat)
+            attribute = disc_df[feat].iloc[0]
+            woe_value = woe_df[feat].iloc[0]
+            beta_value = dict(zip(self.candidate_features, self.betas)).get(feat, 0.0)
+            points = self.credit_scoring.scoring_map.get(feat, {}).get(attribute, 0)
+
+            rows.append({
+                'feature': original_name,
+                'attribute': str(attribute),
+                'woe': woe_value,
+                'beta': beta_value,
+                'points': points,
+            })
+
+        result = pd.DataFrame(rows)
+
+        total_points = result['points'].sum()
+        total_row = pd.DataFrame([{
+            'feature': 'TOTAL',
+            'attribute': '',
+            'woe': np.nan,
+            'beta': np.nan,
+            'points': total_points,
+        }])
+
+        result = pd.concat([result, total_row], ignore_index=True)
+
+        return result
+
+    def feature_analysis(self) -> pd.DataFrame:
+        if not self.is_fitted:
+            raise RuntimeError("Model is not fitted. Call fit() first.")
+
+        rows = []
+
+        if hasattr(self, 'woe_continuous_selector') and self.woe_continuous_selector.selected_features:
+            for feat in self.woe_continuous_selector.selected_features:
+                binned_name = feat['feature']
+                rows.append({
+                    'feature': feat['root_feature'],
+                    'iv': feat['iv'],
+                    'n_bins': int(feat['nbins']),
+                    'monotonic': self._check_binned_monotonic(binned_name),
+                    'feature_type': 'continuous',
+                })
+
+        if hasattr(self, 'woe_discrete_selector') and self.woe_discrete_selector.selected_features:
+            for disc_feat, iv_val in self.woe_discrete_selector.selected_features.items():
+                n_bins = len(self.woe_encoder._woe_encoding_map.get(disc_feat, {}))
+                rows.append({
+                    'feature': disc_feat,
+                    'iv': iv_val,
+                    'n_bins': n_bins,
+                    'monotonic': False,
+                    'feature_type': 'discrete',
+                })
+
+        df = pd.DataFrame(rows)
+
+        betas_map = dict(zip(self.candidate_features, self.betas))
+        root_betas = {}
+        for binned_name, beta in betas_map.items():
+            root = self.feature_name_mapping.get(binned_name, binned_name)
+            root_betas[root] = root_betas.get(root, 0.0) + abs(beta)
+
+        total_abs = sum(root_betas.values()) if root_betas else 1.0
+        df['score_contribution_pct'] = df['feature'].map(
+            lambda f: (root_betas.get(f, 0.0) / total_abs) * 100
+        )
+
+        return df
+
+    def _check_binned_monotonic(self, binned_feature: str) -> bool:
+        woe_map = self.woe_encoder._woe_encoding_map.get(binned_feature, {})
+        items = [(k, v) for k, v in woe_map.items() if k != 'MISSING']
+        if len(items) < 2:
+            return False
+        items.sort(key=lambda x: x[0])
+        woe_vals = [v for _, v in items]
+        return (sorted(woe_vals) == woe_vals or sorted(woe_vals, reverse=True) == woe_vals)
+
+    def plot_woe_bins(self, feature: str) -> plt.Figure:
+        if not self.is_fitted:
+            raise RuntimeError("Model is not fitted. Call fit() first.")
+
+        binned_name = None
+        for bname, root in self.feature_name_mapping.items():
+            if root == feature and bname in self.candidate_features:
+                binned_name = bname
+                break
+
+        if binned_name is None:
+            for bname in self.candidate_features:
+                if bname == feature:
+                    binned_name = bname
+                    break
+
+        if binned_name is None:
+            raise ValueError(f"Feature '{feature}' not found among candidate features.")
+
+        woe_map = self.woe_encoder._woe_encoding_map.get(binned_name, {})
+        items = [(k, v) for k, v in woe_map.items() if k != 'MISSING']
+        items.sort(key=lambda x: x[0])
+        categories = [k for k, _ in items]
+        woe_values = [v for _, v in items]
+
+        event_rate = (
+            self.train_candidate
+            .assign(target=self.train[self.target])
+            .groupby(binned_name)['target']
+            .mean()
+        )
+        event_rate = event_rate.reindex(categories)
+
+        iv_total = 0.0
+        analysis = self.feature_analysis()
+        match = analysis.loc[analysis['feature'] == feature, 'iv']
+        if len(match) > 0:
+            iv_total = match.iloc[0]
+
+        fig, ax1 = plt.subplots(figsize=(10, 5))
+        x_pos = range(len(categories))
+
+        bars = ax1.bar(x_pos, woe_values, color='steelblue', edgecolor='white', label='WoE')
+        ax1.set_xlabel('Bin / Category')
+        ax1.set_ylabel('WoE Value', color='steelblue')
+        ax1.tick_params(axis='y', labelcolor='steelblue')
+        ax1.set_xticks(x_pos)
+        ax1.set_xticklabels(categories, rotation=45, ha='right', fontsize=8)
+
+        for xp, woe_val in zip(x_pos, woe_values):
+            offset = 0.02 if woe_val >= 0 else -0.08
+            ax1.text(xp, woe_val + offset, f'{woe_val:.3f}',
+                     ha='center', va='top' if woe_val >= 0 else 'bottom',
+                     fontsize=8, color='steelblue')
+
+        ax2 = ax1.twinx()
+        ax2.plot(x_pos, event_rate.values, 'o-', color='darkorange', lw=2, markersize=8, label='Event Rate')
+        ax2.set_ylabel('Event Rate', color='darkorange')
+        ax2.tick_params(axis='y', labelcolor='darkorange')
+        ax2.set_ylim(0, 1)
+
+        lines1, labels1 = ax1.get_legend_handles_labels()
+        lines2, labels2 = ax2.get_legend_handles_labels()
+        ax1.legend(lines1 + lines2, labels1 + labels2, loc='upper right')
+
+        ax1.set_title(f'WoE Bins — {feature} (IV = {iv_total:.4f})')
+        fig.tight_layout()
+        return fig
 
     def to_pickle(self, path: str) -> None:
         """Serialize fitted model to a pickle file.
