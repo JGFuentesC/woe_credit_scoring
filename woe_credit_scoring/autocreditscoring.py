@@ -741,7 +741,16 @@ class AutoCreditScoring:
         if not self.is_fitted:
             raise RuntimeError("Model is not fitted. Call fit() first.")
 
-        obs_df = pd.DataFrame([observation])
+        required_features = self.continuous_features + self.discrete_features
+        filtered_obs = {
+            f: observation.get(f) for f in required_features
+            if f in observation
+        }
+        missing = [f for f in required_features if f not in observation]
+        if missing:
+            raise ValueError(f"Missing required features: {missing}")
+
+        obs_df = pd.DataFrame([filtered_obs])
 
         woe_df = self.__apply_pipeline(obs_df)
 
