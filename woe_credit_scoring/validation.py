@@ -4,6 +4,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.metrics import roc_auc_score, roc_curve, confusion_matrix
 
+from .plots import COLORS, _style_axis
+
 
 class ValidationReport:
     def __init__(
@@ -114,16 +116,19 @@ class ValidationReport:
         y_count = np.sum(self._y_true_valid)
         x_gain = fpr * (1 - y_count / n) + tpr * (y_count / n)
         y_gain = tpr
-        fig, ax = plt.subplots(figsize=(6, 5))
-        ax.plot(x_gain, y_gain, lw=2, label="Model")
-        ax.plot([0, 1], [0, 1], "k--", lw=1, alpha=0.5, label="Random")
-        ax.set_xlim([0.0, 1.0])
-        ax.set_ylim([0.0, 1.05])
+
+        fig, ax = plt.subplots(figsize=(6.5, 5.5))
+        ax.plot(x_gain, y_gain, lw=2.2, color=COLORS["accent"], label="Model")
+        ax.fill_between(x_gain, y_gain, alpha=0.06, color=COLORS["accent"])
+        ax.plot([0, 1], [0, 1], lw=1.2, color=COLORS["diagonal"], linestyle="--", label="Random")
+        ax.set_xlim(0, 1)
+        ax.set_ylim(0, 1.02)
         ax.set_xlabel("Cumulative Population")
         ax.set_ylabel("Cumulative Gains")
-        ax.set_title("Cumulative Gains Chart")
-        ax.legend(loc="lower right")
-        fig.tight_layout()
+        ax.set_title("Cumulative Gains Chart — Validation")
+        ax.legend(loc="lower right", frameon=True)
+        _style_axis(ax)
+        fig.tight_layout(pad=1.2)
         return fig
 
     def to_dict(self) -> dict:

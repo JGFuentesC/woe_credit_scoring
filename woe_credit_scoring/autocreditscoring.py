@@ -656,17 +656,6 @@ class AutoCreditScoring:
         )
 
     def plot_discretized_features(self, ncols: int = 3) -> 'plt.Figure':
-        """Subplot grid showing event rate per bin for each discretized continuous feature.
-
-        Each subplot contains bars for the target event rate per bin,
-        with WOE values annotated and the feature's IV in the title.
-
-        Args:
-            ncols: Number of columns in the subplot grid.
-
-        Returns:
-            matplotlib Figure.
-        """
         if not self.is_fitted:
             raise RuntimeError("Model is not fitted. Call fit() first.")
 
@@ -677,9 +666,10 @@ class AutoCreditScoring:
             ax.axis('off')
             return fig
 
+        from .plots import COLORS, _style_axis
+
         iv_report = self.woe_continuous_selector.iv_report
         selected_iv = iv_report[iv_report['relevant']].copy()
-
         if len(selected_iv) == 0:
             fig, ax = plt.subplots(figsize=(8, 4))
             ax.text(0.5, 0.5, "No continuous features were selected.",
@@ -689,9 +679,11 @@ class AutoCreditScoring:
 
         n_features = len(selected_iv)
         nrows = int(np.ceil(n_features / ncols))
-        fig, axes = plt.subplots(nrows, ncols, figsize=(5 * ncols, 4 * nrows))
-
-        axes = np.atleast_1d(axes).flatten()
+        fig, axes = plt.subplots(nrows, ncols, figsize=(5 * ncols, 3.8 * nrows))
+        if n_features == 1:
+            axes = [axes]
+        else:
+            axes = np.atleast_1d(axes).flatten()
 
         woe_map_all = self.woe_encoder._woe_encoding_map
         xd = self.woe_continuous_selector._Xd
@@ -701,31 +693,36 @@ class AutoCreditScoring:
             disc_feat = row['feature']
             root_feat = row['root_feature']
             iv_val = row['iv']
+            if disc_feat not in xd.columns:
+                continue
 
-            if disc_feat in xd.columns:
-                event_rate = xd.groupby(disc_feat)['binary_target'].mean().sort_index()
-                woe = woe_map_all.get(disc_feat, {})
-                categories = list(event_rate.index)
-                rates = list(event_rate.values)
+            event_rate = xd.groupby(disc_feat)['binary_target'].mean().sort_index()
+            woe = woe_map_all.get(disc_feat, {})
+            categories = [str(c) for c in event_rate.index]
+            rates = list(event_rate.values)
+            x_pos = range(len(categories))
 
-                x_pos = range(len(categories))
-                ax.bar(x_pos, rates, color='steelblue', edgecolor='white')
-                ax.set_xticks(x_pos)
-                ax.set_xticklabels(categories, rotation=45, ha='right', fontsize=8)
+            bars = ax.bar(x_pos, rates, color='#A78BFA', edgecolor='white', linewidth=0.8, width=0.65)
+            ax.set_xticks(x_pos)
+            ax.set_xticklabels(categories, rotation=35, ha='right', fontsize=8, color=COLORS['text'])
 
-                for xp, cat, rate_val in zip(x_pos, categories, rates):
-                    woe_val = woe.get(cat, np.nan)
-                    if not np.isnan(woe_val):
-                        ax.text(xp, rate_val + 0.01, f'{woe_val:.2f}',
-                                ha='center', va='bottom', fontsize=7)
+            for xp, cat, rate_val in zip(x_pos, categories, rates):
+                woe_val = woe.get(cat, np.nan)
+                if not np.isnan(woe_val):
+                    ax.text(xp, rate_val + max(rates) * 0.02, f'{woe_val:+.2f}',
+                            ha='center', va='bottom', fontsize=7.5, color=COLORS['text'])
 
-                ax.set_title(f'{root_feat} (IV={iv_val:.4f})')
-                ax.set_ylabel('Event Rate')
+            overall_rate = xd['binary_target'].mean()
+            ax.axhline(overall_rate, color=COLORS['bad'], linestyle='--', lw=0.8, alpha=0.5)
+            ax.set_title(f'{root_feat}  (IV = {iv_val:.4f})', fontsize=10, fontweight='600')
+            ax.set_ylabel('Event Rate', fontsize=9)
+            ax.set_ylim(0, max(rates) * 1.2)
+            _style_axis(ax)
 
-        for idx in range(n_features, len(axes)):
+        for idx in range(n_features, nrows * ncols):
             axes[idx].set_visible(False)
 
-        plt.tight_layout()
+        fig.tight_layout(pad=2)
         return fig
 
     def explain(self, observation: dict) -> pd.DataFrame:
@@ -837,69 +834,72 @@ class AutoCreditScoring:
         if not self.is_fitted:
             raise RuntimeError("Model is not fitted. Call fit() first.")
 
+        from .plots import COLORS, _style_axis
+
         binned_name = None
         for bname, root in self.feature_name_mapping.items():
             if root == feature and bname in self.candidate_features:
                 binned_name = bname
                 break
-
         if binned_name is None:
             for bname in self.candidate_features:
                 if bname == feature:
                     binned_name = bname
                     break
-
         if binned_name is None:
             raise ValueError(f"Feature '{feature}' not found among candidate features.")
 
         woe_map = self.woe_encoder._woe_encoding_map.get(binned_name, {})
         items = [(k, v) for k, v in woe_map.items() if k != 'MISSING']
         items.sort(key=lambda x: x[0])
-        categories = [k for k, _ in items]
+        categories = [str(k) for k, _ in items]
         woe_values = [v for _, v in items]
 
         event_rate = (
-            self.train_candidate
-            .assign(target=self.train[self.target])
-            .groupby(binned_name)['target']
-            .mean()
+            self.train_candidate.assign(target=self.train[self.target])
+            .groupby(binned_name)['target'].mean()
         )
-        event_rate = event_rate.reindex(categories)
+        event_rate = event_rate.reindex([k for k, _ in items])
 
         iv_total = 0.0
-        analysis = self.feature_analysis()
-        match = analysis.loc[analysis['feature'] == feature, 'iv']
-        if len(match) > 0:
-            iv_total = match.iloc[0]
+        for _, row in self.feature_analysis().iterrows():
+            if row['feature'] == feature:
+                iv_total = row['iv']
+                break
 
-        fig, ax1 = plt.subplots(figsize=(10, 5))
-        x_pos = range(len(categories))
+        fig, ax1 = plt.subplots(figsize=(9, 5))
+        x_pos = np.arange(len(categories))
 
-        bars = ax1.bar(x_pos, woe_values, color='steelblue', edgecolor='white', label='WoE')
-        ax1.set_xlabel('Bin / Category')
-        ax1.set_ylabel('WoE Value', color='steelblue')
-        ax1.tick_params(axis='y', labelcolor='steelblue')
+        woe_colors = [COLORS['accent'] if v >= 0 else COLORS['bad'] for v in woe_values]
+        bars = ax1.bar(x_pos, woe_values, color=woe_colors, edgecolor='white', linewidth=0.8, width=0.6, label='WoE')
+        ax1.set_ylabel('WoE Value', color=COLORS['accent'], fontsize=10)
+        ax1.tick_params(axis='y', labelcolor=COLORS['accent'])
         ax1.set_xticks(x_pos)
-        ax1.set_xticklabels(categories, rotation=45, ha='right', fontsize=8)
+        ax1.set_xticklabels(categories, rotation=30, ha='right', fontsize=9, color=COLORS['text'])
+        ax1.axhline(0, color=COLORS['grid'], lw=0.8)
 
         for xp, woe_val in zip(x_pos, woe_values):
-            offset = 0.02 if woe_val >= 0 else -0.08
-            ax1.text(xp, woe_val + offset, f'{woe_val:.3f}',
-                     ha='center', va='top' if woe_val >= 0 else 'bottom',
-                     fontsize=8, color='steelblue')
+            va = 'bottom' if woe_val >= 0 else 'top'
+            offset = max(abs(woe_val) * 0.05, 0.01) * (1 if woe_val >= 0 else -1)
+            ax1.text(xp, woe_val + offset, f'{woe_val:+.3f}',
+                     ha='center', va=va, fontsize=8, color=COLORS['text'])
 
         ax2 = ax1.twinx()
-        ax2.plot(x_pos, event_rate.values, 'o-', color='darkorange', lw=2, markersize=8, label='Event Rate')
-        ax2.set_ylabel('Event Rate', color='darkorange')
-        ax2.tick_params(axis='y', labelcolor='darkorange')
+        ax2.plot(x_pos, event_rate.values, 'o-', color=COLORS['valid'], lw=2.2,
+                 markersize=7, markerfacecolor='white', markeredgewidth=1.5, markeredgecolor=COLORS['valid'],
+                 label='Event Rate (Train)')
+        ax2.set_ylabel('Event Rate', color=COLORS['valid'], fontsize=10)
+        ax2.tick_params(axis='y', labelcolor=COLORS['valid'])
         ax2.set_ylim(0, 1)
 
         lines1, labels1 = ax1.get_legend_handles_labels()
         lines2, labels2 = ax2.get_legend_handles_labels()
-        ax1.legend(lines1 + lines2, labels1 + labels2, loc='upper right')
+        ax1.legend(lines1 + lines2, labels1 + labels2, loc='upper right', frameon=True, fontsize=9)
 
-        ax1.set_title(f'WoE Bins — {feature} (IV = {iv_total:.4f})')
-        fig.tight_layout()
+        ax1.set_title(f'WoE Bins — {feature}  (IV = {iv_total:.4f})', fontsize=12, fontweight='600')
+        ax1.spines["top"].set_visible(False)
+        ax2.spines["top"].set_visible(False)
+        fig.tight_layout(pad=1.5)
         return fig
 
     def to_pickle(self, path: str) -> None:
