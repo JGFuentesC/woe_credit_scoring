@@ -90,9 +90,9 @@
     "semantic_hash": "2b40759676e839ee8daefc0ac9c79fea"
   },
   "requirements.txt": {
-    "mtime": 1784138436.5155284,
-    "ast_hash": "ab173af3996a99226ef6b4a7d9adc156",
-    "semantic_hash": "ab173af3996a99226ef6b4a7d9adc156"
+    "mtime": 1784132506.6083808,
+    "ast_hash": "481a6da669d11fa4cdbfafef419d0371",
+    "semantic_hash": "481a6da669d11fa4cdbfafef419d0371"
   },
   "images/Usage Example_22_0.png": {
     "mtime": 1784132506.6057625,
@@ -243,10 +243,5 @@
     "mtime": 1784135588.6990235,
     "ast_hash": "f24a51b39094da1d647240426fb5a4f2",
     "semantic_hash": "f24a51b39094da1d647240426fb5a4f2"
-  },
-  "docs/REPORT.md": {
-    "mtime": 1784136103.2863343,
-    "ast_hash": "0b1e9bc0fb9fff6718e511477cbc7894",
-    "semantic_hash": "0b1e9bc0fb9fff6718e511477cbc7894"
   }
 }

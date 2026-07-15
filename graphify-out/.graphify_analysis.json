@@ -1,0 +1,484 @@
+{
+  "communities": {
+    "0": [
+      "autocreditscoring_fit_predict",
+      "woe_credit_scoring_autocreditscoring",
+      "woe_credit_scoring_base",
+      "woe_credit_scoring_base_rationale_6",
+      "woe_credit_scoring_base_woebasefeatureselector",
+      "woe_credit_scoring_base_woebasefeatureselector_get_params",
+      "woe_credit_scoring_base_woebasefeatureselector_init",
+      "woe_credit_scoring_base_woebasefeatureselector_repr",
+      "woe_credit_scoring_base_woebasefeatureselector_set_params",
+      "woe_credit_scoring_binning",
+      "woe_credit_scoring_discretizer",
+      "woe_credit_scoring_encoder",
+      "woe_credit_scoring_feature_selectors",
+      "woe_credit_scoring_feature_selectors_py_dataframe",
+      "woe_credit_scoring_feature_selectors_py_series",
+      "woe_credit_scoring_feature_selectors_rationale_12",
+      "woe_credit_scoring_feature_selectors_woecontinuousfeatureselector",
+      "woe_credit_scoring_feature_selectors_woecontinuousfeatureselector_fit",
+      "woe_credit_scoring_feature_selectors_woecontinuousfeatureselector_get_params",
+      "woe_credit_scoring_feature_selectors_woecontinuousfeatureselector_init",
+      "woe_credit_scoring_feature_selectors_woecontinuousfeatureselector_repr",
+      "woe_credit_scoring_feature_selectors_woecontinuousfeatureselector_set_params",
+      "woe_credit_scoring_feature_selectors_woecontinuousfeatureselector_transform",
+      "woe_credit_scoring_feature_selectors_woediscretefeatureselector",
+      "woe_credit_scoring_feature_selectors_woediscretefeatureselector_fit",
+      "woe_credit_scoring_feature_selectors_woediscretefeatureselector_get_params",
+      "woe_credit_scoring_feature_selectors_woediscretefeatureselector_init",
+      "woe_credit_scoring_feature_selectors_woediscretefeatureselector_repr",
+      "woe_credit_scoring_feature_selectors_woediscretefeatureselector_set_params",
+      "woe_credit_scoring_feature_selectors_woediscretefeatureselector_transform",
+      "woe_credit_scoring_init",
+      "woe_credit_scoring_iv_calculator",
+      "woe_credit_scoring_normalizer",
+      "woe_credit_scoring_scoring"
+    ],
+    "1": [
+      "logisticregression",
+      "tests_integration_test_manual_pipeline_test_manual_pipeline_auc",
+      "tests_unit_test_credit_scoring",
+      "tests_unit_test_credit_scoring_fitted_scoring",
+      "tests_unit_test_credit_scoring_rationale_11",
+      "tests_unit_test_credit_scoring_rationale_27",
+      "tests_unit_test_credit_scoring_scoring_data",
+      "tests_unit_test_credit_scoring_test_base_odds_zero_sets_offset_to_infinity",
+      "tests_unit_test_credit_scoring_test_custom_pdo_base_score_base_odds",
+      "tests_unit_test_credit_scoring_test_normal_scoring_produces_valid_scorecard",
+      "tests_unit_test_credit_scoring_test_pdo_zero_edge_case",
+      "tests_unit_test_credit_scoring_test_scorecard_has_expected_columns",
+      "tests_unit_test_credit_scoring_test_scoring_map_exists_after_fit",
+      "tests_unit_test_credit_scoring_test_transform_produces_score_column",
+      "tests_unit_test_credit_scoring_test_transform_with_missing_features_raises_exception",
+      "tests_unit_test_credit_scoring_test_transform_with_unseen_categories_does_not_crash",
+      "tests_unit_test_credit_scoring_test_transform_with_unseen_categories_warns",
+      "tests_unit_test_credit_scoring_test_unfitted_transform_raises_exception",
+      "woe_credit_scoring_scoring_creditscoring",
+      "woe_credit_scoring_scoring_creditscoring_fit",
+      "woe_credit_scoring_scoring_creditscoring_get_params",
+      "woe_credit_scoring_scoring_creditscoring_get_scorecard",
+      "woe_credit_scoring_scoring_creditscoring_init",
+      "woe_credit_scoring_scoring_creditscoring_repr",
+      "woe_credit_scoring_scoring_creditscoring_set_params",
+      "woe_credit_scoring_scoring_creditscoring_transform",
+      "woe_credit_scoring_scoring_py_dataframe",
+      "woe_credit_scoring_scoring_rationale_101",
+      "woe_credit_scoring_scoring_rationale_12",
+      "woe_credit_scoring_scoring_rationale_126",
+      "woe_credit_scoring_scoring_rationale_52",
+      "woe_credit_scoring_scoring_rationale_84"
+    ],
+    "2": [
+      "tests_unit_test_encoder",
+      "tests_unit_test_encoder_edge",
+      "tests_unit_test_encoder_edge_test_encoder_raises_on_unfitted_inverse_transform",
+      "tests_unit_test_encoder_edge_test_encoder_raises_on_unfitted_transform",
+      "tests_unit_test_encoder_edge_test_encoder_raises_value_error_on_non_binary_target",
+      "tests_unit_test_encoder_edge_test_encoder_raises_value_error_on_single_value_target",
+      "tests_unit_test_encoder_edge_test_encoder_works_with_non_01_target",
+      "tests_unit_test_encoder_test_woe_calculation",
+      "tests_unit_test_encoder_test_woe_inverse_transform",
+      "tests_unit_test_encoder_test_woe_transform",
+      "tests_unit_test_encoder_test_woe_with_missing_values",
+      "tests_unit_test_encoder_woe_data",
+      "woe_credit_scoring_encoder_py_dataframe",
+      "woe_credit_scoring_encoder_py_series",
+      "woe_credit_scoring_encoder_rationale_110",
+      "woe_credit_scoring_encoder_rationale_45",
+      "woe_credit_scoring_encoder_rationale_61",
+      "woe_credit_scoring_encoder_rationale_7",
+      "woe_credit_scoring_encoder_rationale_89",
+      "woe_credit_scoring_encoder_woeencoder",
+      "woe_credit_scoring_encoder_woeencoder_fit",
+      "woe_credit_scoring_encoder_woeencoder_get_params",
+      "woe_credit_scoring_encoder_woeencoder_init",
+      "woe_credit_scoring_encoder_woeencoder_inverse_transform",
+      "woe_credit_scoring_encoder_woeencoder_repr",
+      "woe_credit_scoring_encoder_woeencoder_set_params",
+      "woe_credit_scoring_encoder_woeencoder_transform",
+      "woe_credit_scoring_encoder_woeencoder_woe_transformation"
+    ],
+    "3": [
+      "tests_unit_test_normalizer",
+      "tests_unit_test_normalizer_edge",
+      "tests_unit_test_normalizer_edge_test_normalizer_empty_dataframe_no_columns",
+      "tests_unit_test_normalizer_edge_test_normalizer_raises_type_error_on_non_dataframe",
+      "tests_unit_test_normalizer_edge_test_normalizer_threshold_over_one_everything_grouped",
+      "tests_unit_test_normalizer_edge_test_normalizer_threshold_zero_nothing_grouped",
+      "tests_unit_test_normalizer_sample_data",
+      "tests_unit_test_normalizer_test_missing_value_handling",
+      "tests_unit_test_normalizer_test_no_small_categories",
+      "tests_unit_test_normalizer_test_small_category_aggregation",
+      "tests_unit_test_normalizer_test_unseen_categories",
+      "woe_credit_scoring_normalizer_discretenormalizer",
+      "woe_credit_scoring_normalizer_discretenormalizer_fit",
+      "woe_credit_scoring_normalizer_discretenormalizer_get_normalization_map",
+      "woe_credit_scoring_normalizer_discretenormalizer_get_params",
+      "woe_credit_scoring_normalizer_discretenormalizer_init",
+      "woe_credit_scoring_normalizer_discretenormalizer_prepare_feature",
+      "woe_credit_scoring_normalizer_discretenormalizer_repr",
+      "woe_credit_scoring_normalizer_discretenormalizer_set_params",
+      "woe_credit_scoring_normalizer_discretenormalizer_transform",
+      "woe_credit_scoring_normalizer_py_dataframe",
+      "woe_credit_scoring_normalizer_py_series",
+      "woe_credit_scoring_normalizer_rationale_102",
+      "woe_credit_scoring_normalizer_rationale_132",
+      "woe_credit_scoring_normalizer_rationale_36",
+      "woe_credit_scoring_normalizer_rationale_50",
+      "woe_credit_scoring_normalizer_rationale_8",
+      "woe_credit_scoring_normalizer_rationale_97"
+    ],
+    "4": [
+      "tests_unit_test_discretizer",
+      "tests_unit_test_discretizer_test_all_nan_column",
+      "tests_unit_test_discretizer_test_empty_dataframe_returns_empty",
+      "tests_unit_test_discretizer_test_fit_gaussian_strategy",
+      "tests_unit_test_discretizer_test_fit_kmeans_strategy",
+      "tests_unit_test_discretizer_test_fit_quantile_strategy",
+      "tests_unit_test_discretizer_test_fit_uniform_strategy",
+      "tests_unit_test_discretizer_test_single_unique_value_column",
+      "tests_unit_test_discretizer_test_transform_column_naming_convention",
+      "tests_unit_test_discretizer_test_transform_missing_features_raises",
+      "tests_unit_test_discretizer_test_transform_nan_produces_missing_category",
+      "tests_unit_test_discretizer_test_transform_returns_correct_shape",
+      "tests_unit_test_discretizer_test_unfit_transform_raises",
+      "tests_unit_test_discretizer_test_with_n_threads_greater_than_one",
+      "woe_credit_scoring_discretizer_discretizer",
+      "woe_credit_scoring_discretizer_discretizer_discretize",
+      "woe_credit_scoring_discretizer_discretizer_encode",
+      "woe_credit_scoring_discretizer_discretizer_fit",
+      "woe_credit_scoring_discretizer_discretizer_get_params",
+      "woe_credit_scoring_discretizer_discretizer_init",
+      "woe_credit_scoring_discretizer_discretizer_make_pool",
+      "woe_credit_scoring_discretizer_discretizer_repr",
+      "woe_credit_scoring_discretizer_discretizer_set_params",
+      "woe_credit_scoring_discretizer_discretizer_transform",
+      "woe_credit_scoring_discretizer_py_dataframe",
+      "woe_credit_scoring_discretizer_rationale_11"
+    ],
+    "5": [
+      "tests_integration_test_autocreditscoring_pipeline",
+      "tests_integration_test_autocreditscoring_pipeline_data",
+      "tests_integration_test_autocreditscoring_pipeline_test_autocreditscoring_pipeline",
+      "woe_credit_scoring_autocreditscoring_autocreditscoring",
+      "woe_credit_scoring_autocreditscoring_autocreditscoring_apply_pipeline",
+      "woe_credit_scoring_autocreditscoring_autocreditscoring_feature_selection",
+      "woe_credit_scoring_autocreditscoring_autocreditscoring_fit",
+      "woe_credit_scoring_autocreditscoring_autocreditscoring_fit_predict",
+      "woe_credit_scoring_autocreditscoring_autocreditscoring_init",
+      "woe_credit_scoring_autocreditscoring_autocreditscoring_normalize_discrete",
+      "woe_credit_scoring_autocreditscoring_autocreditscoring_outlier_treatment",
+      "woe_credit_scoring_autocreditscoring_autocreditscoring_partition_data",
+      "woe_credit_scoring_autocreditscoring_autocreditscoring_predict",
+      "woe_credit_scoring_autocreditscoring_autocreditscoring_reporting",
+      "woe_credit_scoring_autocreditscoring_autocreditscoring_save_reports",
+      "woe_credit_scoring_autocreditscoring_autocreditscoring_scoring",
+      "woe_credit_scoring_autocreditscoring_autocreditscoring_train_model",
+      "woe_credit_scoring_autocreditscoring_autocreditscoring_woe_transformation",
+      "woe_credit_scoring_autocreditscoring_py_dataframe",
+      "woe_credit_scoring_autocreditscoring_rationale_21",
+      "woe_credit_scoring_autocreditscoring_rationale_249",
+      "woe_credit_scoring_autocreditscoring_rationale_261"
+    ],
+    "6": [
+      "creditscoringtoolkit",
+      "tests_conftest",
+      "tests_conftest_fitted_encoder",
+      "tests_conftest_fitted_normalizer",
+      "tests_conftest_sample_binary_target",
+      "tests_conftest_sample_continuous_df",
+      "tests_conftest_sample_discrete_df",
+      "tests_conftest_sample_target",
+      "tests_conftest_train_data",
+      "tests_conftest_valid_data",
+      "tests_integration_test_manual_pipeline",
+      "tests_integration_test_manual_pipeline_data",
+      "tests_unit_test_feature_selectors",
+      "tests_unit_test_feature_selectors_feature_selection_data",
+      "tests_unit_test_feature_selectors_test_woe_continuous_feature_selector",
+      "tests_unit_test_feature_selectors_test_woe_discrete_feature_selector",
+      "tests_unit_test_reporter",
+      "tests_unit_test_reporter_test_frequency_table_multiple_variables",
+      "tests_unit_test_reporter_test_frequency_table_raises_type_error_on_non_dataframe",
+      "tests_unit_test_reporter_test_frequency_table_single_variable"
+    ],
+    "7": [
+      "tests_unit_test_iv_calculator",
+      "tests_unit_test_iv_calculator_data_both",
+      "tests_unit_test_iv_calculator_data_continuous",
+      "tests_unit_test_iv_calculator_data_discrete",
+      "tests_unit_test_iv_calculator_test_iv_calculator_both",
+      "tests_unit_test_iv_calculator_test_iv_calculator_continuous_only",
+      "tests_unit_test_iv_calculator_test_iv_calculator_discrete_only",
+      "tests_unit_test_iv_calculator_test_iv_calculator_type_error_not_dataframe",
+      "tests_unit_test_iv_calculator_test_iv_calculator_value_error_target_not_in_columns",
+      "woe_credit_scoring_iv_calculator_ivcalculator",
+      "woe_credit_scoring_iv_calculator_ivcalculator_calculate_iv",
+      "woe_credit_scoring_iv_calculator_ivcalculator_get_params",
+      "woe_credit_scoring_iv_calculator_ivcalculator_init",
+      "woe_credit_scoring_iv_calculator_ivcalculator_repr",
+      "woe_credit_scoring_iv_calculator_ivcalculator_set_params",
+      "woe_credit_scoring_iv_calculator_py_dataframe",
+      "woe_credit_scoring_iv_calculator_rationale_12"
+    ],
+    "8": [
+      "eda_dataset_profile",
+      "woe_credit_scoring_eda",
+      "woe_credit_scoring_eda_dataset_profile",
+      "woe_credit_scoring_eda_event_rate_by_feature",
+      "woe_credit_scoring_eda_psi",
+      "woe_credit_scoring_eda_py_dataframe",
+      "woe_credit_scoring_eda_py_series",
+      "woe_credit_scoring_eda_rationale_112",
+      "woe_credit_scoring_eda_rationale_143",
+      "woe_credit_scoring_eda_rationale_193",
+      "woe_credit_scoring_eda_rationale_24",
+      "woe_credit_scoring_eda_rationale_79",
+      "woe_credit_scoring_eda_vif",
+      "woe_credit_scoring_eda_woe_profile"
+    ],
+    "9": [
+      "basemodel",
+      "woe_credit_scoring_models",
+      "woe_credit_scoring_models_datasetprofile",
+      "woe_credit_scoring_models_featureinfo",
+      "woe_credit_scoring_models_pipelineconfig",
+      "woe_credit_scoring_models_pipelineconfig_validate_score_range",
+      "woe_credit_scoring_models_rationale_1",
+      "woe_credit_scoring_models_rationale_33",
+      "woe_credit_scoring_models_rationale_42",
+      "woe_credit_scoring_models_rationale_55",
+      "woe_credit_scoring_models_rationale_9",
+      "woe_credit_scoring_models_scorecardresult"
+    ],
+    "10": [
+      "tests_unit_test_base_selector",
+      "tests_unit_test_base_selector_test_check_monotonic_excludes_missing",
+      "tests_unit_test_base_selector_test_check_monotonic_returns_false",
+      "tests_unit_test_base_selector_test_check_monotonic_returns_true",
+      "tests_unit_test_base_selector_test_information_value_matches_expected",
+      "tests_unit_test_base_selector_test_information_value_none_for_perfect_separation",
+      "tests_unit_test_base_selector_test_information_value_single_category",
+      "woe_credit_scoring_base_py_series",
+      "woe_credit_scoring_base_rationale_42",
+      "woe_credit_scoring_base_rationale_72",
+      "woe_credit_scoring_base_woebasefeatureselector_check_monotonic",
+      "woe_credit_scoring_base_woebasefeatureselector_information_value"
+    ],
+    "11": [
+      "images_feature_importance",
+      "images_roc_auc_curve",
+      "images_score_histogram",
+      "images_score_kde",
+      "readme_autocreditscoring",
+      "readme_creditscoring",
+      "readme_ivcalculator"
+    ],
+    "12": [
+      "images_scoring_method",
+      "readme_discretenormalizer",
+      "readme_discretizer",
+      "readme_woebasefeatureselector",
+      "readme_woecontinuousfeatureselector",
+      "readme_woediscretefeatureselector",
+      "readme_woeencoder"
+    ],
+    "13": [
+      "woe_credit_scoring_reporter",
+      "woe_credit_scoring_reporter_frequency_table",
+      "woe_credit_scoring_reporter_py_dataframe",
+      "woe_credit_scoring_reporter_rationale_8"
+    ],
+    "14": [
+      "changelog_v204"
+    ],
+    "15": [
+      "docs_report_md"
+    ],
+    "16": [
+      "eda_psi"
+    ],
+    "17": [
+      "eda_vif"
+    ],
+    "18": [
+      "pkg_woe_credit_scoring"
+    ],
+    "19": [
+      "requirements_ipykernel"
+    ],
+    "20": [
+      "requirements_matplotlib"
+    ],
+    "21": [
+      "requirements_numpy"
+    ],
+    "22": [
+      "requirements_pandas"
+    ],
+    "23": [
+      "requirements_pydantic"
+    ],
+    "24": [
+      "requirements_scikit_learn"
+    ],
+    "25": [
+      "requirements_scipy"
+    ],
+    "26": [
+      "requirements_seaborn"
+    ],
+    "27": [
+      "woe_credit_scoring_binning_py_dataframe"
+    ],
+    "28": [
+      "woe_credit_scoring_binning_py_series"
+    ]
+  },
+  "cohesion": {
+    "0": 0.11586452762923351,
+    "1": 0.0846774193548387,
+    "2": 0.10052910052910052,
+    "3": 0.10052910052910052,
+    "4": 0.13230769230769232,
+    "5": 0.17316017316017315,
+    "6": 0.1,
+    "7": 0.15441176470588236,
+    "8": 0.18681318681318682,
+    "9": 0.21212121212121213,
+    "10": 0.24242424242424243,
+    "11": 0.2857142857142857,
+    "12": 0.2857142857142857,
+    "13": 0.5,
+    "14": 1.0,
+    "15": 1.0,
+    "16": 1.0,
+    "17": 1.0,
+    "18": 1.0,
+    "19": 1.0,
+    "20": 1.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 1.0,
+    "24": 1.0,
+    "25": 1.0,
+    "26": 1.0,
+    "27": 1.0,
+    "28": 1.0
+  },
+  "gods": [
+    {
+      "id": "woe_credit_scoring_encoder_woeencoder",
+      "label": "WoeEncoder",
+      "degree": 31
+    },
+    {
+      "id": "woe_credit_scoring_discretizer_discretizer",
+      "label": "Discretizer",
+      "degree": 30
+    },
+    {
+      "id": "woe_credit_scoring_normalizer_discretenormalizer",
+      "label": "DiscreteNormalizer",
+      "degree": 27
+    },
+    {
+      "id": "woe_credit_scoring_autocreditscoring_autocreditscoring",
+      "label": "AutoCreditScoring",
+      "degree": 24
+    },
+    {
+      "id": "woe_credit_scoring_scoring_creditscoring",
+      "label": "CreditScoring",
+      "degree": 20
+    },
+    {
+      "id": "woe_credit_scoring_feature_selectors_woecontinuousfeatureselector",
+      "label": "WoeContinuousFeatureSelector",
+      "degree": 18
+    },
+    {
+      "id": "woe_credit_scoring_feature_selectors_woediscretefeatureselector",
+      "label": "WoeDiscreteFeatureSelector",
+      "degree": 18
+    },
+    {
+      "id": "woe_credit_scoring_iv_calculator_ivcalculator",
+      "label": "IVCalculator",
+      "degree": 17
+    },
+    {
+      "id": "woe_credit_scoring_base_woebasefeatureselector",
+      "label": "WoeBaseFeatureSelector",
+      "degree": 12
+    },
+    {
+      "id": "readme_autocreditscoring",
+      "label": "AutoCreditScoring",
+      "degree": 6
+    }
+  ],
+  "surprises": [
+    {
+      "source": "AutoCreditScoring",
+      "target": "Feature Importance Chart",
+      "source_files": [
+        "README.md",
+        "images/feature_importance.png"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "crosses file types (doc \u2194 image); connects across different repos/directories; peripheral node `Feature Importance Chart` unexpectedly reaches hub `AutoCreditScoring`"
+    },
+    {
+      "source": "AutoCreditScoring",
+      "target": "ROC AUC Curve",
+      "source_files": [
+        "README.md",
+        "images/roc_auc_curve.png"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "crosses file types (doc \u2194 image); connects across different repos/directories; peripheral node `ROC AUC Curve` unexpectedly reaches hub `AutoCreditScoring`"
+    },
+    {
+      "source": "AutoCreditScoring",
+      "target": "Score Histogram",
+      "source_files": [
+        "README.md",
+        "images/score_histogram.png"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "crosses file types (doc \u2194 image); connects across different repos/directories; peripheral node `Score Histogram` unexpectedly reaches hub `AutoCreditScoring`"
+    },
+    {
+      "source": "AutoCreditScoring",
+      "target": "Score KDE Plot",
+      "source_files": [
+        "README.md",
+        "images/score_kde.png"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "crosses file types (doc \u2194 image); connects across different repos/directories; peripheral node `Score KDE Plot` unexpectedly reaches hub `AutoCreditScoring`"
+    },
+    {
+      "source": "fitted_encoder()",
+      "target": "WoeEncoder",
+      "source_files": [
+        "tests/conftest.py",
+        "woe_credit_scoring/encoder.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; bridges separate communities; peripheral node `fitted_encoder()` unexpectedly reaches hub `WoeEncoder`"
+    }
+  ],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}
