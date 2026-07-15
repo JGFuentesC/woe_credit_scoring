@@ -156,3 +156,18 @@ class CreditScoring:
                     aux[features] = aux[features].fillna(0)
                 aux['score'] = aux[features].sum(axis=1)
                 return aux
+
+    def to_pickle(self, path: str) -> None:
+        """Serialize fitted scorecard to a pickle file."""
+        import pickle
+        if not self.__is_fitted:
+            raise RuntimeError("Scorecard is not fitted. Call fit() first.")
+        with open(path, 'wb') as f:
+            pickle.dump(self, f)
+
+    @staticmethod
+    def from_pickle(path: str) -> "CreditScoring":
+        """Load a fitted scorecard from a pickle file."""
+        import pickle
+        with open(path, 'rb') as f:
+            return pickle.load(f)

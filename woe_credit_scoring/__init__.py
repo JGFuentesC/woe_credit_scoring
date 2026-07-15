@@ -11,7 +11,10 @@ from .scoring import CreditScoring
 from .autocreditscoring import AutoCreditScoring
 from .eda import dataset_profile, psi, event_rate_by_feature, woe_profile, vif
 from .models import PipelineConfig, FeatureInfo, ScorecardResult, DatasetProfile
-
+from .plots import (
+    roc_curve_plot, roc_comparison_plot, ks_plot, iv_barplot,
+    event_rate_plot, score_distribution_plot, event_rate_by_score_plot,
+)
 
 __all__ = [
     "DiscreteNormalizer", "frequency_table", "WoeBaseFeatureSelector",
@@ -19,4 +22,6 @@ __all__ = [
     "CreditScoring", "AutoCreditScoring", "IVCalculator",
     "dataset_profile", "psi", "event_rate_by_feature", "woe_profile", "vif",
     "PipelineConfig", "FeatureInfo", "ScorecardResult", "DatasetProfile",
+    "roc_curve_plot", "roc_comparison_plot", "ks_plot", "iv_barplot",
+    "event_rate_plot", "score_distribution_plot", "event_rate_by_score_plot",
 ]

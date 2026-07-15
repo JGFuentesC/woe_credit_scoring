@@ -615,3 +615,71 @@ class AutoCreditScoring:
             getattr(self,f'event_rate_fig_{k}').savefig(f'{folder}/event_rate_{k}.png')
         self.roc_curve_fig.savefig(f'{folder}/roc_curve.png')
         logger.info(f"Reports saved in {folder}")
+
+    def to_pickle(self, path: str) -> None:
+        """Serialize fitted model to a pickle file.
+
+        Args:
+            path: File path (e.g. 'model.pkl').
+        """
+        import pickle
+        if not self.is_fitted:
+            raise RuntimeError("Model is not fitted. Call fit() first.")
+        with open(path, 'wb') as f:
+            pickle.dump(self, f)
+        logger.info(f"Model saved to {path}")
+
+    @staticmethod
+    def from_pickle(path: str) -> "AutoCreditScoring":
+        """Load a fitted model from a pickle file.
+
+        Args:
+            path: File path to load from.
+
+        Returns:
+            AutoCreditScoring instance.
+        """
+        import pickle
+        with open(path, 'rb') as f:
+            return pickle.load(f)
+
+    def plot_roc(self) -> "plt.Figure":
+        """Generate and return ROC curve figure for train and validation."""
+        from .plots import roc_comparison_plot
+        if not self.is_fitted:
+            raise RuntimeError("Model is not fitted. Call fit() first.")
+        return roc_comparison_plot(
+            self.train[self.target],
+            self.model.predict_proba(self.train_woe)[:, 1],
+            self.valid[self.target],
+            self.model.predict_proba(self.valid_woe)[:, 1],
+        )
+
+    def plot_ks(self) -> "plt.Figure":
+        """Generate and return KS chart for validation data."""
+        from .plots import ks_plot
+        if not self.is_fitted:
+            raise RuntimeError("Model is not fitted. Call fit() first.")
+        return ks_plot(
+            self.valid[self.target],
+            self.model.predict_proba(self.valid_woe)[:, 1],
+        )
+
+    def plot_score_distribution(self) -> "plt.Figure":
+        """Generate and return score distribution histogram."""
+        from .plots import score_distribution_plot
+        if not self.is_fitted:
+            raise RuntimeError("Model is not fitted. Call fit() first.")
+        return score_distribution_plot(
+            self.scored_train['score'],
+            self.scored_valid['score'],
+        )
+
+    def plot_iv(self) -> "plt.Figure":
+        """Generate and return IV barplot for selected features."""
+        from .plots import iv_barplot
+        iv_data = pd.DataFrame([
+            {"feature": f["root_feature"], "iv": f["iv"]}
+            for f in self.woe_continuous_selector.selected_features
+        ])
+        return iv_barplot(iv_data, top_n=min(15, len(iv_data)))
