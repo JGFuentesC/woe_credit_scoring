@@ -21,6 +21,8 @@ class PipelineConfig(BaseModel):
     n_threads: int = Field(default=1, ge=1, le=64, description="Number of threads for parallel execution.")
     treat_outliers: bool = Field(default=False, description="Apply outlier treatment before discretization.")
     outlier_threshold: float = Field(default=0.01, ge=0, le=0.5, description="Percentile threshold for outlier detection.")
+    target_proportion_tolerance: float = Field(default=0.05, ge=0.001, le=0.5, description="Max allowed difference between train/valid target proportions.")
+    train_proportion: float = Field(default=0.7, ge=0.3, le=0.9, description="Proportion of data used for training.")
 
     @model_validator(mode="after")
     def _validate_score_range(self) -> "PipelineConfig":
