@@ -441,7 +441,7 @@ Distributed under the GNU General Public License v3.0 License. See `LICENSE` for
 
 ## Contact
 
-Jose G Fuentes — [@jgusteacher](https://twitter.com/jgusteacher) — jose.gustavo.fuentes@comunidad.unam.mx
+Jose G Fuentes — [@jgusteacher](https://twitter.com/jgusteacher)
 
 Project Link: [https://github.com/JGFuentesC/woe_credit_scoring](https://github.com/JGFuentesC/woe_credit_scoring)
 

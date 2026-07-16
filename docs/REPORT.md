@@ -424,7 +424,7 @@ Garantiza particiones reproducibles entre ejecuciones.
 $ python3 -m pytest tests/ -v
 ============================= test session starts ==============================
 platform darwin -- Python 3.14.5, pytest-9.1.1, pluggy-1.6.0
-rootdir: /Users/gus/trabajo/personal/woe_credit_scoring
+rootdir: <project-root>/woe_credit_scoring
 configfile: pytest.ini
 collecting ... collected 59 items
 
