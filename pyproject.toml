@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "woe_credit_scoring"
-version = "3.0.0"
+version = "3.0.0.post1"
 description = "A toolkit for Credit Scoring using Weight of Evidence (WoE) and Logistic Regression"
 readme = "README.md"
 requires-python = ">=3.10"
