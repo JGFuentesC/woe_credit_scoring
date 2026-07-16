@@ -132,6 +132,7 @@ class AutoCreditScoring:
     create_reporting: bool = False
     is_fitted: bool = False
     max_features: int = 10
+    model_features: list = None
 
     def __init__(self, data: pd.DataFrame, target: str, continuous_features: List[str] = None, discrete_features: List[str] = None, random_state: int = None):
         self.data = data
@@ -488,6 +489,8 @@ class AutoCreditScoring:
             if len(self.continuous_features) > 0 and len(self.discrete_features) > 0:
                 data_candidate = pd.concat([data_continuous_candidate, data_discrete_candidate], axis=1)
             data_woe = self.woe_encoder.transform(data_candidate)
+            if self.model_features is not None:
+                data_woe = data_woe[self.model_features]
             if data_woe.isna().any().any():
                 logger.error("NAs found in transformed data")
                 raise RuntimeError("NAs found in transformed data, Maybe tiny missing in continuous?")
@@ -514,12 +517,18 @@ class AutoCreditScoring:
             self.valid_woe = self.valid_woe[top_features]
             self.train_candidate = self.train_candidate[top_features]
             self.candidate_features = list(top_features)
-            # Re-fit encoder on truncated features for consistency
-            self.woe_encoder.features = self.candidate_features
+            self.model_features = list(top_features)
+            # Truncate encoder maps for consistency
             self.woe_encoder._woe_encoding_map = {
                 k: v for k, v in self.woe_encoder._woe_encoding_map.items()
                 if k in top_features
             }
+            self.woe_encoder.features = self.candidate_features
+            if self.woe_encoder._woe_reverse_map is not None:
+                self.woe_encoder._woe_reverse_map = {
+                    k: v for k, v in self.woe_encoder._woe_reverse_map.items()
+                    if k in top_features
+                }
             logger.info(f"Using top {self.max_features} features for model training: {self.candidate_features}")
 
         lr = LogisticRegression(penalty='l2', max_iter=2000)

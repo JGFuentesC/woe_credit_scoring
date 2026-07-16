@@ -82,6 +82,7 @@ class WoeEncoder:
         target_levels = aux.columns.tolist()
         with np.errstate(divide='ignore', invalid='ignore'):
             aux['woe'] = np.log(aux.iloc[:, 0] / aux.iloc[:, 1])
+        aux['woe'] = aux['woe'].replace([np.inf, -np.inf], np.nan).fillna(0.0)
         aux = aux.drop(columns=target_levels)
         return {feature: aux['woe'].to_dict()}
 
@@ -103,7 +104,7 @@ class WoeEncoder:
 
         aux = X.copy()
         for feature, woe_map in self._woe_encoding_map.items():
-            aux[feature] = aux[feature].replace(woe_map)
+            aux[feature] = pd.to_numeric(aux[feature].replace(woe_map), errors='coerce').fillna(0.0)
         return aux
 
     def inverse_transform(self, X: pd.DataFrame) -> pd.DataFrame:
