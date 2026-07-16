@@ -132,3 +132,4 @@ graphify-out/.graphify_root
 graphify-out/.graphify_uncached.txt
 
 .venvgraphify-out/
+graphify-out/
