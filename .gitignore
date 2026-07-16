@@ -126,10 +126,3 @@ dmypy.json
 
 **/.venv/
 
-# graphify temp files
-graphify-out/.graphify_python
-graphify-out/.graphify_root
-graphify-out/.graphify_uncached.txt
-
-.venvgraphify-out/
-graphify-out/
