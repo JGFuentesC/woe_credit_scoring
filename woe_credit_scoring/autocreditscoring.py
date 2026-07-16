@@ -131,6 +131,7 @@ class AutoCreditScoring:
     overfitting_tolerance: float = 0.01
     create_reporting: bool = False
     is_fitted: bool = False
+    max_features: int = 10
 
     def __init__(self, data: pd.DataFrame, target: str, continuous_features: List[str] = None, discrete_features: List[str] = None, random_state: int = None):
         self.data = data
@@ -155,6 +156,7 @@ class AutoCreditScoring:
             max_score:int = None,
             create_reporting:bool = None,
             calibrate:bool = False,
+            max_features:int = None,
             verbose:bool=False):
 
         #Train proportion control
@@ -213,6 +215,8 @@ class AutoCreditScoring:
             self.discretization_method = discretization_method
         if n_threads is not None:
             self.n_threads = n_threads
+        if max_features is not None:
+            self.max_features = max_features
 
         # Feature selection
         self.__feature_selection()
@@ -340,17 +344,18 @@ class AutoCreditScoring:
 
     def __partition_data(self):
         logger.info("Partitioning data...")
-        self.train, self.valid = train_test_split(self.data, train_size=self.train_size, random_state=self.random_state)
+        rs = self.random_state
+        self.train, self.valid = train_test_split(self.data, train_size=self.train_size, random_state=rs)
         self.train.reset_index(drop=True, inplace=True)
         self.valid.reset_index(drop=True, inplace=True)
-        # Check if target proportions are compatible between train and valid
         logger.info("Checking partition proportions...")
         iter = 1
         while(np.abs(self.train[self.target].mean()-self.valid[self.target].mean())>self.target_proportion_tolerance):
             logger.info(f"Partitioning data...Iteration {iter}")
             logger.info(f"Train target proportion: {self.train[self.target].mean()}")
             logger.info(f"Valid target proportion: {self.valid[self.target].mean()}")
-            self.train, self.valid = train_test_split(self.data, train_size=self.train_size, random_state=self.random_state)
+            rs = (rs + 1) if rs is not None else None
+            self.train, self.valid = train_test_split(self.data, train_size=self.train_size, random_state=rs)
             self.train.reset_index(drop=True, inplace=True)
             self.valid.reset_index(drop=True, inplace=True)
             iter+=1
@@ -443,6 +448,8 @@ class AutoCreditScoring:
                 raise RuntimeError("No features selected")
             logger.info(f"Selected features ({len(self.candidate_features)}): {self.candidate_features}")
 
+            logger.info(f"Selected features ({len(self.candidate_features)}): {self.candidate_features}")
+
             self.feature_name_mapping = {}
             if len(self.continuous_features)>0 and hasattr(self, 'iv_report_continuous'):
                 self.feature_name_mapping.update(self.iv_report_continuous.set_index('feature')['root_feature'].to_dict())
@@ -491,10 +498,33 @@ class AutoCreditScoring:
 
     def __train_model(self):
         logger.info("Training model...")
-        lr = LogisticRegression()
+        self.valid_woe = self.__apply_pipeline(self.valid)
+
+        # Apply max_features cap to reduce overfitting on small datasets
+        if self.max_features and len(self.candidate_features) > self.max_features:
+            iv_scores = {}
+            if hasattr(self, 'iv_report_continuous') and len(self.iv_report_continuous) > 0:
+                for _, row in self.iv_report_continuous.iterrows():
+                    iv_scores[row['feature']] = row['iv']
+            if hasattr(self, 'iv_report_discrete') and len(self.iv_report_discrete) > 0:
+                for _, row in self.iv_report_discrete.iterrows():
+                    iv_scores[row['feature']] = row['iv']
+            top_features = sorted(iv_scores, key=iv_scores.get, reverse=True)[:self.max_features]
+            self.train_woe = self.train_woe[top_features]
+            self.valid_woe = self.valid_woe[top_features]
+            self.train_candidate = self.train_candidate[top_features]
+            self.candidate_features = list(top_features)
+            # Re-fit encoder on truncated features for consistency
+            self.woe_encoder.features = self.candidate_features
+            self.woe_encoder._woe_encoding_map = {
+                k: v for k, v in self.woe_encoder._woe_encoding_map.items()
+                if k in top_features
+            }
+            logger.info(f"Using top {self.max_features} features for model training: {self.candidate_features}")
+
+        lr = LogisticRegression(penalty='l2', max_iter=2000)
         lr.fit(self.train_woe,self.train[self.target])
         self.model = lr
-        self.valid_woe = self.__apply_pipeline(self.valid)
         self.auc_train = roc_auc_score(y_score=lr.predict_proba(self.train_woe)[:,1],y_true=self.train[self.target])
         self.auc_valid = roc_auc_score(y_score=lr.predict_proba(self.valid_woe)[:,1],y_true=self.valid[self.target])
         logger.info(f"AUC for training: {self.auc_train}")
