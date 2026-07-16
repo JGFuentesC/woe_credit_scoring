@@ -159,6 +159,7 @@ if _MCP_AVAILABLE:
             iv_feature_threshold=iv_threshold,
             discretization_method=method,
             calibrate=calibrate,
+            target_proportion_tolerance=0.05,
         )
 
         if model_path:
